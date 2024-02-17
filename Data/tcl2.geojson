@@ -1,0 +1,1265 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79188489620",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.80417294,
+                        45.77978607
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79188489620,
+                "id_station": 51031,
+                "nom": "Gare de Vaise",
+                "desserte": "30209,30210",
+                "gid": 154,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.80417294,
+                45.77978607,
+                4.80417294,
+                45.77978607
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79201088106",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.80518244,
+                        45.7661358
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79201088106,
+                "id_station": 50405,
+                "nom": "Gorge de Loup",
+                "desserte": "30205,30206",
+                "gid": 261,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.80518244,
+                45.7661358,
+                4.80518244,
+                45.7661358
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79203489046",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.80587915,
+                        45.7745832
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79203489046,
+                "id_station": 50942,
+                "nom": "Valmy",
+                "desserte": "30207,30208",
+                "gid": 262,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.80587915,
+                45.7745832,
+                4.80587915,
+                45.7745832
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79216980898",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.80431757,
+                        45.70127446
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79216980898,
+                "id_station": 59372,
+                "nom": "St-Genis-Laval Hôp. Sud",
+                "desserte": "48138,48139",
+                "gid": 305,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.80431757,
+                45.70127446,
+                4.80431757,
+                45.70127446
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79217982324",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.80502183,
+                        45.71409349
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79217982324,
+                "id_station": 59361,
+                "nom": "Oullins Centre",
+                "desserte": "48136,48137",
+                "gid": 302,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.80502183,
+                45.71409349,
+                4.80502183,
+                45.71409349
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79289287141",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.81612958,
+                        45.75720833
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79289287141,
+                "id_station": 50931,
+                "nom": "St-Just",
+                "desserte": "30214",
+                "gid": 157,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.81612958,
+                45.75720833,
+                4.81612958,
+                45.75720833
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79289682619",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.81434465,
+                        45.71654147
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79289682619,
+                "id_station": 59041,
+                "nom": "Gare d'Oullins",
+                "desserte": "46035,46036",
+                "gid": 298,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.81434465,
+                45.71654147,
+                4.81434465,
+                45.71654147
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79328287274",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.82119648,
+                        45.75829174
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79328287274,
+                "id_station": 50801,
+                "nom": "Minimes Théâtres Romains",
+                "desserte": "30212,30213",
+                "gid": 159,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.82119648,
+                45.75829174,
+                4.82119648,
+                45.75829174
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79328987729",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.82147007,
+                        45.76238488
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79328987729,
+                "id_station": 52241,
+                "nom": "Fourvière",
+                "desserte": "30215",
+                "gid": 156,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.82147007,
+                45.76238488,
+                4.82147007,
+                45.76238488
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79367687475",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.82633834,
+                        45.75998372
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79367687475,
+                "id_station": 50951,
+                "nom": "Vieux Lyon",
+                "desserte": "33264,33265,30211",
+                "gid": 142,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.82633834,
+                45.75998372,
+                4.82633834,
+                45.75998372
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79371589660",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.82772813,
+                        45.77962123
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79371589660,
+                "id_station": 50454,
+                "nom": "Hénon",
+                "desserte": "30158",
+                "gid": 221,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.82772813,
+                45.77962123,
+                4.82772813,
+                45.77962123
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79375486364",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.82687993,
+                        45.74997054
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79375486364,
+                "id_station": 50851,
+                "nom": "Perrache",
+                "desserte": "30101",
+                "gid": 1,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.82687993,
+                45.74997054,
+                4.82687993,
+                45.74997054
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79394786727",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.82951744,
+                        45.7531876
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79394786727,
+                "id_station": 50002,
+                "nom": "Ampère - Victor Hugo",
+                "desserte": "42745",
+                "gid": 161,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.82951744,
+                45.7531876,
+                4.82951744,
+                45.7531876
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79407089079",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.83205597,
+                        45.77429438
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79407089079,
+                "id_station": 52234,
+                "nom": "Croix-Rousse",
+                "desserte": "644,643",
+                "gid": 218,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.83205597,
+                45.77429438,
+                4.83205597,
+                45.77429438
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79407990294",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.83266776,
+                        45.78522527
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79407990294,
+                "id_station": 50223,
+                "nom": "Cuire",
+                "desserte": "30159",
+                "gid": 224,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.83266776,
+                45.78522527,
+                4.83266776,
+                45.78522527
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79410783732",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.83034909,
+                        45.72620643
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79410783732,
+                "id_station": 52004,
+                "nom": "Stade de Gerland Le LOU",
+                "desserte": "46034,46033",
+                "gid": 216,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.83034909,
+                45.72620643,
+                4.83034909,
+                45.72620643
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79426987177",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.83383626,
+                        45.75713754
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79426987177,
+                "id_station": 50024,
+                "nom": "Bellecour",
+                "desserte": "46051,30103,30201,30202",
+                "gid": 294,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.83383626,
+                45.75713754,
+                4.83383626,
+                45.75713754
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79430284223",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.83304775,
+                        45.73056579
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79430284223,
+                "id_station": 52204,
+                "nom": "Debourg",
+                "desserte": "46032",
+                "gid": 213,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.83304775,
+                45.73056579,
+                4.83304775,
+                45.73056579
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79439387842",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.83569768,
+                        45.76308415
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79439387842,
+                "id_station": 50212,
+                "nom": "Cordeliers",
+                "desserte": "46050,42744",
+                "gid": 166,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.83569768,
+                45.76308415,
+                4.83569768,
+                45.76308415
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79439788315",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.83594233,
+                        45.76733113
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79439788315,
+                "id_station": 50462,
+                "nom": "Hôtel de Ville L. Pradel",
+                "desserte": "46052,30156,42743",
+                "gid": 271,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.83594233,
+                45.76733113,
+                4.83594233,
+                45.76733113
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79441388705",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.83630514,
+                        45.77084044
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79441388705,
+                "id_station": 52221,
+                "nom": "Croix-Paquet",
+                "desserte": "10787,10788",
+                "gid": 83,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.83630514,
+                45.77084044,
+                4.83630514,
+                45.77084044
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79458884975",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.83702433,
+                        45.73724404
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79458884975,
+                "id_station": 52214,
+                "nom": "Place Jean Jaurès",
+                "desserte": "31663",
+                "gid": 210,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.83702433,
+                45.73724404,
+                4.83702433,
+                45.73724404
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79492987006",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.84224216,
+                        45.75540995
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79492987006,
+                "id_station": 50443,
+                "nom": "Guillotière Gabriel Péri",
+                "desserte": "30199,30200",
+                "gid": 289,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.84224216,
+                45.75540995,
+                4.84224216,
+                45.75540995
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79499485938",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.84263839,
+                        45.74579252
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79499485938,
+                "id_station": 51602,
+                "nom": "Jean Macé",
+                "desserte": "46028",
+                "gid": 205,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.84263839,
+                45.74579252,
+                4.84263839,
+                45.74579252
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79502688499",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.84409278,
+                        45.76880913
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79502688499,
+                "id_station": 51821,
+                "nom": "Foch",
+                "desserte": "46053",
+                "gid": 20,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.84409278,
+                45.76880913,
+                4.84409278,
+                45.76880913
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79529587457",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.84712981,
+                        45.75936443
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79529587457,
+                "id_station": 50432,
+                "nom": "Place Guichard",
+                "desserte": "46027",
+                "gid": 199,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.84712981,
+                45.75936443,
+                4.84712981,
+                45.75936443
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79530786832",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.84701961,
+                        45.75373673
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79530786832,
+                "id_station": 50921,
+                "nom": "Saxe - Gambetta",
+                "desserte": "30133,46040,30197,30198",
+                "gid": 63,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.84701961,
+                45.75373673,
+                4.84701961,
+                45.75373673
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79570888610",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.852909,
+                        45.76961383
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79570888610,
+                "id_station": 50811,
+                "nom": "Masséna",
+                "desserte": "46054",
+                "gid": 24,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.852909,
+                45.76961383,
+                4.852909,
+                45.76961383
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79577986626",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.85300223,
+                        45.75175438
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79577986626,
+                "id_station": 51814,
+                "nom": "Garibaldi",
+                "desserte": "30445,30446",
+                "gid": 249,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.85300223,
+                45.75175438,
+                4.85300223,
+                45.75175438
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79615387740",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.85826058,
+                        45.76166313
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79615387740,
+                "id_station": 55201,
+                "nom": "Gare Part-Dieu V.Merle",
+                "desserte": "46025,46024",
+                "gid": 56,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.85826058,
+                45.76166313,
+                4.85826058,
+                45.76166313
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79621488338",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.85929328,
+                        45.76701737
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79621488338,
+                "id_station": 50042,
+                "nom": "Brotteaux",
+                "desserte": "46022,46023",
+                "gid": 195,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.85929328,
+                45.76701737,
+                4.85929328,
+                45.76701737
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79654188721",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.86365348,
+                        45.770366
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79654188721,
+                "id_station": 51021,
+                "nom": "Charpennes",
+                "desserte": "46055,42740,30472",
+                "gid": 274,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.86365348,
+                45.770366,
+                4.86365348,
+                45.770366
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79668686216",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.86447793,
+                        45.74779891
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79668686216,
+                "id_station": 50913,
+                "nom": "Sans Souci",
+                "desserte": "30194",
+                "gid": 245,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.86447793,
+                45.74779891,
+                4.86447793,
+                45.74779891
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79723885956",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.87146364,
+                        45.74530238
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79723885956,
+                "id_station": 50834,
+                "nom": "Monplaisir Lumière",
+                "desserte": "30190",
+                "gid": 242,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.87146364,
+                45.74530238,
+                4.87146364,
+                45.74530238
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79728488786",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.87322791,
+                        45.77074105
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79728488786,
+                "id_station": 51831,
+                "nom": "République Villeurbanne",
+                "desserte": "46056",
+                "gid": 30,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.87322791,
+                45.77074105,
+                4.87322791,
+                45.77074105
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79780685704",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.8786508,
+                        45.74287753
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79780685704,
+                "id_station": 50416,
+                "nom": "Grange Blanche",
+                "desserte": "30189,30190",
+                "gid": 284,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.8786508,
+                45.74287753,
+                4.8786508,
+                45.74287753
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79794588637",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.88165451,
+                        45.76920602
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79794588637,
+                "id_station": 50421,
+                "nom": "Gratte Ciel",
+                "desserte": "46057,42738",
+                "gid": 34,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.88165451,
+                45.76920602,
+                4.88165451,
+                45.76920602
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79842785219",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.8864337,
+                        45.73833533
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79842785219,
+                "id_station": 50624,
+                "nom": "Laënnec",
+                "desserte": "30188",
+                "gid": 281,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.8864337,
+                45.73833533,
+                4.8864337,
+                45.73833533
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79853784409",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.8875049,
+                        45.73101335
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79853784409,
+                "id_station": 50823,
+                "nom": "Mermoz - Pinel",
+                "desserte": "30185,30186",
+                "gid": 229,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.8875049,
+                45.73101335,
+                4.8875049,
+                45.73101335
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79859183123",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.88765973,
+                        45.71943937
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79859183123,
+                "id_station": 50842,
+                "nom": "Parilly",
+                "desserte": "30183,30184",
+                "gid": 227,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.88765973,
+                45.71943937,
+                4.88765973,
+                45.71943937
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79860388471",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.89004757,
+                        45.76752348
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79860388471,
+                "id_station": 50243,
+                "nom": "Flachet",
+                "desserte": "42737",
+                "gid": 187,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.89004757,
+                45.76752348,
+                4.89004757,
+                45.76752348
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79868381601",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.88821113,
+                        45.70571994
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79868381601,
+                "id_station": 51043,
+                "nom": "Gare de Vénissieux",
+                "desserte": "30447,30448",
+                "gid": 226,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.88821113,
+                45.70571994,
+                4.88821113,
+                45.70571994
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.79937488309",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.89988064,
+                        45.76583553
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 79937488309,
+                "id_station": 50231,
+                "nom": "Cusset",
+                "desserte": "46059,42736",
+                "gid": 42,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.89988064,
+                45.76583553,
+                4.89988064,
+                45.76583553
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.80007788130",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.90884698,
+                        45.76402212
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 80007788130,
+                "id_station": 51011,
+                "nom": "Laurent Bonnevay",
+                "desserte": "46060",
+                "gid": 46,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.90884698,
+                45.76402212,
+                4.90884698,
+                45.76402212
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tclstation.80107087837",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        4.9214775,
+                        45.76109131
+                    ]
+                ]
+            },
+            "properties": {
+                "id": 80107087837,
+                "id_station": 55641,
+                "nom": "Vaulx-en-Velin La Soie",
+                "desserte": "36434,36394",
+                "gid": 48,
+                "last_update": "2024-02-13T01:31:30+01:00",
+                "last_update_fme": "2024-02-13T06:00:11+01:00"
+            },
+            "bbox": [
+                4.9214775,
+                45.76109131,
+                4.9214775,
+                45.76109131
+            ]
+        }
+    ]
+}
