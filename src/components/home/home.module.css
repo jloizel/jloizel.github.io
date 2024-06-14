@@ -1,0 +1,18 @@
+.home {
+    /* width: 60%; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.header {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 100px;
+    text-align: center;
+    /* box-shadow: 0px 8px 24px rgba(62, 53, 82, 0.3); */
+}
