@@ -5,6 +5,7 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import { IoIosArrowForward } from "react-icons/io";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { FaLongArrowAltDown } from "react-icons/fa";
 
 const phrases = [
   'Part time coder',
@@ -33,7 +34,7 @@ function Home() {
       </div>
       <div className={styles.scroller}>
         <span className={styles.scrollerIcon}>
-          <span className={styles.scrollerDot}></span>
+          <FaLongArrowAltDown className={styles.scrollerArrow}/>
        </span>
       </div>
 

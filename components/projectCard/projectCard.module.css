@@ -1,0 +1,50 @@
+.projectCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px; /* Adjust the gap between cards as needed */
+  padding: 16px;
+}
+
+.card {
+  width: 300px; /* Set a fixed width for the cards */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #1a294a;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 200px; /* Set a fixed height for the image container */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Ensures the image covers the container without distortion */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.details {
+  color: rgb(201, 201, 201);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}

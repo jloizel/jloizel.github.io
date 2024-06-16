@@ -21,10 +21,10 @@ function NavBar() {
           // home
         </div>
         <div className={styles.link}>
-          // experience
+          // projects
         </div>
         <div className={styles.link}>
-          // resume
+          // resumé
         </div>
         <div className={styles.link}>
           // contact

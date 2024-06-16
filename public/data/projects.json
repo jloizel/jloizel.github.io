@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "image": "/images/metroguessr.jpg",
+    "title": "metroguessr",
+    "details": "Interactive online game where the player selects between several cities to play and attempts to guess as many metro stations of that city within a set timeframe.",
+    "languages": "React, Typescript, MongoDB"
+  },
+  {
+    "id": 2,
+    "image": "/images/engenious.png",
+    "title": "Engenious",
+    "details": "Bespoke website developed for Engenious, a recruitment company specialised in the construction industry"
+  }
+]
