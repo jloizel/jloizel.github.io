@@ -2,14 +2,14 @@ import React from 'react';
 import styles from "./home.module.css"
 import TextScrambler from '../textScrambler/textScrambler';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-// import { IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
+import { FaGithubSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 const phrases = [
-  'Hello World!',
-  'This is a test.',
-  'JavaScript is fun.',
-  'Welcome to my portfolio.',
-  'Enjoy your stay!'
+  'Part time coder',
+  'Tech enthusiast',
+  'Problem solver'
 ];
 
 function Home() {
@@ -19,13 +19,22 @@ function Home() {
         JACK LOIZEL
       </div>
       <div className={styles.scrambler}>
-        {/* <IoIosArrowForward className={styles.icon}/> */}
+        <IoIosArrowForward className={styles.icon}/>
         <TextScrambler phrases={phrases} scrambleDuration={2} displayDuration={2} />
         <span className={styles.cursor}></span>
       </div>
-      
-      <div className={styles.text}>
-
+      <div className={styles.logos}>
+        <a href="https://github.com/jloizel" style={{textDecoration: "none"}}>
+          <FaGithubSquare className={styles.logo}/>
+        </a>
+        <a href="https://www.linkedin.com/in/jackloizel/" style={{textDecoration: "none"}}>
+          <FaLinkedin className={styles.logo}/>
+        </a>
+      </div>
+      <div className={styles.scroller}>
+        <span className={styles.scrollerIcon}>
+          <span className={styles.scrollerDot}></span>
+       </span>
       </div>
 
       
