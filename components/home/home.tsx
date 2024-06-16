@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from "./home.module.css"
 import TextScrambler from '../textScrambler/textScrambler';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+// import { IoIosArrowForward } from "react-icons/io";
 
 const phrases = [
   'Hello World!',
@@ -16,7 +18,12 @@ function Home() {
       <div className={styles.header}>
         JACK LOIZEL
       </div>
-      <TextScrambler phrases={phrases}/>
+      <div className={styles.scrambler}>
+        {/* <IoIosArrowForward className={styles.icon}/> */}
+        <TextScrambler phrases={phrases} scrambleDuration={2} displayDuration={2} />
+        <span className={styles.cursor}></span>
+      </div>
+      
       <div className={styles.text}>
 
       </div>

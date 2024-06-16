@@ -1,20 +1,26 @@
+"use client"
+
 import React, { useEffect, useRef, useState } from 'react';
+import { gsap } from 'gsap';
+import styles from "./textScrambler.module.css"
 
 interface TextScramblerProps {
     phrases: string[];
+    scrambleDuration?: number;
+    displayDuration?: number;
 }
 
-const TextScrambler: React.FC<TextScramblerProps> = ({ phrases }) => {
-    const [currentText, setCurrentText] = useState('');
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const frameRef = useRef<number>();
+const TextScrambler: React.FC<TextScramblerProps> = ({ phrases, scrambleDuration = 2, displayDuration = 2 }) => {
+    const [count, setCount] = useState(0);
+    const [scrambledText, setScrambledText] = useState('');
+    const textRef = useRef<HTMLDivElement>(null);
     const chars = '!<>-_\\/[]{}—=+*^?#________';
 
     useEffect(() => {
-        const setText = (newText: string) => {
-            const oldText = currentText;
-            const length = newText.length; // Use the length of the new text
-            const promise = new Promise<void>((resolve) => (resolve));
+        const scrambleIt = () => {
+            const newText = phrases[count];
+            const oldText = textRef.current?.innerText || '';
+            const length = Math.max(oldText.length, newText.length);
             const queue: Array<{ from: string; to: string; start: number; end: number; char?: string }> = [];
 
             for (let i = 0; i < length; i++) {
@@ -40,13 +46,13 @@ const TextScrambler: React.FC<TextScramblerProps> = ({ phrases }) => {
                             char = chars[Math.floor(Math.random() * chars.length)];
                             queue[i].char = char;
                         }
-                        output += `<span class="dud">${char}</span>`;
+                        output += `<span class="${styles.scramble}">${char}</span>`;
                     } else {
                         output += from;
                     }
                 }
 
-                setCurrentText(output);
+                setScrambledText(output);
 
                 if (complete === queue.length) {
                     cancelAnimationFrame(frameRef.current!);
@@ -57,24 +63,28 @@ const TextScrambler: React.FC<TextScramblerProps> = ({ phrases }) => {
 
             cancelAnimationFrame(frameRef.current!);
             frameRef.current = requestAnimationFrame(() => update(0));
-            return promise;
-        };
 
-        const next = () => {
-            setText(phrases[currentIndex]).then(() => {
-                setTimeout(() => {
-                    setCurrentIndex((prevIndex) => (prevIndex + 1) % phrases.length);
-                }, 3000); // Change every 3 seconds
+            gsap.to(textRef.current, {
+                duration: scrambleDuration,
+                onComplete: () => {
+                    setScrambledText(newText);
+                    setTimeout(() => {
+                        setCount((prevCount) => (prevCount + 1) % phrases.length);
+                    }, displayDuration * 1000);
+                }
             });
         };
 
-        const intervalId = setInterval(next, 3000);
-        next();
+        scrambleIt();
+    }, [count, phrases, scrambleDuration, displayDuration]);
 
-        return () => clearInterval(intervalId);
-    }, [currentText, currentIndex, phrases]);
+    const frameRef = useRef<number>();
 
-    return <div className="text-container" dangerouslySetInnerHTML={{ __html: currentText }} />;
+    return (
+        <div className={styles.textContainer}>
+            <div ref={textRef} dangerouslySetInnerHTML={{ __html: scrambledText }}></div>
+        </div>
+    );
 };
 
 export default TextScrambler;
