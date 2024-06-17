@@ -3,14 +3,15 @@
 import React from 'react';
 import styles from "./navbar.module.css"
 
-const scrollToSection = (sectionId: string) => {
-  const section = document.getElementById(sectionId);
-  if (section) {
-    section.scrollIntoView({ behavior: 'smooth' });
-  }
-};
-
 function NavBar() {
+
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  
   return (
     <div className={styles.navbar}>
       <div className={styles.nameContainer}>
@@ -20,7 +21,7 @@ function NavBar() {
         <div className={styles.link} onClick={() => scrollToSection("home")}>
           // home
         </div>
-        <div className={styles.link}>
+        <div className={styles.link} onClick={() => scrollToSection("projects")}>
           // projects
         </div>
         <div className={styles.link}>

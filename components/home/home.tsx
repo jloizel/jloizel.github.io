@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react';
 import styles from "./home.module.css"
 import TextScrambler from '../textScrambler/textScrambler';
@@ -14,6 +16,14 @@ const phrases = [
 ];
 
 function Home() {
+
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className={styles.home} id="home">
       <div className={styles.header}>
@@ -32,7 +42,7 @@ function Home() {
           <FaLinkedin className={styles.logo}/>
         </a>
       </div>
-      <div className={styles.scroller}>
+      <div className={styles.scroller} onClick={() => scrollToSection("projects")}>
         <span className={styles.scrollerIcon}>
           <FaLongArrowAltDown className={styles.scrollerArrow}/>
        </span>

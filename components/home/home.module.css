@@ -5,7 +5,8 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    margin-top: 120px;
+    margin-top: 5vh;
+    height: 95vh;
 }
 
 .header {

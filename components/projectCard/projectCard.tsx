@@ -47,6 +47,7 @@ const ProjectCard: React.FC = () => {
               <div className={styles.details}>{projectCard.details}</div>
               <div className={styles.languages}></div>
             </div>
+            <span className={styles.showProject}>Show Project</span>
           </div>
         ))}
     </div>
