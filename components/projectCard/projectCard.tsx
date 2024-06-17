@@ -10,7 +10,8 @@ const ProjectCard: React.FC = () => {
       id: "",
       image: "",
       title: "",
-      details: ""
+      details: "",
+      href: ""
     },
   ]);
 
@@ -38,7 +39,7 @@ const ProjectCard: React.FC = () => {
   return (
     <div className={styles.projectCardContainer}>
         {data.map((projectCard, index) => (
-          <div className={styles.card} key={projectCard.id}>
+          <a className={styles.card} key={projectCard.id} href={projectCard.href} target='_blank'>
             <div className={styles.imageContainer}>
               <img src={projectCard.image}/>
             </div>
@@ -48,7 +49,7 @@ const ProjectCard: React.FC = () => {
               <div className={styles.languages}></div>
             </div>
             <span className={styles.showProject}>Show Project</span>
-          </div>
+          </a>
         ))}
     </div>
   )

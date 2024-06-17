@@ -4,6 +4,7 @@ import styles from "./page.module.css"
 import NavBar from "../../components/navbar/navbar"
 import Home from '../../components/home/home';
 import Projects from '../../components/projects/projects';
+import Resume from '../../components/resume/resume';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <NavBar/>
       <Home/>  
       <Projects/>
+      <Resume/>
     </div>
   );
 }

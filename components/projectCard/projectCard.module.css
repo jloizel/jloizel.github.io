@@ -17,6 +17,7 @@
   position: relative;
   transition: box-shadow 0.3s ease; /* Add transition for smooth scaling */
   cursor: pointer;
+  text-decoration: none;
 }
 
 .card:hover {
@@ -46,47 +47,50 @@
 .content {
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 30px 20px;
   transition: opacity 0.3s ease; /* Add transition for smooth opacity change */
 }
 
 .card:hover .content {
-  opacity: 0.5; /* Fade out the text content on hover */
+  opacity: 0.2; /* Fade out the text content on hover */
 }
 
 .title {
   color: white;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .details {
   color: rgb(201, 201, 201);
   font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 10px;
 }
 
 .showProject {
-  display: none; /* Hide by default */
+  display: block;
   position: absolute;
   bottom: 16px;
   left: 50%;
-  transform: translateX(-50%) translateY(10px); /* Initial position slightly below */
   background-color: #fff;
+  color: #1a294a;
   padding: 8px 16px;
-  border: 1px solid #ddd;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-size: 0.9em;
-  font-weight: bold;
-  text-transform: uppercase;
-  transition: opacity 0.3s ease, transform 1s ease; /* Transition for both opacity and position */
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%) translateY(-130%);
+  transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
 }
 
 .card:hover .showProject {
-  display: flex; /* Show on hover */
-  opacity: 1; /* Ensure it’s fully visible */
-  transform: translateX(-50%) translateY(0); /* Move to final position */
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(-150%);
 }

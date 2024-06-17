@@ -24,8 +24,8 @@ function NavBar() {
         <div className={styles.link} onClick={() => scrollToSection("projects")}>
           // projects
         </div>
-        <div className={styles.link}>
-          // resumé
+        <div className={styles.link} onClick={() => scrollToSection("resume")}>
+          // résumé
         </div>
         <div className={styles.link}>
           // contact
