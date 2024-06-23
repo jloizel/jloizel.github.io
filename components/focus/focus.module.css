@@ -1,0 +1,65 @@
+.focusContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 80px;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  border: solid 3px grey;
+}
+
+.focus {
+  padding: 40px;
+}
+
+.focusHeader {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  color: white;
+  font-size: 45px;
+  font-size: 200;
+}
+
+.focusHeader span {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: relative;
+}
+
+.focusHeader span div {
+  display: inline-block;
+  color: white;
+  position: relative;
+  width: max-content;
+}
+
+.underline {
+  position: relative;
+  z-index: 1;
+}
+
+.underline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.1em; /* Adjust this value to move the line higher or lower */
+  width: 100%;
+  height: 0.4em; /* Adjust the thickness of the line */
+  background-color: red;
+  z-index: -1; /* Ensure the line is behind the text */
+}

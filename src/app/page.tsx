@@ -5,12 +5,14 @@ import NavBar from "../../components/navbar/navbar"
 import Home from '../../components/home/home';
 import Projects from '../../components/projects/projects';
 import Resume from '../../components/resume/resume';
+import Focus from '../../components/focus/focus';
 
 function App() {
   return (
     <div className={styles.app}>
       <NavBar/>
-      <Home/>  
+      <Home/> 
+      <Focus/> 
       <Projects/>
       <Resume/>
     </div>

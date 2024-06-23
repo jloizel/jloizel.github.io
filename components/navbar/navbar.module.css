@@ -4,7 +4,7 @@
     flex-direction: row;
     height: 80px;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     padding-left: 40px;
     gap: 40px;
 }
@@ -19,13 +19,18 @@
 .linksContainer {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 40px;
 }
 
 .link {
     color: white;
     font-family: "Roboto Mono", monospace;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.link:hover {
+    color: rgb(122, 151, 250);
 }

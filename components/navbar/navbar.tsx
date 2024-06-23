@@ -21,6 +21,9 @@ function NavBar() {
         <div className={styles.link} onClick={() => scrollToSection("home")}>
           // home
         </div>
+        <div className={styles.link} onClick={() => scrollToSection("focus")}>
+          // focus
+        </div>
         <div className={styles.link} onClick={() => scrollToSection("projects")}>
           // projects
         </div>
@@ -31,6 +34,7 @@ function NavBar() {
           // contact
         </div>
       </div>
+      <div className={styles.hidden}></div>
       
     </div>
   );
