@@ -9,7 +9,7 @@ function Focus() {
   return (
     <div className={styles.focusContainer} id="focus">
       <div className={styles.header}>
-        My Focus
+        Areas of Focus
       </div>
       <div className={styles.box}>
         <div className={styles.focus}>
@@ -20,7 +20,15 @@ function Focus() {
               Development
             </span>
           </div>
-          
+          <div className={styles.focusContent}>
+            <pre>&lt;body&gt;</pre>
+            <div className={styles.focusContentText}>
+              Experienced in both functional and OOP:<br/>
+              Dart, Python, Java,<br/>
+              JavaScript, TypeScript.
+            </div>
+            <pre>&lt;/body&gt;</pre>
+          </div>
         </div>
         <div className={styles.focus}>
           <div className={styles.focusHeader}>
@@ -30,7 +38,15 @@ function Focus() {
               React, NextJS
             </span>
           </div>
-          
+          <div className={styles.focusContent}>
+            <pre>&lt;body&gt;</pre>
+            <div className={styles.focusContentText}>
+              Experienced in both functional and OOP:<br/>
+              Dart, Python, Java,<br/>
+              JavaScript, TypeScript.
+            </div>
+            <pre>&lt;/body&gt;</pre>
+          </div>
         </div>
         <div className={styles.focus}>
           <div className={styles.focusHeader}>
@@ -40,7 +56,15 @@ function Focus() {
               Development
             </span>
           </div>
-          
+          <div className={styles.focusContent}>
+            <pre>&lt;body&gt;</pre>
+            <div className={styles.focusContentText}>
+              Experienced in both functional and OOP:<br/>
+              Dart, Python, Java,<br/>
+              JavaScript, TypeScript.
+            </div>
+            <pre>&lt;/body&gt;</pre>
+          </div>
         </div>
       </div>
     </div>
