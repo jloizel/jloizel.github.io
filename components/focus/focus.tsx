@@ -16,7 +16,7 @@ function Focus() {
           <div className={styles.focusHeader}>
             <HiOutlineComputerDesktop className={styles.icon}/>
             <span>
-              <div className={styles.underline}>Software</div>
+              <div className={styles.underline1}>Software</div>
               Development
             </span>
           </div>
@@ -25,14 +25,20 @@ function Focus() {
         <div className={styles.focus}>
           <div className={styles.focusHeader}>
             <FaReact className={styles.icon}/>
-            <span>Frontend Development React, NextJS</span>
+            <span>
+              <div className={styles.underline2}>Fontend Development</div>
+              React, NextJS
+            </span>
           </div>
           
         </div>
         <div className={styles.focus}>
           <div className={styles.focusHeader}>
             <HiOutlineServerStack className={styles.icon}/>
-            <span>Backend Development</span>
+            <span>
+              <div className={styles.underline3}>Backend</div>
+              Development
+            </span>
           </div>
           
         </div>
