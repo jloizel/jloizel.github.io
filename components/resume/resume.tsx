@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "./resume.module.css"
-import ProjectCard from '../projectCard/projectCard';
+import ProjectCard from '../projects/projectCard/projectCard';
 import { IoIosArrowForward } from "react-icons/io";
 
 function Resume() {

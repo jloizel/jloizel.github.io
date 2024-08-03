@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "icon": "FaReact",
+    "header": "Fontend Development",
+    "subheader": "React, NextJS",
+    "content": "Experienced in both functional and OOP: Dart, Python, Java, JavaScript, TypeScript."
+  },
+  {
+    "id": 2,
+    "icon": "HiOutlineServerStack",
+    "header": "Backend Development",
+    "subheader": "React, NextJS",
+    "content": "Experienced in both functional and OOP: Dart, Python, Java, JavaScript, TypeScript."
+  }
+]

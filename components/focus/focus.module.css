@@ -10,7 +10,15 @@
   font-family: 'Poppins', sans-serif;
   color: white;
   font-weight: 600;
-  font-size: 80px;
+  font-size: 40px;
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+
+  }
+  
+  @media (min-width: 1024px) {
+    font-size: 80px;
+  }
 }
 
 .box {
@@ -125,4 +133,28 @@
   bottom: 0;
   width: 0.1rem;
   background-color: rgb(98, 98, 98);
+}
+
+.swiperContainer {
+  align-self: center;
+  width: 80%;
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    width: 60%;
+  }
+  
+  @media (min-width: 1024px) {
+    /* width: 80%; */
+    max-width: 650px;
+  }
+}
+
+.swiper {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.swiperSlide {
+  display: flex !important;
+  justify-content: center !important
 }

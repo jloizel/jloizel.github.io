@@ -13,5 +13,12 @@
     "title": "Engenious Recruitment",
     "details": "Bespoke website developed for Engenious, a recruitment company specialised in the construction industry",
     "href": "https://engenious.vercel.app/"
+  },
+  {
+    "id": 3,
+    "image": "/images/hoopstoglory.png",
+    "title": "Hoops to Glory",
+    "details": "Incremental clicker game with a NBA draft theme.",
+    "href": "https://engenious.vercel.app/"
   }
 ]
