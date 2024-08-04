@@ -32,36 +32,43 @@ const Menu: React.FC<MenuProps> = ({}) => {
   };
 
   return (
-    <>
-      <div className={styles.menuButton}>
-        <MenuIcon onClick={handleDrawerOpen} className={styles.icon}/>
-      </div>
+    <div className={styles.menuContainer}>
+      {/* <div className={styles.menuButton}> */}
+        <MenuIcon onClick={handleDrawerOpen} className={styles.menuIcon}/>
+      {/* </div> */}
+      {/* <div className={styles.drawerContainer}> */}
       <Drawer 
         sx={{height: "100%", width: "100%"}}
         open={open} 
         anchor={"right"} 
-        onClose={handleDrawerClose}
         hideBackdrop={false}
       >
         <div className={styles.container}>
-          <div className={styles.link} onClick={() => jumpToSection("home")}>
-            // home
+          <div>
+            <CloseIcon className={styles.closeIcon} onClick={handleDrawerClose}
+            />
           </div>
-          <div className={styles.link} onClick={() => jumpToSection("focus")}>
-            // focus
-          </div>
-          <div className={styles.link} onClick={() => jumpToSection("projects")}>
-            // projects
-          </div>
-          <div className={styles.link} onClick={() => jumpToSection("resume")}>
-            // résumé
-          </div>
-          <div className={styles.link}>
-            // contact
+          <div className={styles.menuLinks}>
+            <div className={styles.link} onClick={() => jumpToSection("home")}>
+              // home
+            </div>
+            <div className={styles.link} onClick={() => jumpToSection("focus")}>
+              // focus
+            </div>
+            <div className={styles.link} onClick={() => jumpToSection("projects")}>
+              // projects
+            </div>
+            <div className={styles.link} onClick={() => jumpToSection("resume")}>
+              // résumé
+            </div>
+            <div className={styles.link}>
+              // contact
+            </div>
           </div>
         </div>
       </Drawer>
-    </>
+      {/* </div> */}
+    </div>
   );
 };
 

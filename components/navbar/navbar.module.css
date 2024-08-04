@@ -4,9 +4,9 @@
     flex-direction: row;
     height: 80px;
     align-items: center;
-    justify-content: space-between;
-    padding-left: 40px;
-    gap: 40px;
+    justify-content: flex-end;
+    padding: 0 40px;
+    /* gap: 40px; */
 }
 
 .nameContainer {
@@ -32,5 +32,5 @@
 }
 
 .link:hover {
-    color: rgb(122, 151, 250);
+    color: #E18EEC;
 }

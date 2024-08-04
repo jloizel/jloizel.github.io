@@ -1,103 +1,106 @@
 .home {
-    /* width: 60%; */
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+  /* width: 60%; */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+
+  @media (min-width: 768px) and (max-width: 1023px) {
     margin-top: 5vh;
-    height: 95vh;
+  }
 }
 
 .header {
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 100px;
-    text-align: center;
-    /* box-shadow: 0px 8px 24px rgba(62, 53, 82, 0.3); */
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 100px;
+  text-align: center;
+  /* box-shadow: 0px 8px 24px rgba(62, 53, 82, 0.3); */
 }
 
 .icon {
-    font-size: 24px;
-    margin-right: 20px;
+  font-size: 24px;
+  margin-right: 20px;
 }
 
 .scrambler {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    font-size: 30px;
-    text-align: center;
-    flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  font-size: 30px;
+  text-align: center;
+  flex-direction: row;
 }
 
 .cursor {
-    content: "";
-    width: 15px;
-    height: 30px;
-    /* background: rgb(122, 151, 250); */
-    background: #E18EEC;
-    display: inline-block;
-    animation: cursor 1.5s infinite normal;
-    margin-left: 20px;
+  content: "";
+  width: 15px;
+  height: 30px;
+  /* background: rgb(122, 151, 250); */
+  background: #E18EEC;
+  display: inline-block;
+  animation: cursor 1.5s infinite normal;
+  margin-left: 20px;
 }
 
 @keyframes cursor {
-    0% {
-      opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 }
 
 .logos {
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-    gap: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  gap: 20px;
 }
 
 .logo {
-    font-size: 35px;
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
+  font-size: 35px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 .logo:hover {
-    color: #E18EEC;
+  color: #E18EEC;
 }
 
 .scroller {
-    margin-top: 100px;
-    cursor: pointer;
-    animation: up-down 1.5s ease infinite;
+  margin-top: 100px;
+  cursor: pointer;
+  animation: up-down 1.5s ease infinite;
 }
 
 .scrollerArrow {
-    color: #E18EEC;
-    font-size: 15px;
-    /* animation: up-down 3s ease infinite; */
-    margin-top: 10px;
+  color: #E18EEC;
+  font-size: 15px;
+  /* animation: up-down 3s ease infinite; */
+  margin-top: 10px;
 }
   
 .scrollerIcon {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    height: 30px;
-    width: 15px;
-    border: 2px solid #E18EEC;
-    border-radius: 1em;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 30px;
+  width: 15px;
+  border: 2px solid #E18EEC;
+  border-radius: 1em;
 }
 
 @keyframes up-down {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(10px);
-    }
+  0%, 100% {
+    transform: translateY(0);
   }
+  50% {
+    transform: translateY(10px);
+  }
+}
