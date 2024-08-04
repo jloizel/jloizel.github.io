@@ -47,7 +47,6 @@ const Focus: React.FC = () => {
   const iconComponents: { [key: string]: React.ElementType } = {
     FaReact: FaReact,
     HiOutlineServerStack: HiOutlineServerStack,
-    HiOutlineComputerDesktop: HiOutlineComputerDesktop,
   };
 
   const theme = createTheme({
@@ -97,6 +96,9 @@ const Focus: React.FC = () => {
           >
             {data.map((item, index) => {
               const IconComponent = iconComponents[item.icon];
+              if (!IconComponent) {
+                return null;
+              }
               return (
               <SwiperSlide key={item.id} className={styles.swiperSlide}>
                 <div className={styles.focus}>
@@ -125,7 +127,10 @@ const Focus: React.FC = () => {
       ) : (
         <div className={styles.box}>
           {data.map((item, index) => {
-              // const IconComponent = iconComponents[item.icon];
+              const IconComponent = iconComponents[item.icon];
+              if (!IconComponent) {
+                return null;
+              }
               return (
                 <div className={styles.focus}>
                   <div className={styles.focusHeader}>
