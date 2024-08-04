@@ -11,80 +11,82 @@ interface TextScramblerProps {
 }
 
 const TextScrambler: React.FC<TextScramblerProps> = ({ phrases, scrambleDuration = 2, displayDuration = 2 }) => {
-    const [count, setCount] = useState(0);
-    const [scrambledText, setScrambledText] = useState('');
-    const textRef = useRef<HTMLDivElement>(null);
-    const chars = '!<>-_\\/[]{}—=+*^?#________';
+  const [count, setCount] = useState(0);
+  const [scrambledText, setScrambledText] = useState('');
+  const textRef = useRef<HTMLDivElement>(null);
+  const chars = '!<>-_\\/[]{}—=+*^?#________';
 
-    useEffect(() => {
-        const scrambleIt = () => {
-            const newText = phrases[count];
-            const oldText = textRef.current?.innerText || '';
-            const length = Math.max(oldText.length, newText.length);
-            const queue: Array<{ from: string; to: string; start: number; end: number; char?: string }> = [];
+  useEffect(() => {
+      const scrambleIt = () => {
+          const newText = phrases[count];
+          const oldText = textRef.current?.innerText || '';
+          const length = Math.max(oldText.length, newText.length);
+          const queue: Array<{ from: string; to: string; start: number; end: number; char?: string }> = [];
 
-            for (let i = 0; i < length; i++) {
-                const from = oldText[i] || '';
-                const to = newText[i] || '';
-                const start = Math.floor(Math.random() * 40);
-                const end = start + Math.floor(Math.random() * 40);
-                queue.push({ from, to, start, end });
-            }
+          for (let i = 0; i < length; i++) {
+              const from = oldText[i] || '';
+              const to = newText[i] || '';
+              const start = Math.floor(Math.random() * 40);
+              const end = start + Math.floor(Math.random() * 40);
+              queue.push({ from, to, start, end });
+          }
 
-            const update = (frame: number) => {
-                let output = '';
-                let complete = 0;
+          const update = (frame: number) => {
+              let output = '';
+              let complete = 0;
 
-                for (let i = 0, n = queue.length; i < n; i++) {
-                    let { from, to, start, end, char } = queue[i];
+              for (let i = 0, n = queue.length; i < n; i++) {
+                  let { from, to, start, end, char } = queue[i];
 
-                    if (frame >= end) {
-                        complete++;
-                        output += to;
-                    } else if (frame >= start) {
-                        if (!char || Math.random() < 0.28) {
-                            char = chars[Math.floor(Math.random() * chars.length)];
-                            queue[i].char = char;
-                        }
-                        output += `<span class="${styles.scramble}">${char}</span>`;
-                    } else {
-                        output += from;
-                    }
-                }
+                  if (frame >= end) {
+                      complete++;
+                      output += to;
+                  } else if (frame >= start) {
+                      if (!char || Math.random() < 0.28) {
+                          char = chars[Math.floor(Math.random() * chars.length)];
+                          queue[i].char = char;
+                      }
+                      const colorClass = i % 2 === 0 ? styles.scrambleColor1 : styles.scrambleColor2;
+                      output += `<span class="${styles.scramble} ${colorClass}">${char}</span>`;
 
-                setScrambledText(output);
+                  } else {
+                      output += from;
+                  }
+              }
 
-                if (complete === queue.length) {
-                    cancelAnimationFrame(frameRef.current!);
-                } else {
-                    frameRef.current = requestAnimationFrame(() => update(frame + 1));
-                }
-            };
+              setScrambledText(output);
 
-            cancelAnimationFrame(frameRef.current!);
-            frameRef.current = requestAnimationFrame(() => update(0));
+              if (complete === queue.length) {
+                  cancelAnimationFrame(frameRef.current!);
+              } else {
+                  frameRef.current = requestAnimationFrame(() => update(frame + 1));
+              }
+          };
 
-            gsap.to(textRef.current, {
-                duration: scrambleDuration,
-                onComplete: () => {
-                    setScrambledText(newText);
-                    setTimeout(() => {
-                        setCount((prevCount) => (prevCount + 1) % phrases.length);
-                    }, displayDuration * 1000);
-                }
-            });
-        };
+          cancelAnimationFrame(frameRef.current!);
+          frameRef.current = requestAnimationFrame(() => update(0));
 
-        scrambleIt();
-    }, [count, phrases, scrambleDuration, displayDuration]);
+          gsap.to(textRef.current, {
+              duration: scrambleDuration,
+              onComplete: () => {
+                  setScrambledText(newText);
+                  setTimeout(() => {
+                      setCount((prevCount) => (prevCount + 1) % phrases.length);
+                  }, displayDuration * 1000);
+              }
+          });
+      };
 
-    const frameRef = useRef<number>();
+      scrambleIt();
+  }, [count, phrases, scrambleDuration, displayDuration]);
 
-    return (
-        <div className={styles.textContainer}>
-            <div ref={textRef} dangerouslySetInnerHTML={{ __html: scrambledText }}></div>
-        </div>
-    );
+  const frameRef = useRef<number>();
+
+  return (
+      <div className={styles.textContainer}>
+          <div ref={textRef} dangerouslySetInnerHTML={{ __html: scrambledText }}></div>
+      </div>
+  );
 };
 
 export default TextScrambler;

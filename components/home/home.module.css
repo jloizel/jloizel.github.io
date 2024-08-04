@@ -39,7 +39,8 @@
     content: "";
     width: 15px;
     height: 30px;
-    background: rgb(122, 151, 250);
+    /* background: rgb(122, 151, 250); */
+    background: #E18EEC;
     display: inline-block;
     animation: cursor 1.5s infinite normal;
     margin-left: 20px;
@@ -66,7 +67,7 @@
 }
 
 .logo:hover {
-    color: rgb(122, 151, 250);
+    color: #E18EEC;
 }
 
 .scroller {
@@ -76,7 +77,7 @@
 }
 
 .scrollerArrow {
-    color: rgb(122, 151, 250);
+    color: #E18EEC;
     font-size: 15px;
     /* animation: up-down 3s ease infinite; */
     margin-top: 10px;
@@ -88,7 +89,7 @@
     position: relative;
     height: 30px;
     width: 15px;
-    border: 2px solid rgb(122, 151, 250);
+    border: 2px solid #E18EEC;
     border-radius: 1em;
 }
 

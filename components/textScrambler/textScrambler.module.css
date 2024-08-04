@@ -1,8 +1,11 @@
-.scramble {
-    color: rgb(122, 151, 250);
+.scrambleColor1 {
+  color: #E18EEC;
+}
+
+.scrambleColor2 {
+  color: #5bcca8;
 }
 
 .textContainer div {
-    color: white;
+  color: white;
 }
-

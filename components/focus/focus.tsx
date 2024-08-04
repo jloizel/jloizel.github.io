@@ -11,7 +11,11 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper/modules';
 import { createTheme, useMediaQuery } from '@mui/material';
+import { IoIosArrowForward } from 'react-icons/io';
 
+interface CustomCSSProperties extends React.CSSProperties {
+  '--underline-color'?: string;
+}
 
 const Focus: React.FC = () => {
   const [data, setData] = useState([
@@ -20,7 +24,8 @@ const Focus: React.FC = () => {
       icon: "",
       header: "",
       subheader: "",
-      content: ""
+      content: "",
+      color: ""
     },
   ]);
 
@@ -74,6 +79,7 @@ const Focus: React.FC = () => {
   return (
     <div className={styles.focusContainer} id="focus">
       <div className={styles.header}>
+        <IoIosArrowForward className={styles.icon}/>
         Areas of Focus
       </div>
       {isMobile ? (
@@ -90,7 +96,7 @@ const Focus: React.FC = () => {
             pagination={{
               clickable: true,
             }}
-            modules={[Navigation]}
+            modules={[Pagination]}
             className={styles.swiper}
             speed={800}
           >
@@ -105,7 +111,7 @@ const Focus: React.FC = () => {
                   <div className={styles.focusHeader}>
                     <IconComponent className={styles.icon} />
                     <span>
-                      <div className={styles.underline2}>{item.header}</div>
+                      <div className={styles.underline}>{item.header}</div>
                       {item.subheader}
                     </span>
                   </div>
@@ -120,8 +126,8 @@ const Focus: React.FC = () => {
               </SwiperSlide>
               )
             })}
-            <div className="swiper-button-prev swiper-button-prev-custom" style={{...customButtonStyles, marginTop: isMobile ? '100px' : '80px'}}></div>
-            <div className="swiper-button-next swiper-button-next-custom" style={{...customButtonStyles, marginTop: isMobile ? '100px' : '80px'}}></div>
+            {/* <div className="swiper-button-prev" style={{...customButtonStyles, marginTop: isMobile ? '100px' : '80px'}}></div>
+            <div className="swiper-button-next" style={{...customButtonStyles, marginTop: isMobile ? '100px' : '80px'}}></div> */}
           </Swiper>
         </div>
       ) : (
@@ -136,8 +142,8 @@ const Focus: React.FC = () => {
                   <div className={styles.focusHeader}>
                     {/* <IconComponent className={styles.icon} /> */}
                     <span>
-                      <div className={styles.underline2}>{item.header}</div>
-                      {item.subheader}
+                    <div className={styles.underline} style={{ '--underline-color': item.color } as CustomCSSProperties}>{item.header}</div>
+                    {item.subheader}
                     </span>
                   </div>
                   <div className={styles.focusContent}>

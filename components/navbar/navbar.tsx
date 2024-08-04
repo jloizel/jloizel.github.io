@@ -30,9 +30,9 @@ function NavBar() {
   
   return (
     <div className={styles.navbar}>
-      <div className={styles.nameContainer}>
+      {/* <div className={styles.nameContainer}>
         JackLoizel<span style={{color: "white"}}>.</span>
-      </div>
+      </div> */}
       {isMobile ? (
           <Menu/>
         ) : (

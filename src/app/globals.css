@@ -27,3 +27,19 @@ code {
 @media (min-width: 1024px) {
 
 }
+
+.swiper-pagination-bullet, .swiper-pagination-bullet-active {
+  background: #5bcca8 !important;
+}
+
+.swiper-pagination-bullet {
+  border-radius: 5px !important;
+  width: 15px !important;
+  height: 6px !important;
+}
+
+.swiper-pagination-bullet-active {
+  border-radius: 5px !important;
+  width: 25px !important;
+  height: 6px !important;
+}
