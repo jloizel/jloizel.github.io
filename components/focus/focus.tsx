@@ -87,12 +87,8 @@ const Focus: React.FC = () => {
           <Swiper
             slidesPerView={1}
             centeredSlides={true}
-            navigation={{
-              prevEl: '.swiper-button-prev-custom',
-              nextEl: '.swiper-button-next-custom',
-            }}
             initialSlide={1}
-            spaceBetween={20}
+            spaceBetween={32}
             pagination={{
               clickable: true,
             }}
@@ -111,7 +107,8 @@ const Focus: React.FC = () => {
                   <div className={styles.focusHeader}>
                     <IconComponent className={styles.icon} />
                     <span>
-                      <div className={styles.underline}>{item.header}</div>
+                    <div className={styles.underline} style={{ '--underline-color': item.color } as CustomCSSProperties}>{item.header}
+                    </div>
                       {item.subheader}
                     </span>
                   </div>
@@ -126,8 +123,6 @@ const Focus: React.FC = () => {
               </SwiperSlide>
               )
             })}
-            {/* <div className="swiper-button-prev" style={{...customButtonStyles, marginTop: isMobile ? '100px' : '80px'}}></div>
-            <div className="swiper-button-next" style={{...customButtonStyles, marginTop: isMobile ? '100px' : '80px'}}></div> */}
           </Swiper>
         </div>
       ) : (
@@ -142,7 +137,8 @@ const Focus: React.FC = () => {
                   <div className={styles.focusHeader}>
                     {/* <IconComponent className={styles.icon} /> */}
                     <span>
-                    <div className={styles.underline} style={{ '--underline-color': item.color } as CustomCSSProperties}>{item.header}</div>
+                    <div className={styles.underline} style={{ '--underline-color': item.color } as CustomCSSProperties}>{item.header}
+                    </div>
                     {item.subheader}
                     </span>
                   </div>

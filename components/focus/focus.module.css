@@ -43,7 +43,7 @@
 .box {
   display: flex;
   flex-direction: row;
-  border: solid 3px grey;
+  /* border: solid 3px grey; */
   margin-top: 40px;
 }
 
@@ -51,8 +51,16 @@
   border-right: solid 2px rgb(149, 149, 149);
 }
 
+.focus:first-child {
+  border-left: solid 2px rgb(149, 149, 149);
+}
+
+
 .focus {
   padding: 40px;
+  margin: 60px 0;
+  border-top: solid 2px rgb(149, 149, 149);
+  border-bottom: solid 2px rgb(149, 149, 149);
 }
 
 .focusHeader {
@@ -103,22 +111,6 @@
   background-color: var(--underline-color);
 }
 
-/* .underline:first-child::before {
-  background-color: #E18EEC;
-}
-
-.underline:last-child::before {
-  background-color: #5bcca8;
-} */
-
-.underline2::before {
-  background-color: #E18EEC;
-}
-
-.underline3::before {
-  background-color: #5bcca8;
-}
-
 .focusContent {
   position: relative;
   font-size: 16px;
@@ -164,7 +156,7 @@
 
 .swiperContainer {
   align-self: center;
-  width: 80%;
+  width: 100%;
   
   @media (min-width: 768px) and (max-width: 1023px) {
     width: 60%;
