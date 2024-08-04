@@ -96,12 +96,12 @@ const Focus: React.FC = () => {
             speed={800}
           >
             {data.map((item, index) => {
-              // const IconComponent = iconComponents[item.icon];
+              const IconComponent = iconComponents[item.icon];
               return (
               <SwiperSlide key={item.id} className={styles.swiperSlide}>
                 <div className={styles.focus}>
                   <div className={styles.focusHeader}>
-                    {/* <IconComponent className={styles.icon} /> */}
+                    <IconComponent className={styles.icon} />
                     <span>
                       <div className={styles.underline2}>{item.header}</div>
                       {item.subheader}
@@ -124,42 +124,27 @@ const Focus: React.FC = () => {
         </div>
       ) : (
         <div className={styles.box}>
-          <div className={styles.focus}>
-            <div className={styles.focusHeader}>
-              <FaReact className={styles.icon}/>
-              <span>
-                <div className={styles.underline2}>Fontend Development</div>
-                React, NextJS
-              </span>
-            </div>
-            <div className={styles.focusContent}>
-              <pre>&lt;body&gt;</pre>
-              <div className={styles.focusContentText}>
-                Experienced in both functional and OOP:<br/>
-                Dart, Python, Java,<br/>
-                JavaScript, TypeScript.
-              </div>
-              <pre>&lt;/body&gt;</pre>
-            </div>
-          </div>
-          <div className={styles.focus}>
-            <div className={styles.focusHeader}>
-              <HiOutlineServerStack className={styles.icon}/>
-              <span>
-                <div className={styles.underline3}>Backend</div>
-                Development
-              </span>
-            </div>
-            <div className={styles.focusContent}>
-              <pre>&lt;body&gt;</pre>
-              <div className={styles.focusContentText}>
-                Experienced in both functional and OOP:<br/>
-                Dart, Python, Java,<br/>
-                JavaScript, TypeScript.
-              </div>
-              <pre>&lt;/body&gt;</pre>
-            </div>
-          </div>
+          {data.map((item, index) => {
+              // const IconComponent = iconComponents[item.icon];
+              return (
+                <div className={styles.focus}>
+                  <div className={styles.focusHeader}>
+                    {/* <IconComponent className={styles.icon} /> */}
+                    <span>
+                      <div className={styles.underline2}>{item.header}</div>
+                      {item.subheader}
+                    </span>
+                  </div>
+                  <div className={styles.focusContent}>
+                    <pre>&lt;body&gt;</pre>
+                    <div className={styles.focusContentText}>
+                      {item.content}
+                    </div>
+                    <pre>&lt;/body&gt;</pre>
+                  </div>
+                </div>
+              )
+            })}
         </div>
       )}
     </div>

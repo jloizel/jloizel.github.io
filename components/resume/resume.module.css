@@ -20,10 +20,18 @@
   /* font-family: 'Poppins', sans-serif; */
   font-family: "Roboto Mono", monospace;
   font-weight: 600;
-  font-size: 40px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  font-size: 40px;
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+  
+  }
+  
+  @media (min-width: 1024px) {
+    font-size: 40px;
+  }
 }
 
 .icon {
@@ -36,7 +44,16 @@
   color: white;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 18px;
   margin-top: 20px;
-  width: 800px;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+  
+  }
+  
+  @media (min-width: 1024px) {
+    width: 800px;
+    font-size: 18px;
+  }
 }
