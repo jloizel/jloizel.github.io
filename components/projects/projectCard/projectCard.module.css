@@ -16,6 +16,8 @@
   
   @media (min-width: 1024px) {
     flex-wrap: wrap;
+    width: 100%;
+    gap: 80px;
   }
 }
 
@@ -36,7 +38,7 @@
   }
   
   @media (min-width: 1024px) {
-    width: 500px; /* Set a fixed width for the cards */
+    width: 400px; /* Set a fixed width for the cards */
   }
 }
 
@@ -61,7 +63,7 @@
   }
   
   @media (min-width: 1024px) {
-    height: 400px;  
+    /* height: 300px;   */
   }
 }
 
@@ -76,7 +78,7 @@
   }
   
   @media (min-width: 1024px) {
-    height: 400px;  
+    /* height: 300px;   */
   }
 }
 

@@ -42,7 +42,7 @@ function Home() {
           <FaLinkedin className={styles.logo}/>
         </a>
       </div>
-      <div className={styles.scroller} onClick={() => scrollToSection("projects")}>
+      <div className={styles.scroller} onClick={() => scrollToSection("focus")}>
         <span className={styles.scrollerIcon}>
           <FaLongArrowAltDown className={styles.scrollerArrow}/>
        </span>
