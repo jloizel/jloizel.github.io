@@ -10,9 +10,9 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaLongArrowAltDown } from "react-icons/fa";
 
 const phrases = [
-  'Part time coder',
-  'Tech enthusiast',
-  'Problem solver'
+  'PART TIME CODER',
+  'TECH ENTHUSIAST',
+  'PROBLEM SOLVER'
 ];
 
 function Home() {
@@ -30,7 +30,7 @@ function Home() {
         JACK LOIZEL
       </div>
       <div className={styles.scrambler}>
-        <IoIosArrowForward className={styles.icon}/>
+        {/* <IoIosArrowForward className={styles.icon}/> */}
         <TextScrambler phrases={phrases} scrambleDuration={2} displayDuration={2} />
         <span className={styles.cursor}></span>
       </div>

@@ -79,7 +79,7 @@ const Focus: React.FC = () => {
   return (
     <div className={styles.focusContainer} id="focus">
       <div className={styles.header}>
-        <IoIosArrowForward className={styles.icon}/>
+        {/* <IoIosArrowForward className={styles.icon}/> */}
         Areas of Focus
       </div>
       {isMobile ? (
