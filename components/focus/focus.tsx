@@ -80,7 +80,7 @@ const Focus: React.FC = () => {
     <div className={styles.focusContainer} id="focus">
       <div className={styles.header}>
         {/* <IoIosArrowForward className={styles.icon}/> */}
-        Areas of Focus
+        Areas of Focus 
       </div>
       {isMobile ? (
         <div className={styles.swiperContainer}>

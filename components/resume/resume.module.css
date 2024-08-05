@@ -17,26 +17,44 @@
 .header {
   align-self: flex-start;
   color: white;
-  /* font-family: 'Poppins', sans-serif; */
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Poppins', sans-serif;
+  /* font-family: "Roboto Mono", monospace; */
   font-weight: 600;
   display: flex;
   flex-direction: row;
   align-items: center;
   font-size: 40px;
+  /* padding: 0 40px; */
   
   @media (min-width: 768px) and (max-width: 1023px) {
   
   }
   
   @media (min-width: 1024px) {
-    font-size: 40px;
+    font-size: 60px;
   }
 }
 
 .icon {
   font-size: 34px;
   margin-right: 20px;
+}
+
+.cursor {
+  content: "";
+  width: 20px;
+  height: 45px;
+  /* background: rgb(122, 151, 250); */
+  background: #E18EEC;
+  display: inline-block;
+  animation: cursor 1.5s infinite normal;
+  margin-left: 20px;
+}
+
+@keyframes cursor {
+  0% {
+    opacity: 0;
+  }
 }
 
 .text {
