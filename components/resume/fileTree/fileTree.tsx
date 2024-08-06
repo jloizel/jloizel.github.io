@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Entry from "./file";
+import File from "./file";
 import { files } from "./files";
 import styles from "./filetree.module.css";
 import resumeSections from '../../../public/data/resume.json';
@@ -17,9 +17,9 @@ const FileTree = () => {
 
   return (
     <div className={styles.container}>
-      <div>
+      <div className={styles.fileContainer}>
       {files.children?.map((file) => (
-        <Entry
+        <File
           key={file.name}
           file={file}
           depth={1}

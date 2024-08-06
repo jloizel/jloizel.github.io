@@ -6,13 +6,8 @@
   width: 100%;
 }
 
-.fileStructure {
-  display: flex;
-  flex-direction: row;
-}
-
 .fileContainer {
-  width: 100%;
+  width: 50%;
 }
 
 .file {
@@ -56,7 +51,7 @@
 }
 
 .horizontalLine {
-  width: 100px;
+  width: 100%;
   height: 0;
   border: 1px solid #E18EEC;
   margin: 3px;
@@ -67,20 +62,16 @@
   }
   
   @media (min-width: 1024px) {
-    width: 60%;
+
   }
 }
 
 .selectedFileContainer {
   display: flex;
-  align-items: center;
-  /* justify-content: flex-start; */
-  /* position: absolute; */
-  left: 20%;
-  flex-direction: flex;
-  /* top: 0; */
-  /* width: 100%; */
+  align-items: left;
+  flex-direction: column;
   gap: 20px;
+  width: 50%;
 }
 
 .header {

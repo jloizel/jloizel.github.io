@@ -22,7 +22,7 @@ const File: FC<FileProps> = ({ file, depth, isExpanded = false, selectedFile, ha
   };
 
   return (
-    <div className={styles.fileContainer}>
+    <>
       <button onClick={handleLocalClick} className={styles.file}>
         {file.children && (
           <div className={styles.fileIcon}>
@@ -56,7 +56,7 @@ const File: FC<FileProps> = ({ file, depth, isExpanded = false, selectedFile, ha
           </div>
         )}
       </div>
-    </div>
+    </>
   );
 }
 
