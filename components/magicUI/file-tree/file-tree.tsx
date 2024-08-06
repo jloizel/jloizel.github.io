@@ -11,9 +11,9 @@ import React, {
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
 import { FileIcon, FolderIcon, FolderOpenIcon } from "lucide-react";
 
-import { cn } from "@/lib/utils";
-import { Button } from "../magicUI/button";
-import { ScrollArea } from "../magicUI/scroll-area";
+import { cn } from "../../../src/app/lib/utils"
+import { Button } from "../../magicUI/ui/button";
+import { ScrollArea } from "../../magicUI/ui/scroll-area";
 
 type TreeViewElement = {
   id: string;
