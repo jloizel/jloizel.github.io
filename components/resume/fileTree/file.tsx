@@ -1,33 +1,63 @@
-"use client"
-
-import { TFiles } from "./files"
 import { FC, useState } from "react";
+import { TFiles } from "./files";
+import styles from "./filetree.module.css";
+import { FaRegFolder } from "react-icons/fa";
+import { LuFolderOpen } from "react-icons/lu";
 
 type FileProps = {
   file: TFiles;
   depth: number;
+  isExpanded?: boolean;
+  selectedFile: string | null;
+  handleClick: (fileName: string) => void;
+  resumeSection: any; // Replace with the appropriate type if known
 }
 
-export default function File({ file, depth }: FileProps ): ReturnType<FC> {
-  const [isExpanded, setIsExpanded] = useState<boolean>(false);
+const File: FC<FileProps> = ({ file, depth, isExpanded = false, selectedFile, handleClick, resumeSection }) => {
+  const [localIsExpanded, setLocalIsExpanded] = useState<boolean>(isExpanded);
+
+  const handleLocalClick = () => {
+    handleClick(file.name);
+    setLocalIsExpanded(prev => !prev);
+  };
 
   return (
-    <>
-      <button onClick={() => setIsExpanded(prev => !prev)}>
+    <div className={styles.fileContainer}>
+      <button onClick={handleLocalClick} className={styles.file}>
         {file.children && (
-          <div style={{ paddingLeft: "6px", paddingRight: "6px", width: "20px" }} >
-            {isExpanded ? "-" : "+"}
+          <div className={styles.fileIcon}>
+            {localIsExpanded ? <LuFolderOpen /> : <FaRegFolder />}
           </div>
         )}
-        <span className="name" style={{ paddingLeft: file.children ? "" : "20px" }} >{file.name}</span>
+        <span
+          className={`${styles.fileName} ${selectedFile === file.name && resumeSection ? styles.fileSelected : ""}`}
+          style={{ paddingLeft: file.children ? "" : "20px" }}
+        >
+          {file.name}
+          {selectedFile === file.name && resumeSection && (
+            <div className={styles.horizontalLine}></div>
+          )}
+        </span>
       </button>
-      <div style={{ borderLeft: "1px solid black", margin: "5px 5px" }}>
-        {isExpanded && (<div style={{ paddingLeft: `5px` }} >
-          {file.children?.map((file) => (
-            <File file={file} depth={depth + 1}/>
-          ))}
-        </div>)}
+      <div className={styles.subFileContainer}>
+        {localIsExpanded && (
+          <div className={styles.subFile}>
+            {file.children?.map((childFile) => (
+              <File
+                key={childFile.name}
+                file={childFile}
+                depth={depth + 1}
+                isExpanded={isExpanded}
+                selectedFile={selectedFile}
+                handleClick={handleClick}
+                resumeSection={resumeSection}
+              />
+            ))}
+          </div>
+        )}
       </div>
-    </>
-  )
+    </div>
+  );
 }
+
+export default File;

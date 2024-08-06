@@ -38,13 +38,10 @@ export const files: TFiles = {
               name: "pages",
               children: [
                 {
-                  name: "login.tsx"
+                  name: "about.tsx"
                 },
                 {
-                  name: "dashboard.tsx"
-                },
-                {
-                  name: "404.tsx"
+                  name: "skills.tsx"
                 }
               ]
             },
