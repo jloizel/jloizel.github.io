@@ -35,9 +35,22 @@ const FileTree = () => {
           <div className={styles.header}>
             {resumeSection.header}
           </div>
-          <div className={styles.content}>
-            {resumeSection.content}
-          </div>
+          {resumeSection.sections ? (
+            resumeSection.sections.map((section, index) => (
+              <div key={index} className={styles.section}>
+                <div className={styles.subHeader}>
+                  {section.subHeader}
+                </div>
+                <div className={styles.content}>
+                  {section.content}
+                </div>
+              </div>
+            ))
+          ) : (
+            <div className={styles.content}>
+              {resumeSection.content}
+            </div>
+          )}
         </div>
       )}
     </div>

@@ -2,7 +2,20 @@
   {
     "fileName": "about.tsx",
     "header": "About",
-    "content": "This is the description for File1"
+    "sections": [
+      {
+        "subHeader": "Name:",
+        "content": "Jack Loizel"
+      },
+      {
+        "subHeader": "Job:",
+        "content": "Structural Engineer"
+      },
+      {
+        "subHeader": "Nationality:",
+        "content": "British, French"
+      }
+    ]
   },
   {
     "fileName": "File2",

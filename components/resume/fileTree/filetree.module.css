@@ -90,9 +90,33 @@
   }
 }
 
+.section {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.subHeader {
+  color: #E18EEC;
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: "Roboto Mono", monospace;
+  font-weight: 500;
+  /* font-size: 20px; */
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+  
+  }
+  
+  @media (min-width: 1024px) {
+    /* font-size: 16px; */
+  }
+}
+
 .content {
-  color: white;
+  color: #E6E6E5;
   /* position: relative; */
 }
+
 
 
