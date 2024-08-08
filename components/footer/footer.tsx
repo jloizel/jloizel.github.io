@@ -1,6 +1,10 @@
 import React from 'react';
 import styles from "./footer.module.css"
 import { AiOutlineCopyright } from "react-icons/ai";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaGithubSquare } from "react-icons/fa";
+
 
 function Footer() {
 
@@ -18,7 +22,8 @@ function Footer() {
         Jack Loizel 2024. All rights reserved.
       </div>
       <div className={styles.right}>
-
+        <FaLinkedin/>
+        <FaGithub/>
       </div>
     </div>
   );
