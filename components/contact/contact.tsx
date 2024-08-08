@@ -5,10 +5,10 @@ import styles from './contact.module.css'
 import { FaPhone } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
+import ContactForm from './contactForm/contactForm';
 
-export default function ContactForm() {
+export default function Contact() {
  
-
   return (
     <div className={styles.contactContainer} id="contact">
         <div className={styles.header}>
@@ -16,7 +16,7 @@ export default function ContactForm() {
         </div>
         <div className={styles.content}>
           <div className={styles.contactForm}>
-            {/* <ContactForm/> */}
+            <ContactForm/>
           </div>
           <div className={styles.contactDetails}>
             <div className={styles.detail}>

@@ -23,7 +23,7 @@ const formSchema = z.object({
 export type FormData = z.infer<typeof formSchema>;
 
 const ContactForm: FC = () => {
-  const form = useRef<any>(null);
+  const form = useRef<HTMLFormElement | null>(null);
   const {
     register,
     handleSubmit,
@@ -48,12 +48,15 @@ const ContactForm: FC = () => {
   const onSubmit = (data: FormData) => {
     sendEmail(data);
     setMessageSent(true);
-    reset();
+    // reset();
   };
 
-  const handleChange = (e:any) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    setFormData(prevFormData => ({
+      ...prevFormData,
+      [name]: value,
+    }));
   };
 
   const theme = createTheme({
@@ -74,22 +77,42 @@ const ContactForm: FC = () => {
   return (
     <div className={styles.formContainer}>
       {!messageSent && (
-        <div>
-      <form ref={form} onSubmit={handleSubmit(onSubmit)} className={styles.form2}>
+        <form ref={form} onSubmit={handleSubmit(onSubmit)} className={styles.form2}>
           <div className={styles.stepContainer}>
-        
-              <div className={styles.messageInputContainer}>
-                <div className={styles.label}>Message</div>
-                <textarea
-                  {...register('message')}
-                  value={formData.message}
-                  onChange={handleChange}
-                  className={styles.messageInput}
-                />
-              </div>
+            <div className={styles.messageInputContainer}>
+              <div className={styles.label}>Message</div>
+              <input
+                {...register('name')}
+                value={formData.name}
+                onChange={handleChange}
+                className={styles.messageInput}
+              />
+            </div>
+            <div className={styles.messageInputContainer}>
+              <div className={styles.label}>Message</div>
+              <input
+                {...register('email')}
+                value={formData.email}
+                onChange={handleChange}
+                className={styles.messageInput}
+              />
+            </div>
+            <div className={styles.messageInputContainer}>
+              <div className={styles.label}>Message</div>
+              <textarea
+                {...register('message')}
+                value={formData.message}
+                onChange={handleChange}
+                className={styles.messageInput}
+              />
+            </div>
+            <button
+              className={styles.button} type="submit"
+            >
+              Send Message
+            </button>
           </div>      
-      </form>
-      </div>
+        </form>
       )}
       {messageSent && (
         <div className={styles.successMessageContainer}>
