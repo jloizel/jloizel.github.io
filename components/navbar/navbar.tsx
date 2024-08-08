@@ -49,7 +49,7 @@ function NavBar() {
           <div className={styles.link} onClick={() => scrollToSection("resume")}>
             // résumé
           </div>
-          <div className={styles.link}>
+          <div className={styles.link} onClick={() => scrollToSection("contact")}>
             // contact
           </div>
       </div>

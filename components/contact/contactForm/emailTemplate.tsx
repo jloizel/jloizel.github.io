@@ -15,16 +15,13 @@ import {
 } from "@react-email/components";
 
 interface ContactMeEmailProps {
-  company: string;
-  job: string;
   name: string;
   emailAddress: string;
-  phoneNumber: string;
   message: string;
 }
 
-export function EmailTemplate({ company, job, name, emailAddress, phoneNumber, message }: ContactMeEmailProps) {
-  const previewText = `${name} has sent you a message`;
+export function EmailTemplate({ name, emailAddress, message }: ContactMeEmailProps) {
+  const previewText = `${name} from has submitted a vacancy`;
 
   return (
     <Html>
@@ -39,12 +36,12 @@ export function EmailTemplate({ company, job, name, emailAddress, phoneNumber, m
             <strong>{message}</strong>
           </Text>
           <Text className={styles.emailText}>
-            <strong>Job title: {job}</strong>
+            <strong>Job title:</strong>
           </Text>
           <Hr style={{backgroundColor: "#002D49"}} />
           <Text className={styles.emailInfo}>
-            This message was sent by {name} from {company}. You can contact them through their
-            email {emailAddress} or phone number <strong>{phoneNumber}</strong>
+            This message was sent by {name} from. You can contact them through their
+            email {emailAddress} or phone number <strong></strong>
           </Text>
         </Container>
       </Tailwind>

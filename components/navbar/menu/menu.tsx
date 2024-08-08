@@ -61,7 +61,7 @@ const Menu: React.FC<MenuProps> = ({}) => {
             <div className={styles.link} onClick={() => jumpToSection("resume")}>
               // résumé
             </div>
-            <div className={styles.link}>
+            <div className={styles.link} onClick={() => jumpToSection("contact")}>
               // contact
             </div>
           </div>

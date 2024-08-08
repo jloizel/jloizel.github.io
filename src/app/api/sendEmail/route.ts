@@ -2,7 +2,7 @@ import { type NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 import Mail from 'nodemailer/lib/mailer';
 import { render } from "@react-email/render";
-import { EmailTemplate } from '../../../components/contact/emailTemplate';
+import { EmailTemplate } from '../../../../components/contact/contactForm/emailTemplate';
 
 
 export async function POST(request: NextRequest) {
@@ -19,14 +19,15 @@ export async function POST(request: NextRequest) {
   const mailOptions: Mail.Options = {
     from: process.env.MY_EMAIL,
     to: process.env.MY_EMAIL,
-    subject: `Message from ${name}`,
-    text: `${message}`,
-    html: render(EmailTemplate({ company: company, job: job, name: name, emailAddress: email, phoneNumber: phoneNumber, message: message })),
+    // cc: email, (uncomment this line if you want to send a copy to the sender)
+    subject: `Message from ${name} from (${company})`,
+    text: `${message} ${job} ${phoneNumber}`,
+    html: render(EmailTemplate({ name: name, emailAddress: email, message: message })),
   };
 
   const sendMailPromise = () =>
     new Promise<string>((resolve, reject) => {
-      transport.sendMail(mailOptions, function (err:any) {
+      transport.sendMail(mailOptions, function (err) {
         if (!err) {
           // resolve('Email sent');
         } else {
