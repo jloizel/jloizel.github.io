@@ -7,7 +7,7 @@ import styles from "./filetree.module.css";
 import resumeSections from '../../../public/data/resume.json';
 
 const FileTree = () => {
-  const [selectedFile, setSelectedFile] = useState<string | null>(null);
+  const [selectedFile, setSelectedFile] = useState<string | null>("README.md");
 
   const handleClick = (fileName: string) => {
     setSelectedFile(fileName);
@@ -23,7 +23,7 @@ const FileTree = () => {
           key={file.name}
           file={file}
           depth={1}
-          isExpanded={false} // Initial state, can be managed locally in File component
+          isExpanded={file.name === "README.md"} // Expanded by default if it's README
           selectedFile={selectedFile}
           handleClick={handleClick}
           resumeSection={resumeSection}
