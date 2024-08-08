@@ -7,6 +7,7 @@ import * as z from "zod";
 import { sendEmail } from '../../../src/app/utils/sendEmail';
 import styles from './page.module.css'
 import { createTheme, useMediaQuery } from "@mui/material";
+import { IoIosArrowForward } from "react-icons/io";
 
 const formSchema = z.object({
   name: z.string().min(1, {
@@ -59,59 +60,48 @@ const ContactForm: FC = () => {
     }));
   };
 
-  const theme = createTheme({
-    breakpoints: {
-      values: {
-        xs: 0,
-        sm: 768,
-        md: 1024,
-        lg: 1200,
-        xl: 1536,
-      },
-    },
-  });
-  
-  const isTabletOrAbove = useMediaQuery(theme.breakpoints.up('sm'));
-
-
   return (
     <div className={styles.formContainer}>
       {!messageSent && (
-        <form ref={form} onSubmit={handleSubmit(onSubmit)} className={styles.form2}>
-          <div className={styles.stepContainer}>
-            <div className={styles.messageInputContainer}>
-              <div className={styles.label}>Message</div>
-              <input
-                {...register('name')}
-                value={formData.name}
-                onChange={handleChange}
-                className={styles.messageInput}
-              />
+        <form ref={form} onSubmit={handleSubmit(onSubmit)} className={styles.form}>
+          <div className={styles.inputContainer}>
+            <div className={styles.label}>
+              <IoIosArrowForward className={styles.icon}/>
+              MESSAGE FROM: 
             </div>
-            <div className={styles.messageInputContainer}>
-              <div className={styles.label}>Message</div>
-              <input
-                {...register('email')}
-                value={formData.email}
-                onChange={handleChange}
-                className={styles.messageInput}
-              />
-            </div>
-            <div className={styles.messageInputContainer}>
-              <div className={styles.label}>Message</div>
-              <textarea
-                {...register('message')}
-                value={formData.message}
-                onChange={handleChange}
-                className={styles.messageInput}
-              />
-            </div>
-            <button
-              className={styles.button} type="submit"
-            >
-              Send Message
-            </button>
-          </div>      
+            <input
+              {...register('name')}
+              value={formData.name}
+              onChange={handleChange}
+              className={styles.input}
+              placeholder="{enter user name}"
+            />
+          </div>
+          <div className={styles.inputContainer}>
+            <div className={styles.label}>Message</div>
+            <input
+              {...register('email')}
+              value={formData.email}
+              onChange={handleChange}
+              className={styles.input}
+              placeholder="{enter user email}"
+            />
+          </div>
+          <div className={styles.inputContainer}>
+            <div className={styles.label}>Message</div>
+            <textarea
+              {...register('message')}
+              value={formData.message}
+              onChange={handleChange}
+              className={styles.input}
+              placeholder="{enter user message}"
+            />
+          </div>
+          <button
+            className={styles.button} type="submit"
+          >
+            Send Message
+          </button>
         </form>
       )}
       {messageSent && (

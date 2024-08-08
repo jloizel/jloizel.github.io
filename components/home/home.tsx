@@ -10,9 +10,9 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaLongArrowAltDown } from "react-icons/fa";
 
 const phrases = [
-  'PART TIME CODER',
-  'TECH ENTHUSIAST',
-  'PROBLEM SOLVER'
+  'Part time coder',
+  'Tech enthusiast',
+  'Problem solver'
 ];
 
 function Home() {
