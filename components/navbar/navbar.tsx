@@ -29,7 +29,7 @@ function NavBar() {
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   
   return (
-    <div className={styles.navbar}>
+    <div className={styles.navbar} id="navbar">
       {/* <div className={styles.nameContainer}>
         JackLoizel<span style={{color: "white"}}>.</span>
       </div> */}

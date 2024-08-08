@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react';
 import styles from "./footer.module.css"
 import { AiOutlineCopyright } from "react-icons/ai";
@@ -34,7 +36,7 @@ function Footer() {
           <FaGithub className={styles.logo} href="https://github.com/jloizel" target='_blank'/>
         </div>
         <div className={styles.arrowContainer}>
-          <FaArrowUp className={styles.arrow} onClick={() => scrollToSection("home")}/>
+          <FaArrowUp className={styles.arrow} onClick={() => scrollToSection("navbar")}/>
         </div>
       </div>
     </div>
