@@ -1,0 +1,68 @@
+.footer {
+  /* width: 100%; */
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  color: grey;
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: "Roboto Mono", monospace;
+  font-size: 12px;
+}
+
+.icon {
+  font-size: 16px;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  color: white;
+  font-size: 25px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.logo:hover {
+  color: #E18EEC;
+}
+
+.arrowContainer {
+  display: inline-flex; 
+  justify-content: center;
+  align-items: center;
+  width: 3em ; 
+  height: 3em; 
+  background-color: white; 
+}
+
+.arrow {
+  color: #E18EEC;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  scale: 1.2;
+}
