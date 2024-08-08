@@ -35,6 +35,7 @@
   width: 100%;
   justify-content: center;
   align-items: flex-start;
+  margin-top: 40px;
 }
 
 .contactForm {
@@ -64,10 +65,11 @@
   font-weight: 500;
   /* font-family: 'Poppins', sans-serif; */
   font-family: "Roboto Mono", monospace;
+  margin-bottom: 20px;
 }
 
 .contactDetails {
-  gap: 25px;
+  gap: 22px;
 }
 
 .detail {
@@ -77,10 +79,16 @@
   color: #E6E6E5;
   align-items: center;
   text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.detail:hover {
+  color: #E18EEC;
 }
 
 .icon {
   color: #E18EEC;
-  font-size: 22px;
+  font-size: 25px;
 }
 

@@ -2,9 +2,10 @@
 
 import React, { useRef, useState } from 'react';
 import styles from './contact.module.css'
-import { FaPhone } from "react-icons/fa";
+import { MdPhoneEnabled } from "react-icons/md";
 import { MdOutlineMail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
+import { MdOutlineLocalPhone } from "react-icons/md";
 import ContactForm from './contactForm/contactForm';
 
 export default function Contact() {
@@ -23,7 +24,7 @@ export default function Contact() {
             <span>Contact details<span style={{color: "#E18EEC"}}>.</span></span>
             <div className={styles.contactDetails}>
               <a className={styles.detail} href="tel: +447478218859" target="_blank">
-                <FaPhone className={styles.icon}/>
+                <MdPhoneEnabled className={styles.icon}/>
                 +447478218859
               </a>
               <a className={styles.detail} href="mailto: loizeljack@gmail.com">

@@ -17,7 +17,7 @@
   flex-direction: row;
   align-items: center;
   gap: 5px;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .label {
@@ -31,23 +31,49 @@
 }
 
 .icon {
-
+  
 }
 
 .input {
   /* background-color: #1a294a; */
   background-color: #0F172A;
   border: none;
+  width: 40%;
+  outline: none;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  /* margin-bottom: -2px; */
+  font-size: 16px;
+}
+
+.input::placeholder, .textArea::placeholder {
+  /* color: white; */
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+}
+
+.textAreaContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.textAreaContainer.multiLine {
+  align-items: flex-start;
+}
+
+.textArea {
+  resize: none; 
+  overflow: hidden;
   width: 60%;
   outline: none;
   color: white;
   font-family: "Roboto Mono", monospace;
-  margin-bottom: -2px;
-}
-
-.input::placeholder {
-  color: white;
-  font-family: "Roboto Mono", monospace;
+  /* margin-top: -2px; */
+  background-color: #0F172A;
+  border: none;
+  /* padding: 2px; */
   font-size: 16px;
 }
 
@@ -59,7 +85,13 @@
   font-size: 16px;
   border-radius: 2px;
   padding: 10px 20px;
+  width: 200px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
-
+.button:hover {
+  color: white;
+  background-color: #5bcca8;
+}
 

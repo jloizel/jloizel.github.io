@@ -6,7 +6,7 @@ import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { sendEmail } from '../../../src/app/utils/sendEmail';
 import styles from './page.module.css'
-import { createTheme, useMediaQuery } from "@mui/material";
+import { createTheme, TextareaAutosize, useMediaQuery } from "@mui/material";
 import { IoIosArrowForward } from "react-icons/io";
 
 const formSchema = z.object({
@@ -45,6 +45,7 @@ const ContactForm: FC = () => {
   });
 
   const [messageSent, setMessageSent] = useState<boolean>(false);
+  const [isMultiLine, setIsMultiLine] = useState<boolean>(false);
 
   const onSubmit = (data: FormData) => {
     sendEmail(data);
@@ -58,6 +59,19 @@ const ContactForm: FC = () => {
       ...prevFormData,
       [name]: value,
     }));
+
+    // Calculate the number of lines in the textarea
+    if (e.target.name === 'message') {
+      const textArea = e.target;
+      const lines = textArea.value.split('\n').length;
+
+      // Update the state if the user is on the second line or more
+      if (lines > 1) {
+        setIsMultiLine(true);
+      } else {
+        setIsMultiLine(false);
+      }
+    }
   };
 
   return (
@@ -78,7 +92,10 @@ const ContactForm: FC = () => {
             />
           </div>
           <div className={styles.inputContainer}>
-            <div className={styles.label}>Message</div>
+            <div className={styles.label}>
+              <IoIosArrowForward className={styles.icon}/>
+              EMAIL: 
+            </div>
             <input
               {...register('email')}
               value={formData.email}
@@ -87,15 +104,20 @@ const ContactForm: FC = () => {
               placeholder="{enter user email}"
             />
           </div>
-          <div className={styles.inputContainer}>
-            <div className={styles.label}>Message</div>
-            <textarea
+          <div className={`${styles.textAreaContainer} ${isMultiLine ? styles.multiLine : ''}`}>
+            <div className={styles.label}>
+              <IoIosArrowForward className={styles.icon}/>
+              MESSAGE: 
+            </div>
+            <TextareaAutosize 
               {...register('message')}
               value={formData.message}
               onChange={handleChange}
-              className={styles.input}
+              className={styles.textArea}
               placeholder="{enter user message}"
+              // minRows={2}
             />
+
           </div>
           <button
             className={styles.button} type="submit"
