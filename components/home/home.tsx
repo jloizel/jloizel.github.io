@@ -5,11 +5,10 @@ import styles from "./home.module.css"
 import TextScrambler from '../textScrambler/textScrambler';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import { IoIosArrowForward } from "react-icons/io";
-import { FaGithubSquare } from "react-icons/fa";
+import { FaGithubSquare, FaNodeJs, FaReact } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaLongArrowAltDown } from "react-icons/fa";
 import OrbitingCircles from '@/components/magicui/orbiting-circles';
-import { OrbitingCirclesDemo } from './orbitingCircles/orbitingCircles';
 
 const phrases = [
   'Part time coder',
@@ -28,6 +27,14 @@ function Home() {
 
   return (
     <div className={styles.home} id="home">
+      <div className={styles.circleContainer}>
+        <div className={`${styles.circle} ${styles.small}`}>
+          <FaReact className={`${styles.orbitIcon} ${styles.orbitIcon1}`} />
+        </div>
+        <div className={`${styles.circle} ${styles.large}`}>
+          <FaNodeJs className={`${styles.orbitIcon} ${styles.orbitIcon2}`} />
+        </div>
+      </div>
       <div className={styles.header}>
         JACK LOIZEL
       </div>
@@ -49,7 +56,6 @@ function Home() {
           <FaLongArrowAltDown className={styles.scrollerArrow}/>
        </span>
       </div>
-      {/* <OrbitingCirclesDemo/> */}
     </div>
   );
 }
