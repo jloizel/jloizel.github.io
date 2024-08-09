@@ -18,6 +18,7 @@
     "@mui/icons-material": "^5.15.20",
     "@mui/material": "^5.15.20",
     "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
     "cobe": "^0.6.3",
     "framer-motion": "^11.3.24",
     "gsap": "^3.12.5",
@@ -34,6 +35,8 @@
     "react-spring": "^9.7.4",
     "react-textarea-autosize": "^8.5.3",
     "swiper": "^11.1.9",
+    "tailwind-merge": "^2.4.0",
+    "tailwindcss-animate": "^1.0.7",
     "zod": "^3.23.8"
   },
   "devDependencies": {
@@ -43,6 +46,8 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.4",
+    "postcss": "8.1",
+    "tailwindcss": "^3.4.9",
     "typescript": "^5"
   }
 }

@@ -8,6 +8,8 @@ import { IoIosArrowForward } from "react-icons/io";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaLongArrowAltDown } from "react-icons/fa";
+import OrbitingCircles from '@/components/magicui/orbiting-circles';
+import { OrbitingCirclesDemo } from './orbitingCircles/orbitingCircles';
 
 const phrases = [
   'Part time coder',
@@ -47,7 +49,7 @@ function Home() {
           <FaLongArrowAltDown className={styles.scrollerArrow}/>
        </span>
       </div>
-      
+      {/* <OrbitingCirclesDemo/> */}
     </div>
   );
 }

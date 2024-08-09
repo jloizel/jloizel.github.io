@@ -104,3 +104,9 @@
     transform: translateY(10px);
   }
 }
+
+.orbit {
+  z-index: 10000;
+  border-style: none; 
+  background-color: transparent; 
+}
