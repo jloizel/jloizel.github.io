@@ -2,21 +2,24 @@
 
 import React from 'react';
 import styles from "./orbitingCircles.module.css"
-import { FaNodeJs, FaReact } from "react-icons/fa";
+import { FaLinkedin, FaNodeJs, FaReact } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import type { siTypescript } from 'simple-icons';
+
 
 function OrbitingCircles() {
 
   return (
     <div className={styles.circlesContainer}>
-      <div className={`${styles.circle} ${styles.small}`}>
-        <FaReact className={`${styles.orbitIcon} ${styles.orbitIcon1}`} />
-      </div>
-      <div className={`${styles.circle} ${styles.large}`}>
-        <FaNodeJs className={`${styles.orbitIcon} ${styles.orbitIcon2}`} />
-      </div>
-      <div>
-        <FaNodeJs className={styles.icon}/>
-      </div>
+      <a className={styles.circle1} href="https://github.com/jloizel" style={{textDecoration: "none"}}>
+        <FaGithub className={styles.logo1}/>
+      </a>
+      <a className={styles.circle2} href="https://www.linkedin.com/in/jackloizel/" style={{textDecoration: "none"}}>
+        <FaLinkedin className={styles.logo2}/>
+      </a>
+      <img height="32" width="32" src="https://unpkg.com/simple-icons@v13/icons/typescript.svg" />
+      <img height="20" src="https://cdn.simpleicons.org/github?viewbox=auto" />
+
     </div>
   );
 }

@@ -1,110 +1,56 @@
 .circlesContainer {
   position: relative;
-  width: 300px;
+  /* width: 300px; */
   height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.circle {
+.circle1 {
   position: absolute;
   border-radius: 50%;
-  border: 2px solid #333;
+  /* border: 1px solid #E6E6E5; */
+  border: 1px solid #5bcca8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.small {
-  width: 100px;
-  height: 100px;
-  top: 100px;
-  left: 100px;
-}
-
-.large {
+.circle1 {
   width: 200px;
   height: 200px;
-  top: 50px;
-  left: 50px;
 }
 
-.orbitIcon {
-  position: absolute;
-  font-size: 2rem;
-  /* Adjust color as needed */
-  color: #61dafb;
+.logo1 {
+  color: white;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
-.orbitIcon1 {
-  width: 100px;
-  height: 100px;
-  top: 100px;
-  left: 100px;
-  transform-origin: 50% 50%;
-  animation: orbitSmall 8s linear infinite;
+.logo1:hover {
+  color: #E18EEC;
 }
 
-.orbitIcon2 {
-  width: 200px;
-  height: 200px;
-  top: 50px;
-  left: 50px;
-  transform-origin: 50% 50%;
-  animation: orbitLarge 12s linear infinite;
-}
-
-@keyframes orbitSmall {
-  0% {
-    transform: rotate(0deg) translateX(50px);
-  }
-  100% {
-    transform: rotate(360deg) translateX(50px);
-  }
-}
-
-@keyframes orbitLarge {
-  0% {
-    transform: rotate(0deg) translateX(100px);
-  }
-  100% {
-    transform: rotate(360deg) translateX(100px);
-  }
-}
-
-
-.circle {
-  position: absolute;
-  border-radius: 50%;
-  border: 2px solid #333;
-}
-
-.small {
-  width: 100px;
-  height: 100px;
-  top: 100px;
-  left: 100px;
-}
-
-.large {
-  width: 200px;
-  height: 200px;
-  top: 50px;
-  left: 50px;
-}
-
-.icon { 
+.logo1 { 
   width: 50px; 
   height: 50px; 
+  /* top: 0px; */
+  /* position: absolute; */
   display: block; 
   margin-left: auto; 
   margin-right: auto; 
-  animation: GFG 5s infinite linear; 
+  animation: rotate1 10s infinite linear; 
 } 
 
-@keyframes GFG { 
+@keyframes rotate1 { 
   0% { 
-      transform: rotate(0deg)  
-          translateX(100px) rotate(0deg); 
+    transform: rotate(0deg)  
+      translateX(100px) rotate(0deg); 
   } 
 
   100% { 
-      transform: rotate(-360deg)  
-          translateX(100px) rotate(360deg); 
+    transform: rotate(-360deg)  
+      translateX(100px) rotate(360deg); 
   } 
 } 
