@@ -1,0 +1,110 @@
+.circlesContainer {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid #333;
+}
+
+.small {
+  width: 100px;
+  height: 100px;
+  top: 100px;
+  left: 100px;
+}
+
+.large {
+  width: 200px;
+  height: 200px;
+  top: 50px;
+  left: 50px;
+}
+
+.orbitIcon {
+  position: absolute;
+  font-size: 2rem;
+  /* Adjust color as needed */
+  color: #61dafb;
+}
+
+.orbitIcon1 {
+  width: 100px;
+  height: 100px;
+  top: 100px;
+  left: 100px;
+  transform-origin: 50% 50%;
+  animation: orbitSmall 8s linear infinite;
+}
+
+.orbitIcon2 {
+  width: 200px;
+  height: 200px;
+  top: 50px;
+  left: 50px;
+  transform-origin: 50% 50%;
+  animation: orbitLarge 12s linear infinite;
+}
+
+@keyframes orbitSmall {
+  0% {
+    transform: rotate(0deg) translateX(50px);
+  }
+  100% {
+    transform: rotate(360deg) translateX(50px);
+  }
+}
+
+@keyframes orbitLarge {
+  0% {
+    transform: rotate(0deg) translateX(100px);
+  }
+  100% {
+    transform: rotate(360deg) translateX(100px);
+  }
+}
+
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid #333;
+}
+
+.small {
+  width: 100px;
+  height: 100px;
+  top: 100px;
+  left: 100px;
+}
+
+.large {
+  width: 200px;
+  height: 200px;
+  top: 50px;
+  left: 50px;
+}
+
+.icon { 
+  width: 50px; 
+  height: 50px; 
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+  animation: GFG 5s infinite linear; 
+} 
+
+@keyframes GFG { 
+  0% { 
+      transform: rotate(0deg)  
+          translateX(100px) rotate(0deg); 
+  } 
+
+  100% { 
+      transform: rotate(-360deg)  
+          translateX(100px) rotate(360deg); 
+  } 
+} 
