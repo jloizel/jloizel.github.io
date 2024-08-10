@@ -17,8 +17,7 @@ function OrbitingCircles() {
       <a className={styles.circle2} href="https://www.linkedin.com/in/jackloizel/" style={{textDecoration: "none"}}>
         <FaLinkedin className={styles.logo2}/>
       </a>
-      <img height="32" width="32" src="https://unpkg.com/simple-icons@v13/icons/typescript.svg" />
-      <img height="20" src="https://cdn.simpleicons.org/github?viewbox=auto" />
+      <img height="32" width="32" src="/icons/typescript.svg" />
 
     </div>
   );
