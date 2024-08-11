@@ -18,7 +18,25 @@
     ]
   },
   {
-    "fileName": "File2",
+    "fileName": "education",
+    "header": "Educationjob",
+    "sections": [
+      {
+        "subHeader": "Name:",
+        "content": "Jack Loizel"
+      },
+      {
+        "subHeader": "Job:",
+        "content": "Structural Engineer"
+      },
+      {
+        "subHeader": "Nationality:",
+        "content": "British, French"
+      }
+    ]
+  },
+  {
+    "fileName": "file1",
     "header": "About",
     "content": "This is the description for File2"
   },

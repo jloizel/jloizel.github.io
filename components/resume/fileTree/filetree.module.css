@@ -72,6 +72,27 @@
   flex-direction: column;
   gap: 20px;
   width: 50%;
+  padding-left: 40px;
+  position: relative;
+}
+
+.line {
+  position: absolute;
+  left: 18px; /* Position the line */
+  top: 10px; /* Start the line slightly below the top */
+  bottom: 10px; /* End the line slightly above the bottom */
+  width: 2px;
+  background-color: #c084fc; /* Pink color */
+}
+
+.circle {
+  position: absolute;
+  left: 1px; /* Align circle with the line */
+  width: 10px;
+  height: 10px;
+  background-color: #c084fc; /* Pink color */
+  border-radius: 50%;
+  transform: translate(-50%, -50%); /* Center the circle on the line */
 }
 
 .header {

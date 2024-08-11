@@ -38,6 +38,17 @@ const File: FC<FileProps> = ({ file, depth, isExpanded = false, selectedFile, ha
             <div className={styles.horizontalLine}></div>
           )}
         </span>
+        {/* {selectedFile === "education" && resumeSection?.sections && (
+            <div className={styles.verticalLine}>
+              {resumeSection.sections.map((_:any, index:any) => (
+                <div
+                  key={index}
+                  className={styles.circle}
+                  style={{ top: `${index * 500 + 40}px` }}
+                />
+              ))}
+            </div>
+          )} */}
       </button>
       <div className={styles.subFileContainer}>
         {localIsExpanded && (

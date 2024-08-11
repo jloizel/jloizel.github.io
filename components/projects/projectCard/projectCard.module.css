@@ -98,6 +98,9 @@
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 22px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .details {

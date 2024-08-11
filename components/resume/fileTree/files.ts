@@ -95,7 +95,7 @@ export const files: TFiles = {
       ]
     },
     {
-      name: "tests"
+      name: "education"
     },
     {
       name: ".gitignore"

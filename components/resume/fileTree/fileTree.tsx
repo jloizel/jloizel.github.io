@@ -32,6 +32,17 @@ const FileTree = () => {
       </div>
       {selectedFile && resumeSection && (
         <div className={styles.selectedFileContainer}>
+          {selectedFile === "education" && resumeSection.sections && (
+            <div className={styles.line}>
+              {resumeSection.sections.map((_, index) => (
+                <div
+                  key={index}
+                  className={styles.circle}
+                  style={{ top: `${index * 50 + 40}px` }} // Adjust this value for spacing
+                />
+              ))}
+            </div>
+          )}
           <div className={styles.header}>
             {resumeSection.header}
           </div>

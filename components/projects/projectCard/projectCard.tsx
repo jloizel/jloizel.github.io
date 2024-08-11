@@ -2,7 +2,8 @@
 
 import React, { useEffect, useState } from 'react'
 import styles from './projectCard.module.css'
-
+import { FaLink } from "react-icons/fa6";
+import { IoIosLink } from "react-icons/io";
 
 const ProjectCard: React.FC = () => {
   const [data, setData] = useState([
@@ -44,7 +45,7 @@ const ProjectCard: React.FC = () => {
               <img src={projectCard.image}/>
             </div>
             <div className={styles.content}>
-              <div className={styles.title}>{projectCard.title}</div>
+              <div className={styles.title}>{projectCard.title}<IoIosLink/></div>
               <div className={styles.details}>{projectCard.details}</div>
               <div className={styles.languages}></div>
             </div>
