@@ -27,10 +27,12 @@ function Home() {
 
   return (
     <div className={styles.home} id="home">
-      <OrbitingCircles/>
+      {/* <div className={styles.orbitingCircles}> */}
+        <OrbitingCircles/>
+      {/* </div> */}
       <div className={styles.header}>
         JACK LOIZEL
-      </div>
+      </div>      
       <div className={styles.scrambler}>
         {/* <IoIosArrowForward className={styles.icon}/> */}
         <TextScrambler phrases={phrases} scrambleDuration={2} displayDuration={2} />
