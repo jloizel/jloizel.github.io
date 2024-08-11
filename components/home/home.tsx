@@ -28,7 +28,7 @@ function Home() {
   return (
     <div className={styles.home} id="home">
       {/* <div className={styles.orbitingCircles}> */}
-        <OrbitingCircles/>
+        {/* <OrbitingCircles/> */}
       {/* </div> */}
       <div className={styles.header}>
         JACK LOIZEL

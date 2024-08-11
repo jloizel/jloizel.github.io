@@ -50,18 +50,6 @@
   padding: 80px;
 }
 
-/* .focus:first-child, .focus:nth-child(n+1) {
-  border-right: solid 2px rgb(149, 149, 149);
-}
-
-.focus:first-child {
-  border-left: solid 2px rgb(149, 149, 149);
-} */
-
-.focus:not(:last-child) {
-  /* border-right: 2px solid #6F6B71; */
-}
-
 .focus:last-child {
   border-right: 2px solid #6F6B71;
 }
@@ -70,7 +58,7 @@
 .focus {
   flex: 1;
   border: 2px solid #6F6B71;
-  padding: 40px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
