@@ -38,7 +38,7 @@ const FileTree = () => {
                 <div
                   key={index}
                   className={styles.circle}
-                  style={{ top: `${index * 50 + 40}px` }} // Adjust this value for spacing
+                  style={{ top: `${index * 39 + 15}px` }} // Adjust this value for spacing
                 />
               ))}
             </div>
