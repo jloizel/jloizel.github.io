@@ -32,36 +32,30 @@ const FileTree = () => {
       </div>
       {selectedFile && resumeSection && (
         <div className={styles.selectedFileContainer}>
-          {selectedFile === "education" && resumeSection.sections && (
-            <div className={styles.line}>
-              {resumeSection.sections.map((_, index) => (
-                <div
-                  key={index}
-                  className={styles.circle}
-                  style={{ top: `${index * 39 + 15}px` }} // Adjust this value for spacing
-                />
-              ))}
-            </div>
-          )}
           <div className={styles.header}>
             {resumeSection.header}
           </div>
-          {resumeSection.sections ? (
-            resumeSection.sections.map((section, index) => (
-              <div key={index} className={styles.section}>
-                <div className={styles.subHeader}>
-                  {section.subHeader}
+          <div className={selectedFile === "education" ? styles.contentContainer2 : styles.contentContainer}>
+            {resumeSection.sections ? (
+              resumeSection.sections.map((section, index) => (
+                <div 
+                  key={index} 
+                  className={selectedFile === "education" ? styles.section2 : styles.section}
+                >
+                  <div className={selectedFile === "education" ? styles.subHeaderWithCircle : styles.subHeader}>
+                    {section.subHeader}
+                  </div>
+                  <div className={styles.content}>
+                    {section.content}
+                  </div>
                 </div>
-                <div className={styles.content}>
-                  {section.content}
-                </div>
+              ))
+            ) : (
+              <div className={styles.content}>
+                {resumeSection.content}
               </div>
-            ))
-          ) : (
-            <div className={styles.content}>
-              {resumeSection.content}
-            </div>
-          )}
+            )}
+          </div> 
         </div>
       )}
     </div>
