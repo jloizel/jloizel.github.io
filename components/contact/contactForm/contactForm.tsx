@@ -78,46 +78,66 @@ const ContactForm: FC = () => {
     <div className={styles.formContainer}>
       {!messageSent && (
         <form ref={form} onSubmit={handleSubmit(onSubmit)} className={styles.form}>
-          <div className={styles.inputContainer}>
-            <div className={styles.label}>
-              <IoIosArrowForward className={styles.icon}/>
-              MESSAGE FROM: 
+          <div className={styles.container}>
+            <div className={styles.inputContainer}>
+              <div className={styles.label}>
+                <IoIosArrowForward className={styles.icon}/>
+                MESSAGE FROM: 
+              </div>
+              <input
+                {...register('name')}
+                value={formData.name}
+                onChange={handleChange}
+                className={styles.input}
+                placeholder="{enter user name}"
+              />          
             </div>
-            <input
-              {...register('name')}
-              value={formData.name}
-              onChange={handleChange}
-              className={styles.input}
-              placeholder="{enter user name}"
-            />
+            {errors?.name && (
+              <p className={styles.errorMessage}>
+                {errors.name.message}
+              </p>
+            )}
           </div>
-          <div className={styles.inputContainer}>
-            <div className={styles.label}>
-              <IoIosArrowForward className={styles.icon}/>
-              EMAIL: 
+          <div className={styles.container}>
+            <div className={styles.inputContainer}>
+              <div className={styles.label}>
+                <IoIosArrowForward className={styles.icon}/>
+                EMAIL: 
+              </div>
+              <input
+                {...register('email')}
+                value={formData.email}
+                onChange={handleChange}
+                className={styles.input}
+                placeholder="{enter user email}"
+              />
             </div>
-            <input
-              {...register('email')}
-              value={formData.email}
-              onChange={handleChange}
-              className={styles.input}
-              placeholder="{enter user email}"
-            />
-          </div>
-          <div className={`${styles.textAreaContainer} ${isMultiLine ? styles.multiLine : ''}`}>
-            <div className={styles.label}>
-              <IoIosArrowForward className={styles.icon}/>
-              MESSAGE: 
+            {errors?.email && (
+              <p className={styles.errorMessage}>
+                {errors.email.message}
+              </p>
+            )}
+          </div> 
+          <div className={styles.container}>
+            <div className={`${styles.textAreaContainer} ${isMultiLine ? styles.multiLine : ''}`}>
+              <div className={styles.label}>
+                <IoIosArrowForward className={styles.icon}/>
+                MESSAGE: 
+              </div>
+              <TextareaAutosize 
+                {...register('message')}
+                value={formData.message}
+                onChange={handleChange}
+                className={styles.textArea}
+                placeholder="{enter user message}"
+                // minRows={2}
+              />
             </div>
-            <TextareaAutosize 
-              {...register('message')}
-              value={formData.message}
-              onChange={handleChange}
-              className={styles.textArea}
-              placeholder="{enter user message}"
-              // minRows={2}
-            />
-
+            {errors?.message && (
+              <p className={styles.errorMessage}>
+                {errors.message.message}
+              </p>
+            )}
           </div>
           <button
             className={styles.button} type="submit"
@@ -129,7 +149,7 @@ const ContactForm: FC = () => {
       {messageSent && (
         <div className={styles.successMessageContainer}>
           <div className={styles.successMessage}>
-            Thank you for your message, we will be in contact as soon as possible.
+            Thank you for your message, I will be in contact as soon as possible.
           </div>
         </div>
       )}
