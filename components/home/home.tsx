@@ -9,6 +9,7 @@ import { FaGithubSquare, FaNodeJs, FaReact } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaLongArrowAltDown } from "react-icons/fa";
 import OrbitingCircles from './orbitingCircles/orbitingCircles';
+import SplineScene from '../spline/spline';
 
 const phrases = [
   'Part time coder',
@@ -30,6 +31,7 @@ function Home() {
       {/* <div className={styles.orbitingCircles}> */}
         {/* <OrbitingCircles/> */}
       {/* </div> */}
+      <SplineScene/>
       <div className={styles.header}>
         JACK LOIZEL
       </div>      
