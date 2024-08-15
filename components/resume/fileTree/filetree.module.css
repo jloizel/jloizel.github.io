@@ -154,7 +154,7 @@
 .subHeaderWithCircle::before {
   content: "";
   position: absolute;
-  left: -35px; /* Adjust based on layout */
+  left: -36px; /* Adjust based on layout */
   top: 50%;
   transform: translateY(-50%);
   width: 10px;
