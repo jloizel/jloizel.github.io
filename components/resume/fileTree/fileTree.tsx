@@ -35,27 +35,22 @@ const FileTree = () => {
           <div className={styles.header}>
             {resumeSection.header}
           </div>
-          <div className={selectedFile === "education" ? styles.contentContainer2 : styles.contentContainer}>
-            {resumeSection.sections ? (
-              resumeSection.sections.map((section, index) => (
-                <div 
-                  key={index} 
-                  className={selectedFile === "education" ? styles.section2 : styles.section}
-                >
-                  <div className={selectedFile === "education" ? styles.subHeaderWithCircle : styles.subHeader}>
-                    {section.subHeader}
-                  </div>
-                  <div className={styles.content}>
-                    {section.content}
-                  </div>
+          <div className={selectedFile === "education.tsx" ? styles.contentContainer2 : styles.contentContainer}>
+            {resumeSection.sections?.map((section, index) => (
+              <div key={index} className={selectedFile === "education.tsx" ? styles.section2 : styles.section}>
+                <div className={selectedFile === "education.tsx" ? styles.subHeaderWithCircle : styles.subHeader}>
+                  {section.subHeader}
                 </div>
-              ))
-            ) : (
-              <div className={styles.content}>
-                {resumeSection.content}
+                <div className={styles.contentContainer}>
+                  {section.content.map((line: string, lineIndex: number) => (
+                    <div key={lineIndex}>
+                      {line}
+                    </div>
+                  ))}
+                </div>
               </div>
-            )}
-          </div> 
+            ))}
+          </div>
         </div>
       )}
     </div>

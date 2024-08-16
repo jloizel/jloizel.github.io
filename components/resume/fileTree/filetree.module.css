@@ -163,9 +163,11 @@
   background-color: #E18EEC;
 }
 
-.content {
+.contentContainer {
   color: #E6E6E5;
   /* position: relative; */
+  display: flex;
+  flex-direction: column;
 }
 
 

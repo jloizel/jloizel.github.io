@@ -10,45 +10,28 @@ export const files: TFiles = {
       name: "components",
       children: [
         {
-          name: "components",
+          name: "education",
           children: [
             {
-              name: "pages",
-              children: [
-                {
-                  name: "about.tsx"
-                },
-                {
-                  name: "skills.tsx"
-                }
-              ]
-            },
+              name: "education.tsx",
+            }            
+          ],
+        },
+        {
+          name: "workExperience",
+          children: [
             {
-              name: "partials",
-              children: [
-                {
-                  name: "contact.tsx"
-                }
-              ]
-            },
+              name: "workExperience.tsx",
+            }            
+          ],
+        },
+        {
+          name: "skills",
+          children: [
             {
-              name: "shared",
-              children: [
-                {
-                  name: "footer.tsx"
-                },
-                {
-                  name: "navigation.tsx"
-                },
-                {
-                  name: "form.tsx"
-                }
-              ]
-            },
-            {
-              name: "types"
-            }
-          ]
+              name: "skills.tsx",
+            }            
+          ],
         },
       ]
     },
@@ -128,9 +111,6 @@ export const files: TFiles = {
           name: "globals.d.ts"
         }
       ]
-    },
-    {
-      name: "education"
     },
     {
       name: "README.md"
