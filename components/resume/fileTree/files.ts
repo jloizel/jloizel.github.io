@@ -7,42 +7,13 @@ export const files: TFiles = {
   name: "root",
   children: [
     {
-      name: "components",
-      children: [
-        {
-          name: "education",
-          children: [
-            {
-              name: "education.tsx",
-            }            
-          ],
-        },
-        {
-          name: "workExperience",
-          children: [
-            {
-              name: "workExperience.tsx",
-            }            
-          ],
-        },
-        {
-          name: "skills",
-          children: [
-            {
-              name: "skills.tsx",
-            }            
-          ],
-        },
-      ]
-    },
-    {
       name: "public",
       children: [
         {
-          name: "index.html"
+          name: "portrait.jpg"
         },
         {
-          name: "robots.tsx"
+          name: "resume.pdf"
         }
       ]
     },
@@ -53,67 +24,55 @@ export const files: TFiles = {
           name: "components",
           children: [
             {
-              name: "pages",
+              name: "about",
               children: [
                 {
                   name: "about.tsx"
-                },
-                {
-                  name: "skills.tsx"
-                }
-              ]
+                }            
+              ],
             },
             {
-              name: "partials",
+              name: "education",
               children: [
                 {
-                  name: "contact.tsx"
-                }
-              ]
+                  name: "education.tsx",
+                }            
+              ],
             },
             {
-              name: "shared",
+              name: "workExperience",
               children: [
                 {
-                  name: "footer.tsx"
-                },
-                {
-                  name: "navigation.tsx"
-                },
-                {
-                  name: "form.tsx"
-                }
-              ]
+                  name: "workExperience.tsx",
+                }            
+              ],
             },
             {
-              name: "types"
-            }
-          ]
-        },
-        {
-          name: "context",
-          children: [
-            {
-              name: "user.tsx"
+              name: "skills",
+              children: [
+                {
+                  name: "skills.tsx",
+                }            
+              ],
             },
-            {
-              name: "theme.tsx"
-            }
           ]
-        },
-        {
-          name: "App.tsx",
-        },
-        {
-          name: "index.tsx"
-        },
-        {
-          name: "globals.d.ts"
         }
       ]
     },
     {
       name: "README.md"
+    },
+    {
+      name: ".gitignore", // Symbolic, showcasing your familiarity with Git
+    },
+    {
+      name: "LICENSE.md" // Example license file, could symbolize your open-source contributions or permissions
+    },
+    {
+      name: "package.json", // Symbolic file containing an overview of your 'skills dependencies'
+    },
+    {
+      name: "yarn.lock" // Symbolizes dependency management in your projects
     }
   ]
 }

@@ -5,15 +5,19 @@ import File from "./file";
 import { files } from "./files";
 import styles from "./filetree.module.css";
 import resumeSections from '../../../public/data/resume.json';
+import OrbitingCircles from "../../home/orbitingCircles/orbitingCircles";
 
 const FileTree = () => {
   const [selectedFile, setSelectedFile] = useState<string | null>("README.md");
+  // const [timeline, setTimeline] = useState(false)
 
   const handleClick = (fileName: string) => {
     setSelectedFile(fileName);
   };
 
   const resumeSection = resumeSections.find(section => section.fileName === selectedFile);
+
+  const timeline = selectedFile === "education.tsx" || selectedFile === "workExperience.tsx"
 
   return (
     <div className={styles.container}>
@@ -35,13 +39,13 @@ const FileTree = () => {
           <div className={styles.header}>
             {resumeSection.header}
           </div>
-          <div className={selectedFile === "education.tsx" ? styles.contentContainer2 : styles.contentContainer}>
+          <div className={timeline ? styles.contentContainer2 : styles.contentContainer}>
             {resumeSection.sections?.map((section, index) => (
-              <div key={index} className={selectedFile === "education.tsx" ? styles.section2 : styles.section}>
-                <div className={selectedFile === "education.tsx" ? styles.subHeaderWithCircle : styles.subHeader}>
+              <div key={index} className={timeline ? styles.section2 : styles.section}>
+                <div className={timeline ? styles.subHeaderWithCircle : styles.subHeader}>
                   {section.subHeader}
                 </div>
-                <div className={styles.contentContainer}>
+                <div className={styles.contentBox}>
                   {section.content.map((line: string, lineIndex: number) => (
                     <div key={lineIndex}>
                       {line}
@@ -50,6 +54,12 @@ const FileTree = () => {
                 </div>
               </div>
             ))}
+            {selectedFile === "portrait.jpg" && (
+              <img src="/images/pp.png" alt="portrait picture" className={styles.image}/>
+            )}
+            {selectedFile === "skills.tsx" && (
+              <OrbitingCircles/>
+            )}
           </div>
         </div>
       )}
