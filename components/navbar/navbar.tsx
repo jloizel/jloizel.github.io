@@ -54,7 +54,7 @@ function NavBar() {
           </div>
       </div>
         )}
-      <div className={styles.hidden}></div>
+      {/* <div className={styles.hidden}></div> */}
       
     </div>
   );
