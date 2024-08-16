@@ -7,14 +7,49 @@ export const files: TFiles = {
   name: "root",
   children: [
     {
-      name: "node_modules",
+      name: "components",
       children: [
         {
-          name: ".bin"
+          name: "components",
+          children: [
+            {
+              name: "pages",
+              children: [
+                {
+                  name: "about.tsx"
+                },
+                {
+                  name: "skills.tsx"
+                }
+              ]
+            },
+            {
+              name: "partials",
+              children: [
+                {
+                  name: "contact.tsx"
+                }
+              ]
+            },
+            {
+              name: "shared",
+              children: [
+                {
+                  name: "footer.tsx"
+                },
+                {
+                  name: "navigation.tsx"
+                },
+                {
+                  name: "form.tsx"
+                }
+              ]
+            },
+            {
+              name: "types"
+            }
+          ]
         },
-        {
-          name: ".cache"
-        }
       ]
     },
     {
@@ -98,19 +133,7 @@ export const files: TFiles = {
       name: "education"
     },
     {
-      name: ".gitignore"
-    },
-    {
-      name: "package-lock.json"
-    },
-    {
-      name: "package.json"
-    },
-    {
       name: "README.md"
-    },
-    {
-      name: "tsconfig.json"
-    },
+    }
   ]
 }
