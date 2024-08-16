@@ -31,7 +31,9 @@ function Home() {
       {/* <div className={styles.orbitingCircles}> */}
         {/* <OrbitingCircles/> */}
       {/* </div> */}
-      <SplineScene/>
+      {/* <div className={styles.splineScene}> */}
+        <SplineScene />
+      {/* </div> */}
       <div className={styles.header}>
         JACK LOIZEL
       </div>      
