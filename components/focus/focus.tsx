@@ -137,16 +137,16 @@ const Focus: React.FC = () => {
                   <div className={styles.focusHeader}>
                     <IconComponent className={styles.icon} />
                     <span>
-                    <div className={styles.underline} style={{ '--underline-color': item.color } as CustomCSSProperties}>{item.header}
-                    </div>
-                    {item.subheader}
+                      <div className={styles.underline} style={{ '--underline-color': item.color } as CustomCSSProperties}>{item.header}
+                      </div>
+                      {item.subheader}
                     </span>
                   </div>
                   <div className={styles.focusContent}>
                     <pre>&lt;body&gt;</pre>
-                    <div className={styles.focusContentText}>
-                      {item.content}
-                    </div>
+                      <div className={styles.focusContentText}>
+                        {item.content}
+                      </div>
                     <pre>&lt;/body&gt;</pre>
                   </div>
                 </div>
