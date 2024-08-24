@@ -43,17 +43,15 @@ const metroguessrPage = () => {
         ]}
       />
       <div className={styles.navbar}>
-        {/* <div className={styles.linkContainer}> */}
-          <a className={getLinkClassName()} href="/">
-            // home
-          </a>
-          <span className={mode === 'dark' ? styles.arrowDark : styles.arrowLight}>
-            <MdKeyboardArrowRight/>
-          </span>
-          <a className={getLinkClassName()} href="/">
-            metroguessr
-          </a>
-        {/* </div> */}
+        <a className={getLinkClassName()} href="/">
+          // home
+        </a>
+        <span className={mode === 'dark' ? styles.arrowDark : styles.arrowLight}>
+          <MdKeyboardArrowRight/>
+        </span>
+        <a className={getLinkClassName()} href="/">
+          metroguessr
+        </a>
       </div>
       <div className={styles.arrowContainer}>
         <a href="/">
@@ -68,7 +66,14 @@ const metroguessrPage = () => {
         <div className={mode === 'dark' ? styles.darkHeader : styles.lightHeader}>
           metroguessr
         </div>
-        <div></div>
+        <div className={styles.subHeader}>
+          <div className={mode === 'dark' ? styles.darkDescription : styles.lightDescription}>
+            metroguessr is an interactive online game where the player selects between several cities to play and attempts to guess as many metro stations of that city within a set timeframe.
+          </div>
+          <div>
+            test
+          </div>
+        </div>
       </div>
     </div>
   )

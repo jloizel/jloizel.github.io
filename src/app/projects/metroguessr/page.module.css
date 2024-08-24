@@ -32,18 +32,13 @@
   }
 }
 
-.linkContainer {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-}
-
 .link, .linkDark {
   font-family: "Roboto Mono", monospace;
   font-weight: 600;
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .link {
@@ -51,10 +46,10 @@
 }
 
 .linkDark {
-  color: black;
+  color: #182542;
 }
 
-.link:hover {
+.link:hover, .linkDark:hover {
   color: #E18EEC;
 }
 
@@ -136,9 +131,6 @@
   padding: 0px 120px;
 }
 
-.header {
-  
-}
 
 .darkHeader, .lightHeader {
   font-family: "Poppins", Sans-serif;
@@ -154,3 +146,26 @@
 .lightHeader {
   color: #182542;
 }
+
+.subHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.darkDescription, .lightDescription {
+  font-family: "Poppins", Sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 80px;
+  width: 50%;
+}
+
+.darkDescription {
+  color: #C6C5C6;
+}
+
+.lightDescription {
+  color: #182542;
+}
+
