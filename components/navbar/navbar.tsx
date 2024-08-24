@@ -5,7 +5,11 @@ import styles from "./navbar.module.css"
 import { createTheme, useMediaQuery } from '@mui/material';
 import Menu from './menu/menu';
 
-function NavBar() {
+interface NavbarProps {
+  mode?: string;
+}
+
+const NavBar: React.FC<NavbarProps> = ({mode}) => {
 
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
@@ -27,6 +31,8 @@ function NavBar() {
   });
 
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
+  const getLinkClassName = () => mode === 'dark' ? styles.link : styles.linkDark;
   
   return (
     <div className={styles.navbar} id="navbar">
@@ -37,19 +43,19 @@ function NavBar() {
           <Menu/>
         ) : (
         <div className={styles.linksContainer}>
-          <div className={styles.link} onClick={() => scrollToSection("home")}>
+          <div className={getLinkClassName()} onClick={() => scrollToSection("home")}>
             // home
           </div>
-          <div className={styles.link} onClick={() => scrollToSection("focus")}>
+          <div className={getLinkClassName()} onClick={() => scrollToSection("focus")}>
             // focus
           </div>
-          <div className={styles.link} onClick={() => scrollToSection("projects")}>
+          <div className={getLinkClassName()} onClick={() => scrollToSection("projects")}>
             // projects
           </div>
-          <div className={styles.link} onClick={() => scrollToSection("resume")}>
+          <div className={getLinkClassName()} onClick={() => scrollToSection("resume")}>
             // résumé
           </div>
-          <div className={styles.link} onClick={() => scrollToSection("contact")}>
+          <div className={getLinkClassName()} onClick={() => scrollToSection("contact")}>
             // contact
           </div>
       </div>

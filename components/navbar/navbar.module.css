@@ -28,13 +28,20 @@
   gap: 40px;
 }
 
-.link {
-  color: white;
+.link, .linkDark {
   font-family: "Roboto Mono", monospace;
   font-weight: 600;
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+}
+
+.link {
+  color: white;
+}
+
+.linkDark {
+  color: black;
 }
 
 .link:hover {
