@@ -11,6 +11,9 @@ import Contact from '../../components/contact/contact';
 import Footer from '../../components/footer/footer';
 
 function App() {
+
+  const mode = "dark"
+
   return (
     <div className={styles.app}>
       <AnimatedCursor 
@@ -35,7 +38,7 @@ function App() {
           '.link'
         ]}
       />
-      <NavBar/>
+      <NavBar mode={mode}/>
       <Home/> 
       <Focus/> 
       <Projects/>

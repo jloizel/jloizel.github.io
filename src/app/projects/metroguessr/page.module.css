@@ -72,3 +72,28 @@
   transform: translateY(-50%);
   z-index: 1000; /* Ensure it stays above other content */
 }
+
+.content {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  padding: 0px 120px;
+}
+
+.header {
+  margin-top: 100px;
+}
+
+.darkHeader, .lightHeader {
+  font-family: "Poppins", Sans-serif;
+  font-weight: 600;
+  font-size: 60px;
+}
+
+.darkHeader {
+  color: white;
+}
+
+.lightHeader {
+  color: #182542;
+}

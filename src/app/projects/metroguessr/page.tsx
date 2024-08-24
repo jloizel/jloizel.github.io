@@ -40,13 +40,21 @@ const metroguessrPage = () => {
       />
       <NavBar mode={mode}/>
       <div className={styles.arrowContainer}>
-        <a href="http://localhost:3000/">
+        <a href="/">
           <FiArrowLeft className={mode === 'dark' ? styles.darkArrow : styles.lightArrow} />
         </a>
         <span className={styles.backText}>Back</span>
       </div>
       <div className={styles.toggleContainer}>
         <Toggle handleModeChange={handleModeChange} mode={mode}/>
+      </div>
+      <div className={styles.content}>
+        <div className={styles.header}>
+
+          <div className={mode === 'dark' ? styles.darkHeader : styles.lightHeader}>
+            metroguessr
+          </div>
+        </div>
       </div>
     </div>
   )
