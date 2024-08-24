@@ -1,10 +1,25 @@
-import React from 'react'
-import styles from "./projectNav.module.css"
+import React from 'react';
+import styles from './projectNav.module.css';
+import { LuArrowRight } from "react-icons/lu";
 
-const ProjectNav = () => {
-  return (
-    <div>projectNav</div>
-  )
+
+interface ProjectNavProps {
+  mode: string;
+  nextProject: string;
 }
 
-export default ProjectNav
+const ProjectNav: React.FC<ProjectNavProps> = ({ mode, nextProject }) => {
+  return (
+    <div className={styles.container}>
+      <div className={styles.top}>
+        <span>Next Project</span>
+        <LuArrowRight/>
+      </div>
+      <div className={styles.bottom}>
+        {nextProject}
+      </div>
+    </div>
+  );
+};
+
+export default ProjectNav;

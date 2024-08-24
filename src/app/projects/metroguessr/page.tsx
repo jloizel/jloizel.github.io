@@ -9,10 +9,13 @@ import { FiArrowLeft } from "react-icons/fi";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Footer from '../../../../components/footer/footer'
+import ProjectNav from '../../../../components/projectNav/projectNav'
 
 
 const metroguessrPage = () => {
   const [mode, setMode] = useState("dark");
+  
+  const nextProject = "Engenious"
 
   const handleModeChange = () => {
     setMode(prevMode => (prevMode === "dark" ? "light" : "dark"));
@@ -51,7 +54,7 @@ const metroguessrPage = () => {
         <span className={mode === 'dark' ? styles.arrowDark : styles.arrowLight}>
           <MdKeyboardArrowRight/>
         </span>
-        <a className={getLinkClassName()} href="/">
+        <a className={getLinkClassName()} href="/projects/metroguessr">
           metroguessr
         </a>
       </div>
@@ -86,6 +89,9 @@ const metroguessrPage = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className={styles.projectNavContainer}>
+        <ProjectNav mode={mode} nextProject={nextProject}/>
       </div>
       <Footer/>
     </div>
