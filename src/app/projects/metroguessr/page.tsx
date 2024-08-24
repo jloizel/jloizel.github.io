@@ -8,6 +8,7 @@ import Toggle from '../../../../components/toggle/toggle'
 import { FiArrowLeft } from "react-icons/fi";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { FaArrowRightLong } from "react-icons/fa6";
+import Footer from '../../../../components/footer/footer'
 
 
 const metroguessrPage = () => {
@@ -43,7 +44,7 @@ const metroguessrPage = () => {
           '.link'
         ]}
       />
-      <div className={styles.navbar}>
+      <div className={styles.navbar} id="navbar">
         <a className={getLinkClassName()} href="/">
           // home
         </a>
@@ -86,6 +87,7 @@ const metroguessrPage = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   )
 }
