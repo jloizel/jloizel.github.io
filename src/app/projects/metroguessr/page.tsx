@@ -7,6 +7,7 @@ import NavBar from '../../../../components/navbar/navbar'
 import Toggle from '../../../../components/toggle/toggle'
 import { FiArrowLeft } from "react-icons/fi";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 
 const metroguessrPage = () => {
@@ -70,8 +71,18 @@ const metroguessrPage = () => {
           <div className={mode === 'dark' ? styles.darkDescription : styles.lightDescription}>
             metroguessr is an interactive online game where the player selects between several cities to play and attempts to guess as many metro stations of that city within a set timeframe.
           </div>
-          <div>
-            test
+          <div className={styles.info}>
+            <div className={styles.detailsContainer}>
+              <span className={mode === 'dark' ? styles.darkDetailsHeader : styles.lightDetailsHeader}>
+                Technologies
+              </span>
+              <span className={mode === 'dark' ? styles.darkDetails : styles.lightDetails}>
+                React, Typescript, MongoDB
+              </span>
+            </div>
+            <div className={mode === 'dark' ? styles.darkOpen : styles.lightOpen}>
+              Open Project <FaArrowRightLong className={mode === 'dark' ? styles.darkLongArrow : styles.lightLongArrow}/>
+            </div>
           </div>
         </div>
       </div>

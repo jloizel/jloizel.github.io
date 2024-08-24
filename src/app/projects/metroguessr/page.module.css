@@ -46,7 +46,7 @@
 }
 
 .linkDark {
-  color: #182542;
+  color: #0F172A;
 }
 
 .link:hover, .linkDark:hover {
@@ -103,7 +103,7 @@
 }
 
 .darkArrow {
-  background-color: #182542;
+  background-color: #0F172A;
   color: #C7C7C8;
 }
 
@@ -144,20 +144,22 @@
 }
 
 .lightHeader {
-  color: #182542;
+  color: #0F172A;
 }
 
 .subHeader {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  /* width: 100%; */
+  margin-top: 80px;
+  gap: 140px;
 }
 
 .darkDescription, .lightDescription {
   font-family: "Poppins", Sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
-  margin-top: 80px;
   width: 50%;
 }
 
@@ -166,6 +168,84 @@
 }
 
 .lightDescription {
-  color: #182542;
+  color: #0F172A;
 }
 
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.detailsContainer {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(136,136,136,.65);
+  padding-top: 15px;
+}
+
+.darkDetailsHeader, .lightDetailsHeader {
+  font-family: "Poppins", Sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.darkDetailsHeader {
+  color: white;
+}
+
+.lightDetailsHeader {
+  color: #0F172A;
+}
+
+.darkDetails, .lightDetails {
+  font-family: "Poppins", Sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.darkDetails {
+  color: #C6C5C6;
+}
+
+.lightDetails {
+  color: #0F172A;
+}
+
+.darkOpen, .lightOpen {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.darkOpen:hover, .lightOpen:hover {
+  color: #E18EEC;
+}
+
+.darkOpen {
+  color: white;
+}
+
+.lightOpen {
+  color: black;
+} 
+
+.darkLongArrow, .lightLongArrow {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.darkOpen:hover .darkLongArrow, .lightOpen:hover .lightLongArrow {
+  transform: translateX(10px);
+  color: #E18EEC;
+}
+
+.darkLongArrow {
+  color: white;
+}
+
+.lightLongArrow {
+
+}
