@@ -6,6 +6,8 @@ import AnimatedCursor from 'react-animated-cursor'
 import NavBar from '../../../../components/navbar/navbar'
 import Toggle from '../../../../components/toggle/toggle'
 import { FiArrowLeft } from "react-icons/fi";
+import { MdKeyboardArrowRight } from "react-icons/md";
+
 
 const metroguessrPage = () => {
   const [mode, setMode] = useState("dark");
@@ -13,6 +15,8 @@ const metroguessrPage = () => {
   const handleModeChange = () => {
     setMode(prevMode => (prevMode === "dark" ? "light" : "dark"));
   };
+
+  const getLinkClassName = () => mode === 'dark' ? styles.link : styles.linkDark;
 
   return (
     <div className={mode === 'dark' ? styles.darkPage : styles.lightPage}>
@@ -38,7 +42,19 @@ const metroguessrPage = () => {
           '.link'
         ]}
       />
-      <NavBar mode={mode}/>
+      <div className={styles.navbar}>
+        {/* <div className={styles.linkContainer}> */}
+          <a className={getLinkClassName()} href="/">
+            // home
+          </a>
+          <span className={mode === 'dark' ? styles.arrowDark : styles.arrowLight}>
+            <MdKeyboardArrowRight/>
+          </span>
+          <a className={getLinkClassName()} href="/">
+            metroguessr
+          </a>
+        {/* </div> */}
+      </div>
       <div className={styles.arrowContainer}>
         <a href="/">
           <FiArrowLeft className={mode === 'dark' ? styles.darkArrow : styles.lightArrow} />
@@ -49,12 +65,10 @@ const metroguessrPage = () => {
         <Toggle handleModeChange={handleModeChange} mode={mode}/>
       </div>
       <div className={styles.content}>
-        <div className={styles.header}>
-
-          <div className={mode === 'dark' ? styles.darkHeader : styles.lightHeader}>
-            metroguessr
-          </div>
+        <div className={mode === 'dark' ? styles.darkHeader : styles.lightHeader}>
+          metroguessr
         </div>
+        <div></div>
       </div>
     </div>
   )

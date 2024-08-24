@@ -15,10 +15,67 @@
   background-color: white;
 }
 
+.navbar {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  align-items: center;
+  padding: 0 40px;
+  /* gap: 40px; */
+  z-index: -100;
+  background: none;
+  background-color: transparent;
+  gap: 10px;
+
+  @media (max-width: 767px) {
+    justify-content: flex-end;
+  }
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.link, .linkDark {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.link {
+  color: white;
+}
+
+.linkDark {
+  color: black;
+}
+
+.link:hover {
+  color: #E18EEC;
+}
+
+.arrowDark, .arrowLight {
+  font-size: 25px;
+  display: flex;
+  align-items: bottom;
+}
+
+.arrowDark {
+  color: white;
+}
+
+.arrowLight {
+  color: black;
+}
+
 .arrowContainer {
   position: fixed;
-  top: 20px;     /* Position it 20px from the top of the viewport */
-  left: 20px;    /* Position it 20px from the left of the viewport */
+  top: 120px;     /* Position it 20px from the top of the viewport */
+  left: 30px;    /* Position it 20px from the left of the viewport */
   z-index: 1000; /* Ensure it stays on top of other content */
   display: flex;
   align-items: center;
@@ -67,8 +124,7 @@
 
 .toggleContainer {
   position: fixed;
-  left: 20px; /* Distance from the left of the page */
-  top: 33%;   /* One-third of the way down from the top */
+  top: 40%;   /* One-third of the way down from the top */
   transform: translateY(-50%);
   z-index: 1000; /* Ensure it stays above other content */
 }
@@ -81,13 +137,14 @@
 }
 
 .header {
-  margin-top: 100px;
+  
 }
 
 .darkHeader, .lightHeader {
   font-family: "Poppins", Sans-serif;
   font-weight: 600;
-  font-size: 60px;
+  font-size: 55px;
+  margin-top: 80px;
 }
 
 .darkHeader {
