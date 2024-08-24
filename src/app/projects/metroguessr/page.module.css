@@ -103,7 +103,7 @@
 }
 
 .darkArrow {
-  background-color: #0F172A;
+  background-color: #1c2a4d;
   color: #C7C7C8;
 }
 
@@ -218,6 +218,7 @@
   gap: 10px;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+  font-weight: 500;
 }
 
 .darkOpen:hover, .lightOpen:hover {
@@ -244,7 +245,25 @@
 
 .projectNavContainer {
   position: fixed; 
-  bottom: 20px; 
+  bottom: 100px; 
   right: 20px; 
   /* z-index: 1000; */
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 80px;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+  height: auto;
 }

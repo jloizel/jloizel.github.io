@@ -8,7 +8,11 @@ import { FaGithub } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaArrowUp } from "react-icons/fa";
 
-function Footer() {
+interface FooterProps {
+  mode?: string;
+}
+
+const Footer: React.FC<FooterProps> = ({mode}) => {
 
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
@@ -17,12 +21,10 @@ function Footer() {
     }
   };
 
-  const jumpToSection = (sectionId: string) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  const getLinkClassName = () => mode === 'dark' ? styles.logo : styles.logoDark;
+  const getArrowContainerClassName = () => mode === 'dark' ? styles.arrowContainer : styles.arrowContainerDark;
+
+  console.log(mode)
 
   return (
     <div className={styles.footer}>
@@ -32,10 +34,10 @@ function Footer() {
       </div>
       <div className={styles.right}>
         <div className={styles.logoContainer}>
-          <FaLinkedin className={styles.logo} href="https://www.linkedin.com/in/jackloizel/" target="_blank"/>
-          <FaGithub className={styles.logo} href="https://github.com/jloizel" target='_blank'/>
+          <FaLinkedin className={getLinkClassName()} href="https://www.linkedin.com/in/jackloizel/" target="_blank"/>
+          <FaGithub className={getLinkClassName()} href="https://github.com/jloizel" target='_blank'/>
         </div>
-        <div className={styles.arrowContainer}>
+        <div className={getArrowContainerClassName()}>
           <FaArrowUp className={styles.arrow} onClick={() => scrollToSection("navbar")}/>
         </div>
       </div>

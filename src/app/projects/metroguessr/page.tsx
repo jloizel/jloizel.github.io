@@ -89,11 +89,35 @@ const metroguessrPage = () => {
             </div>
           </div>
         </div>
+        <div className={styles.images}>
+          <div className={styles.imageContainer}>
+            <img
+              src="/images/metroguessr/3.png"
+              alt="Metroguessr Screenshot"
+              className={styles.image}
+            />
+          </div>
+          <div className={styles.imageContainer}>
+            <img
+              src="/images/metroguessr/1.png"
+              alt="Metroguessr Screenshot"
+              className={styles.image}
+            />
+          </div>
+          <div className={styles.imageContainer}>
+            <img
+              src="/images/metroguessr/4.png"
+              alt="Metroguessr Screenshot"
+              className={styles.image}
+            />
+          </div>
+        </div>
       </div>
+      
       <div className={styles.projectNavContainer}>
         <ProjectNav nextProject={nextProject}/>
       </div>
-      <Footer/>
+      <Footer mode={mode}/>
     </div>
   )
 }

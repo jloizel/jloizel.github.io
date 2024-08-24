@@ -2,7 +2,7 @@
   position: relative;
   width: 200px;
   height: 60px; 
-  background-color: #f1f1f1;
+  background-color: white;
   overflow: hidden;
   transition: height 0.3s ease; 
   border-radius: 8px;
