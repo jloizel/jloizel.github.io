@@ -1,11 +1,43 @@
 .container {
-  background-color: white;
-  padding: 30px;
+  position: relative;
+  width: 200px;
+  height: 60px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+.container:hover {
+  height: 300px; 
 }
 
 .top {
-  font-family: "Poppins", Sans-serif;
-  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.bottom {
+  padding: 10px;
   font-size: 16px;
-  color: #0F172A;
+}
+
+.imageContainer {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 240px;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.container:hover .imageContainer {
+  opacity: 1;
 }

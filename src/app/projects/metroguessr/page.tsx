@@ -91,7 +91,7 @@ const metroguessrPage = () => {
         </div>
       </div>
       <div className={styles.projectNavContainer}>
-        <ProjectNav mode={mode} nextProject={nextProject}/>
+        <ProjectNav nextProject={nextProject}/>
       </div>
       <Footer/>
     </div>
