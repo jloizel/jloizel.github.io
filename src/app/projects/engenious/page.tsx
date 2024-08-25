@@ -73,8 +73,7 @@ const EngeniousPage = () => {
         </div>
         <div className={styles.subHeader}>
           <div className={mode === 'dark' ? styles.darkDescription : styles.lightDescription}>
-            metroguessr is an interactive online game where players choose from various cities and try to guess as many metro stations as possible within a set time limit. The game has attracted over 10,000 users and has been featured in publications such as Time Out Paris, Le Bonbon, and News Shopper, among others.
-            
+            Custom-designed website created for Engenious, a leading recruitment firm specializing in the construction industry, developed to enhance their online presence, streamline their recruitment processes, and effectively connect with both clients and job seekers in the construction sector. The site features a user-friendly interface and robust functionality tailored to meet the specific needs of Engenious and its audience.
           </div>
           <div className={styles.info}>
             <div className={styles.detailsContainer}>
@@ -85,9 +84,9 @@ const EngeniousPage = () => {
                 React, Typescript, MongoDB
               </span>
             </div>
-            <div className={mode === 'dark' ? styles.darkOpen : styles.lightOpen}>
+            <a className={mode === 'dark' ? styles.darkOpen : styles.lightOpen} href="https://engenious.vercel.app/" target='_blank'>
               Open Project <FaArrowRightLong className={mode === 'dark' ? styles.darkLongArrow : styles.lightLongArrow}/>
-            </div>
+            </a>
           </div>
         </div>
         <div className={styles.images}>

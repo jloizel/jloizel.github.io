@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from "./page.module.css"
 import AnimatedCursor from 'react-animated-cursor'
 import NavBar from '../../../../components/navbar/navbar'
@@ -85,9 +85,9 @@ const metroguessrPage = () => {
                 React, Typescript, MongoDB
               </span>
             </div>
-            <div className={mode === 'dark' ? styles.darkOpen : styles.lightOpen}>
+            <a className={mode === 'dark' ? styles.darkOpen : styles.lightOpen} href="https://www.metroguessr.com/" target='_blank'>
               Open Project <FaArrowRightLong className={mode === 'dark' ? styles.darkLongArrow : styles.lightLongArrow}/>
-            </div>
+            </a>
           </div>
         </div>
         <div className={styles.images}>
