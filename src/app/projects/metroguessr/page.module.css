@@ -98,7 +98,7 @@
   padding: 14px;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
-  cursor: pointer;
+  cursor: pointer !important;
   transition: outline 0.3s ease-in-out;
 }
 
@@ -220,7 +220,7 @@
   align-items: center;
   gap: 10px;
   transition: all 0.3s ease-in-out;
-  cursor: pointer;
+  cursor: pointer !important;
   font-weight: 500;
 }
 
