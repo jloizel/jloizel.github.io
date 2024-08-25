@@ -31,7 +31,7 @@ const ProjectNav: React.FC<ProjectNavProps> = ({ nextProject }) => {
             <HiArrowRight className={styles.arrow}/>
           </a>
         </div>
-        <span>{nextProject}</span>
+        <a href={href}>{nextProject}</a>
       </div>
     </div>
   );

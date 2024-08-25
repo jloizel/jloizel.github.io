@@ -23,7 +23,7 @@
   bottom: 10px;
 }
 
-.content span {
+.content a {
   font-family: "Roboto Mono", monospace;
   font-size: 18px;
   font-weight: 600;
