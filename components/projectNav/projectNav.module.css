@@ -27,7 +27,7 @@
   font-family: "Roboto Mono", monospace;
   font-size: 18px;
   font-weight: 600;
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 .top {

@@ -71,7 +71,7 @@ const EngeniousPage = () => {
       <div className={styles.content}>
         <div className={mode === 'dark' ? styles.darkHeader : styles.lightHeader}>
           Engenious
-          <a className={styles.repo} href="https://github.com/jloizel/metroguessr-client" target="_blank">
+          <a className={styles.repo} href="https://github.com/jloizel/Engenious" target="_blank">
             <RiGitRepositoryLine className={styles.repoIcon}/>            
             GitHub Repository
           </a>
