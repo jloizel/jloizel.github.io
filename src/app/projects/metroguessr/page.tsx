@@ -73,7 +73,8 @@ const metroguessrPage = () => {
         </div>
         <div className={styles.subHeader}>
           <div className={mode === 'dark' ? styles.darkDescription : styles.lightDescription}>
-            metroguessr is an interactive online game where the player selects between several cities to play and attempts to guess as many metro stations of that city within a set timeframe.
+            metroguessr is an interactive online game where players choose from various cities and try to guess as many metro stations as possible within a set time limit. The game has attracted over 10,000 users and has been featured in publications such as Time Out Paris, Le Bonbon, and News Shopper, among others.
+            
           </div>
           <div className={styles.info}>
             <div className={styles.detailsContainer}>
