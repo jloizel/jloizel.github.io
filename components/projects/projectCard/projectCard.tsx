@@ -40,7 +40,7 @@ const ProjectCard: React.FC = () => {
   return (
     <div className={styles.projectCardContainer}>
         {data.map((projectCard, index) => (
-          <a className={styles.card} key={projectCard.id} href={projectCard.href} target='_blank'>
+          <a className={styles.card} key={projectCard.id} href={projectCard.href}>
             <div className={styles.imageContainer}>
               <img src={projectCard.image}/>
             </div>

@@ -1,16 +1,16 @@
 .circlesWrapper {
-  position: relative; /* Allows absolutely positioned children to be positioned relative to this container */
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 250px; /* Adjust height as needed */
+  height: 250px; 
   margin-bottom: 20px;
 }
 
 .circlesContainer {
   position: relative;
-  width: 200px; /* Adjust width to fit your needs */
-  height: 200px; /* Adjust height to fit your needs */
+  width: 200px; 
+  height: 200px; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,7 +23,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: -1000; /* Keep circles behind logos */
+  z-index: -1000; 
 }
 
 .circle1 {

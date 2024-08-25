@@ -4,6 +4,10 @@
     "header": "Portrait"
   },
   {
+    "fileName": "resume.pdf",
+    "header": "Resume"
+  },
+  {
     "fileName": "about.tsx",
     "header": "About",
     "sections": [

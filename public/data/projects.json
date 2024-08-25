@@ -5,20 +5,20 @@
     "title": "metroguessr",
     "details": "Interactive online game where the player selects between several cities to play and attempts to guess as many metro stations of that city within a set timeframe.",
     "languages": "React, Typescript, MongoDB",
-    "href": "https://www.metroguessr.com/"
+    "href": "/projects/metroguessr"
   },
   {
     "id": 2,
     "image": "/images/engenious.png",
     "title": "Engenious Recruitment",
     "details": "Bespoke website developed for Engenious, a recruitment company specialised in the construction industry",
-    "href": "https://engenious.vercel.app/"
+    "href": "/projects/Engenious"
   },
   {
     "id": 3,
     "image": "/images/hoopstoglory.png",
     "title": "Hoops to Glory",
     "details": "Incremental clicker game with a NBA draft theme.",
-    "href": "https://engenious.vercel.app/"
+    "href": "/projects/HoopsToGlory"
   }
 ]
