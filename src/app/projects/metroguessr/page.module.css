@@ -137,6 +137,9 @@
   font-weight: 600;
   font-size: 55px;
   margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .darkHeader {
@@ -145,6 +148,17 @@
 
 .lightHeader {
   color: #0F172A;
+}
+
+.repo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.repoIcon {
+  font-size: 30px;
 }
 
 .subHeader {

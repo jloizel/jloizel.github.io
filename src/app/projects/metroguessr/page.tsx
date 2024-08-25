@@ -10,6 +10,8 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Footer from '../../../../components/footer/footer'
 import ProjectNav from '../../../../components/projectNav/projectNav'
+import { RiGitRepositoryLine } from "react-icons/ri";
+import { RiGitRepositoryFill } from "react-icons/ri";
 
 
 const metroguessrPage = () => {
@@ -72,6 +74,10 @@ const metroguessrPage = () => {
       <div className={styles.content}>
         <div className={mode === 'dark' ? styles.darkHeader : styles.lightHeader}>
           metroguessr
+          <div className={styles.repo}>
+            GitHub Repository
+            <RiGitRepositoryLine className={styles.repoIcon}/>            
+          </div>
         </div>
         <div className={styles.subHeader}>
           <div className={mode === 'dark' ? styles.darkDescription : styles.lightDescription}>
