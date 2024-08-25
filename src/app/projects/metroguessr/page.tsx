@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from 'react'
 import styles from "./page.module.css"
 import AnimatedCursor from 'react-animated-cursor'
-import NavBar from '../../../../components/navbar/navbar'
 import Toggle from '../../../../components/toggle/toggle'
 import { FiArrowLeft } from "react-icons/fi";
 import { MdKeyboardArrowRight } from "react-icons/md";
