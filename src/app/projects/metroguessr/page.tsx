@@ -74,10 +74,10 @@ const metroguessrPage = () => {
       <div className={styles.content}>
         <div className={mode === 'dark' ? styles.darkHeader : styles.lightHeader}>
           metroguessr
-          <div className={styles.repo}>
-            GitHub Repository
+          <a className={styles.repo} href="https://github.com/jloizel/metroguessr-client" target="_blank">
             <RiGitRepositoryLine className={styles.repoIcon}/>            
-          </div>
+            GitHub Repository
+          </a>
         </div>
         <div className={styles.subHeader}>
           <div className={mode === 'dark' ? styles.darkDescription : styles.lightDescription}>

@@ -10,6 +10,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Footer from '../../../../components/footer/footer'
 import ProjectNav from '../../../../components/projectNav/projectNav'
+import { RiGitRepositoryLine } from 'react-icons/ri'
 
 
 const EngeniousPage = () => {
@@ -70,6 +71,10 @@ const EngeniousPage = () => {
       <div className={styles.content}>
         <div className={mode === 'dark' ? styles.darkHeader : styles.lightHeader}>
           Engenious
+          <a className={styles.repo} href="https://github.com/jloizel/metroguessr-client" target="_blank">
+            <RiGitRepositoryLine className={styles.repoIcon}/>            
+            GitHub Repository
+          </a>
         </div>
         <div className={styles.subHeader}>
           <div className={mode === 'dark' ? styles.darkDescription : styles.lightDescription}>

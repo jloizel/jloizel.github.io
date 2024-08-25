@@ -139,7 +139,7 @@
   margin-top: 80px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 10px;
 }
 
 .darkHeader {
@@ -155,10 +155,19 @@
   flex-direction: row;
   align-items: center;
   gap: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: italic;
+  cursor: pointer !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.repo:hover {
+  color: #E18EEC;
 }
 
 .repoIcon {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .subHeader {
