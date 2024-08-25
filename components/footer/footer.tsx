@@ -34,8 +34,12 @@ const Footer: React.FC<FooterProps> = ({mode}) => {
       </div>
       <div className={styles.right}>
         <div className={styles.logoContainer}>
-          <FaLinkedin className={getLinkClassName()} href="https://www.linkedin.com/in/jackloizel/" target="_blank"/>
-          <FaGithub className={getLinkClassName()} href="https://github.com/jloizel" target='_blank'/>
+          <a href="https://www.linkedin.com/in/jackloizel/" target="_blank">
+            <FaLinkedin className={getLinkClassName()} />
+          </a>
+          <a href="https://github.com/jloizel" target='_blank'>
+            <FaGithub className={getLinkClassName()} />
+          </a>
         </div>
         <div className={getArrowContainerClassName()}>
           <FaArrowUp className={styles.arrow} onClick={() => scrollToSection("navbar")}/>

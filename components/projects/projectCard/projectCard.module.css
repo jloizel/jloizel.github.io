@@ -1,6 +1,6 @@
 .projectCardContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 40px;
   /* padding: 16px; */
   margin-top: 50px;

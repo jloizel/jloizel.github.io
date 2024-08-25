@@ -11,7 +11,9 @@ import Contact from '../../components/contact/contact';
 import Footer from '../../components/footer/footer';
 
 function App() {
-  
+
+  const mode = "dark"
+
   return (
     <div className={styles.app}>
       <AnimatedCursor 
@@ -42,7 +44,7 @@ function App() {
       <Projects/>
       <Resume/>
       <Contact/>
-      <Footer/>
+      <Footer mode={mode}/>
     </div>
   );
 }

@@ -43,10 +43,10 @@ function Home() {
         <span className={styles.cursor}></span>
       </div>
       <div className={styles.logos}>
-        <a href="https://github.com/jloizel" style={{textDecoration: "none"}}>
+        <a href="https://github.com/jloizel" target="_blank" style={{textDecoration: "none"}}>
           <FaGithubSquare className={styles.logo}/>
         </a>
-        <a href="https://www.linkedin.com/in/jackloizel/" style={{textDecoration: "none"}}>
+        <a href="https://www.linkedin.com/in/jackloizel/" target="_blank" style={{textDecoration: "none"}}>
           <FaLinkedin className={styles.logo}/>
         </a>
       </div>
