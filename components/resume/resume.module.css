@@ -78,3 +78,22 @@
     font-size: 18px;
   }
 }
+
+.downloadButton {
+  /* background-color: #007bff; */
+  color: #E18EEC;
+  cursor: pointer !important;
+  /* font-size: 20px; */
+  font-weight: 500;
+  font-family: "Roboto Mono", monospace;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+  width: max-content;
+}
+
+.downloadButton:hover {
+  color: black;
+  background-color: #E18EEC;
+}
+

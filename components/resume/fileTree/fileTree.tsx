@@ -7,6 +7,7 @@ import styles from "./filetree.module.css";
 import resumeSections from '../../../public/data/resume.json';
 import OrbitingCircles from "../../home/orbitingCircles/orbitingCircles";
 import { FaFileDownload } from "react-icons/fa";
+import { FaDownload } from "react-icons/fa";
 
 const FileTree = () => {
   const [selectedFile, setSelectedFile] = useState<string | null>("README.md");
@@ -60,13 +61,6 @@ const FileTree = () => {
             )}
             {selectedFile === "skills.tsx" && (
               <OrbitingCircles/>
-            )}
-            {selectedFile === "resume.pdf" && (
-              <div className={styles.downloadContainer}> 
-                <a href="/resume.pdf" download className={styles.downloadButton}>
-                  <FaFileDownload /> Download Resume
-                </a>
-              </div>
             )}
           </div>
         </div>
