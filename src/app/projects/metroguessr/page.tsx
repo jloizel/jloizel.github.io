@@ -11,6 +11,7 @@ import Footer from '../../../../components/footer/footer'
 import ProjectNav from '../../../../components/projectNav/projectNav'
 import { RiGitRepositoryLine } from "react-icons/ri";
 import { RiGitRepositoryFill } from "react-icons/ri";
+import ScrollArrow from '../../../../components/scrollArrow/scrollArrow'
 
 
 const metroguessrPage = () => {
@@ -70,7 +71,7 @@ const metroguessrPage = () => {
       <div className={styles.toggleContainer}>
         <Toggle handleModeChange={handleModeChange} mode={mode}/>
       </div>
-      <div className={styles.content}>
+      <div className={styles.content} id="home">
         <div className={mode === 'dark' ? styles.darkHeader : styles.lightHeader}>
           metroguessr
           <a className={styles.repo} href="https://github.com/jloizel/metroguessr-client" target="_blank">
@@ -125,6 +126,7 @@ const metroguessrPage = () => {
       <div className={styles.projectNavContainer}>
         <ProjectNav nextProject={nextProject}/>
       </div>
+      <ScrollArrow mode={mode}/>
       <Footer mode={mode}/>
     </div>
   )

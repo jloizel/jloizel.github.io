@@ -9,6 +9,7 @@ import Resume from '../../components/resume/resume';
 import Focus from '../../components/focus/focus';
 import Contact from '../../components/contact/contact';
 import Footer from '../../components/footer/footer';
+import ScrollArrow from '../../components/scrollArrow/scrollArrow';
 
 function App() {
 
@@ -45,6 +46,7 @@ function App() {
       <Resume/>
       <Contact/>
       <Footer mode={mode}/>
+      <ScrollArrow/>
     </div>
   );
 }

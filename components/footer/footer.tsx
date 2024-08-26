@@ -22,9 +22,8 @@ const Footer: React.FC<FooterProps> = ({mode}) => {
   };
 
   const getLinkClassName = () => mode === 'dark' ? styles.logo : styles.logoDark;
+  
   const getArrowContainerClassName = () => mode === 'dark' ? styles.arrowContainer : styles.arrowContainerDark;
-
-  console.log(mode)
 
   return (
     <div className={styles.footer}>
@@ -41,9 +40,9 @@ const Footer: React.FC<FooterProps> = ({mode}) => {
             <FaGithub className={getLinkClassName()} />
           </a>
         </div>
-        <div className={getArrowContainerClassName()}>
+        {/* <div className={getArrowContainerClassName()}>
           <FaArrowUp className={styles.arrow} onClick={() => scrollToSection("navbar")}/>
-        </div>
+        </div> */}
       </div>
     </div>
   );
