@@ -32,7 +32,7 @@ function Home() {
         {/* <OrbitingCircles/> */}
       {/* </div> */}
       <div className={styles.splineSceneContainer}>
-        <SplineScene />
+        {/* <SplineScene /> */}
       </div>
       <div className={styles.header}>
         JACK LOIZEL
