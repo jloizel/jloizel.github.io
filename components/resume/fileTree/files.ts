@@ -12,9 +12,9 @@ export const files: TFiles = {
         {
           name: "portrait.jpg"
         },
-        {
-          name: "resume.pdf"
-        }
+        // {
+        //   name: "resume.pdf"
+        // }
       ]
     },
     {

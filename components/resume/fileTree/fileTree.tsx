@@ -62,6 +62,13 @@ const FileTree = () => {
             {selectedFile === "skills.tsx" && (
               <OrbitingCircles/>
             )}
+            {/* {selectedFile === "resume.pdf" && (
+              <div className={styles.downloadContainer}> 
+                <a href="/resume.pdf" download className={styles.downloadButton}>
+                  <FaFileDownload />
+                </a>
+              </div>
+            )} */}
           </div>
         </div>
       )}
