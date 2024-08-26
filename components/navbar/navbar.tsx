@@ -1,12 +1,12 @@
 "use client"
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from "./navbar.module.css"
 import { createTheme, useMediaQuery } from '@mui/material';
 import Menu from './menu/menu';
 
-
 const NavBar: React.FC = () => {
+  const [isSlidingDown, setIsSlidingDown] = useState(false);
 
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
@@ -14,6 +14,31 @@ const NavBar: React.FC = () => {
       section.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const homeSection = document.getElementById('home');
+      if (!homeSection) return;
+
+      const homeBottom = homeSection.getBoundingClientRect().bottom;
+      const scrollPosition = window.scrollY;
+
+      if (scrollPosition > homeBottom) {
+        setIsSlidingDown(true); // Navbar slides down when scrolling past home section
+      } else {
+        setIsSlidingDown(false); // Navbar hides when back on home section
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Run the handler once on component mount
+    handleScroll();
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const theme = createTheme({
     breakpoints: {
@@ -29,35 +54,40 @@ const NavBar: React.FC = () => {
 
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
-  
   return (
-    <div className={styles.navbar} id="navbar">
-      {/* <div className={styles.nameContainer}>
-        JackLoizel<span style={{color: "white"}}>.</span>
-      </div> */}
+    <div id="navbar">
       {isMobile ? (
-          <Menu/>
-        ) : (
-        <div className={styles.linksContainer}>
-          <div className={styles.link} onClick={() => scrollToSection("home")}>
-            // home
+        <Menu />
+      ) : (
+        <div>
+          <div className={`${styles.fixedNavbar} ${isSlidingDown ? styles.hidden : ""}`}>
+            <div className={styles.linksContainer}>
+              {['home', 'focus', 'projects', 'resume', 'contact'].map((section) => (
+                <div
+                  key={section}
+                  className={`${styles.link}`}
+                  onClick={() => scrollToSection(section)}
+                >
+                  {section}
+                </div>
+              ))}
+            </div>
           </div>
-          <div className={styles.link} onClick={() => scrollToSection("focus")}>
-            // focus
+          <div className={`${styles.navbar} ${isSlidingDown ? styles.slideDown : styles.hidden}`}>
+            <div className={styles.linksContainer}>
+              {['home', 'focus', 'projects', 'resume', 'contact'].map((section) => (
+                <div
+                  key={section}
+                  className={`${styles.link}`}
+                  onClick={() => scrollToSection(section)}
+                >
+                  {section}
+                </div>
+              ))}
+            </div>
           </div>
-          <div className={styles.link} onClick={() => scrollToSection("projects")}>
-            // projects
-          </div>
-          <div className={styles.link} onClick={() => scrollToSection("resume")}>
-            // résumé
-          </div>
-          <div className={styles.link} onClick={() => scrollToSection("contact")}>
-            // contact
-          </div>
-      </div>
-        )}
-      {/* <div className={styles.hidden}></div> */}
-      
+        </div>
+      )}
     </div>
   );
 }
