@@ -19,7 +19,7 @@
   z-index: 100;
   background-color: rgba(15, 23, 42, 0.9); 
   backdrop-filter: blur(4px);
-  transition: top 0.8s ease-in-out;
+  transition: top 0.6s ease-in;
 }
 
 .slideDown {
@@ -27,7 +27,7 @@
 }
 
 .hidden {
-  top: -80px; /* Move out of view */
+  top: -80px; 
 }
 
 .linksContainer {
