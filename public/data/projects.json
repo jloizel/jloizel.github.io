@@ -4,7 +4,8 @@
     "image": "/images/metroguessr.jpg",
     "title": "metroguessr",
     "details": "Interactive online game where the player selects between several cities to play and attempts to guess as many metro stations of that city within a set timeframe.",
-    "languages": "React, Typescript, MongoDB",
+    "languages": "React - Typescript - MongoDB",
+    "summary": "A city-based game where players guess metro stations, with over 10,000 users and features in top publications.",
     "href": "/projects/metroguessr"
   },
   {
@@ -12,6 +13,8 @@
     "image": "/images/engenious.png",
     "title": "Engenious Recruitment",
     "details": "Bespoke website developed for Engenious, a recruitment company specialised in the construction industry",
+    "languages": "React - Typescript - MongoDB",
+    "summary": "Custom website for Engenious, a leading construction recruitment firm, enhancing online presence and streamlining connections with clients and job seekers.",
     "href": "/projects/Engenious"
   },
   {
@@ -19,6 +22,8 @@
     "image": "/images/hoopstoglory.png",
     "title": "Hoops to Glory",
     "details": "Incremental clicker game with a NBA draft theme.",
+    "languages": "React - Typescript - MongoDB",
+    "summary": "A basketball clicker game where you manage training and career to reach the top NBA draft pick.",
     "href": "/projects/HoopsToGlory"
   }
 ]

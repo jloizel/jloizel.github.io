@@ -10,6 +10,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaLongArrowAltDown } from "react-icons/fa";
 import OrbitingCircles from './orbitingCircles/orbitingCircles';
 import SplineScene from '../spline/spline';
+import Bounce from '../scrollAnimations/bounce';
 
 const phrases = [
   'Part time coder',
@@ -34,9 +35,11 @@ function Home() {
       <div className={styles.splineSceneContainer}>
         {/* <SplineScene /> */}
       </div>
-      <div className={styles.header}>
-        JACK LOIZEL
-      </div>      
+      <Bounce>
+        <div className={styles.header}>
+          JACK LOIZEL
+        </div>
+      </Bounce>    
       <div className={styles.scrambler}>
         {/* <IoIosArrowForward className={styles.icon}/> */}
         <TextScrambler phrases={phrases} scrambleDuration={2} displayDuration={2} />

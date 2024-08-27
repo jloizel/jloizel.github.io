@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react'
 import styles from './projectCard.module.css'
 import { FaLink } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
 import { IoIosLink } from "react-icons/io";
 import Bounce from '../../scrollAnimations/bounce';
 
@@ -13,6 +14,8 @@ const ProjectCard: React.FC = () => {
       image: "",
       title: "",
       details: "",
+      languages: "",
+      summary: "",
       href: ""
     },
   ]);
@@ -47,9 +50,19 @@ const ProjectCard: React.FC = () => {
               <img src={projectCard.image}/>
             </div>
             <div className={styles.content}>
-              <div className={styles.title}>{projectCard.title}<IoIosLink/></div>
-              {/* <div className={styles.details}>{projectCard.details}</div> */}
-              <div className={styles.languages}></div>
+              <div className={styles.top}>
+                <div className={styles.title}>{projectCard.title}</div>
+                {/* <div className={styles.details}>{projectCard.details}</div> */}
+                <div className={styles.line}></div>
+                <div className={styles.icons}>
+                  <FaGithub/><IoIosLink/>
+                </div>
+              </div>
+              <div className={styles.languages}>{projectCard.languages}</div>
+              <div className={styles.summary}>
+                {projectCard.summary}
+                {/* <a> Learn more &gt;</a> */}
+              </div>
             </div>
             <span className={styles.showProject}>Show Project</span>
           </a>

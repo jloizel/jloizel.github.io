@@ -29,7 +29,7 @@
   background-color: rgba(158, 158, 158, 0.05);
   position: relative;
   transition: box-shadow 0.3s ease; /* Add transition for smooth scaling */
-  cursor: pointer;
+  cursor: pointer !important;
   text-decoration: none;
   /* width: 80%; */
 
@@ -85,22 +85,53 @@
 .content {
   display: flex;
   flex-direction: column;
-  padding: 45px;
+  padding: 30px 20px;
   transition: opacity 0.3s ease; /* Add transition for smooth opacity change */
+  gap: 10px;
 }
 
 .card:hover .content {
   opacity: 0.2; /* Fade out the text content on hover */
 }
 
+.top {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
 .title {
   color: white;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 20px;
   display: flex;
   align-items: center;
   gap: 6px;
+  white-space: nowrap;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(201, 201, 201, 0.432);
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.icons:hover {
+  color: #E18EEC;
 }
 
 .details {
@@ -109,6 +140,29 @@
   font-weight: 400;
   font-size: 16px;
   margin-top: 10px;
+}
+
+.languages {
+  /* margin-top: 10px; */
+  color: #E18EEC;
+  font-size: 16px;
+  font-size: 600;
+}
+
+.summary {
+  color: #C6C5C6;
+  line-height: 25px;
+  font-weight: 200;
+  font-size: 16px;
+  /* display: flex;
+  gap: 5px; */
+}
+
+.summary a {
+  color: #E18EEC;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 .showProject {
@@ -128,7 +182,7 @@
   visibility: hidden;
   transform: translateX(-50%) translateY(0%);
   transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 .card:hover .showProject {

@@ -17,12 +17,10 @@ function Resume() {
             <span className={styles.cursor}/>
           </Slide>
         </div>
-        <Slide>
+        <Bounce>
           <a href="/resume.pdf" download className={styles.downloadButton}>
             &lt;Download Résumé&gt;          
           </a>
-        </Slide>
-        <Bounce>
           <FileTree/>
         </Bounce>
       </div>
