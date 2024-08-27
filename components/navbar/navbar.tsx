@@ -62,7 +62,7 @@ const NavBar: React.FC = () => {
         <div>
           <div className={`${styles.fixedNavbar} ${isSlidingDown ? styles.hidden : ""}`}>
             <div className={styles.linksContainer}>
-              {['home', 'focus', 'projects', 'resume', 'contact'].map((section) => (
+              {['// home', '// focus', '// projects', '// resume', '// contact'].map((section) => (
                 <div
                   key={section}
                   className={`${styles.link}`}
@@ -75,7 +75,7 @@ const NavBar: React.FC = () => {
           </div>
           <div className={`${styles.navbar} ${isSlidingDown ? styles.slideDown : styles.hidden}`}>
             <div className={styles.linksContainer}>
-              {['home', 'focus', 'projects', 'resume', 'contact'].map((section) => (
+              {['// home', '// focus', '// projects', '// resume', '//  contact'].map((section) => (
                 <div
                   key={section}
                   className={`${styles.link}`}

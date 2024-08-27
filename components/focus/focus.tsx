@@ -12,7 +12,8 @@ import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper/modules';
 import { createTheme, useMediaQuery } from '@mui/material';
 import { IoIosArrowForward } from 'react-icons/io';
-import ScrollAnimation from '../scrollAnimations/bounce';
+import Slide from '../scrollAnimations/slide';
+import Bounce from '../scrollAnimations/bounce';
 
 interface CustomCSSProperties extends React.CSSProperties {
   '--underline-color'?: string;
@@ -81,9 +82,9 @@ const Focus: React.FC = () => {
     <div className={styles.focusContainer} id="focus">
       <div className={styles.header}>
         {/* <IoIosArrowForward className={styles.icon}/> */}
-        <ScrollAnimation>
+        <Slide>
           Areas of Focus
-        </ScrollAnimation>
+        </Slide>
       </div>
       {isMobile ? (
         <div className={styles.swiperContainer}>
@@ -129,6 +130,7 @@ const Focus: React.FC = () => {
           </Swiper>
         </div>
       ) : (
+        <Bounce>
         <div className={styles.box}>
           {data.map((item, index) => {
               const IconComponent = iconComponents[item.icon];
@@ -156,6 +158,7 @@ const Focus: React.FC = () => {
               )
             })}
         </div>
+        </Bounce>
       )}
     </div>
   );

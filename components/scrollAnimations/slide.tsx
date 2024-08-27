@@ -9,7 +9,7 @@ type Props = {
   delay?: number;
 };
 
-export default function CurtainRevealAnimation({ children, delay = 0, className }: Props) {
+export default function Slide({ children, delay = 0, className }: Props) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const controls = useAnimation();

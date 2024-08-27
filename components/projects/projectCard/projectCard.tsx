@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import styles from './projectCard.module.css'
 import { FaLink } from "react-icons/fa6";
 import { IoIosLink } from "react-icons/io";
+import Bounce from '../../scrollAnimations/bounce';
 
 const ProjectCard: React.FC = () => {
   const [data, setData] = useState([
@@ -40,6 +41,7 @@ const ProjectCard: React.FC = () => {
   return (
     <div className={styles.projectCardContainer}>
         {data.map((projectCard, index) => (
+          <Bounce className={styles.card}>
           <a className={styles.card} key={projectCard.id} href={projectCard.href}>
             <div className={styles.imageContainer}>
               <img src={projectCard.image}/>
@@ -51,6 +53,7 @@ const ProjectCard: React.FC = () => {
             </div>
             <span className={styles.showProject}>Show Project</span>
           </a>
+          </Bounce>
         ))}
     </div>
   )
