@@ -164,6 +164,12 @@
   font-weight: 500;
   font-size: 15px;
   font-family: 'Poppins', sans-serif;
+  cursor: pointer !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.summary a:hover {
+  color: #e18eecb8;
 }
 
 .showProject {
