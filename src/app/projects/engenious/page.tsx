@@ -10,6 +10,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import Footer from '../../../../components/footer/footer'
 import ProjectNav from '../../../../components/projectNav/projectNav'
 import { RiGitRepositoryLine } from 'react-icons/ri'
+import { FaGithub } from 'react-icons/fa'
 
 
 const EngeniousPage = () => {
@@ -71,8 +72,8 @@ const EngeniousPage = () => {
         <div className={mode === 'dark' ? styles.darkHeader : styles.lightHeader}>
           Engenious
           <a className={styles.repo} href="https://github.com/jloizel/Engenious" target="_blank">
-            <RiGitRepositoryLine className={styles.repoIcon}/>            
-            GitHub Repository
+            <FaGithub className={styles.repoIcon}/>            
+            Source Code
           </a>
         </div>
         <div className={styles.subHeader}>

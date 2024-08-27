@@ -12,6 +12,7 @@ import ProjectNav from '../../../../components/projectNav/projectNav'
 import { RiGitRepositoryLine } from "react-icons/ri";
 import { RiGitRepositoryFill } from "react-icons/ri";
 import ScrollArrow from '../../../../components/scrollArrow/scrollArrow'
+import { FaGithub } from 'react-icons/fa'
 
 
 const metroguessrPage = () => {
@@ -75,8 +76,8 @@ const metroguessrPage = () => {
         <div className={mode === 'dark' ? styles.darkHeader : styles.lightHeader}>
           metroguessr
           <a className={styles.repo} href="https://github.com/jloizel/metroguessr-client" target="_blank">
-            <RiGitRepositoryLine className={styles.repoIcon}/>            
-            GitHub Repository
+            <FaGithub className={styles.repoIcon}/>            
+            Source Code
           </a>
         </div>
         <div className={styles.subHeader}>

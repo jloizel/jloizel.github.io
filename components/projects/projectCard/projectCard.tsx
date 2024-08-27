@@ -61,7 +61,7 @@ const ProjectCard: React.FC = () => {
               <div className={styles.languages}>{projectCard.languages}</div>
               <div className={styles.summary}>
                 {projectCard.summary}
-                {/* <a> Learn more &gt;</a> */}
+                <a> Learn more &gt;</a>
               </div>
             </div>
             <span className={styles.showProject}>Show Project</span>

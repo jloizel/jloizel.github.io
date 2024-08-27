@@ -154,18 +154,18 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
   font-size: 16px;
   font-weight: 500;
-  font-style: italic;
+  /* font-style: italic; */
+  color: #E18EEC;
   cursor: pointer !important;
   transition: all 0.3s ease-in-out;
   width: max-content;
-
 }
 
 .repo:hover {
-  color: #E18EEC;
+  color: #e18eecb8;
 }
 
 .repoIcon {
