@@ -80,11 +80,15 @@ const Focus: React.FC = () => {
 
   return (
     <div className={styles.focusContainer} id="focus">
-      <div className={styles.header}>
-        {/* <IoIosArrowForward className={styles.icon}/> */}
-        <Slide>
-          Areas of Focus
-        </Slide>
+      <div className={styles.headerContainer}>
+        <div className={styles.header}>
+          <Slide>
+            {/* <IoIosArrowForward className={styles.icon}/> */}
+            Areas of Focus
+            <span className={styles.cursor}/>
+          </Slide>
+        </div>
+        <div className={styles.line}/>
       </div>
       {isMobile ? (
         <div className={styles.swiperContainer}>

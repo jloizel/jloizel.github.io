@@ -89,7 +89,7 @@ const EngeniousPage = () => {
                 React, Typescript, MongoDB
               </span>
             </div>
-            <a className={mode === 'dark' ? styles.darkOpen : styles.lightOpen} href="https://engenious.vercel.app/" target='_blank'>
+            <a className={mode === 'dark' ? styles.darkOpen : styles.lightOpen} href="https://www.hoopstoglory.com/" target='_blank'>
               Live Project <FaArrowRightLong className={mode === 'dark' ? styles.darkLongArrow : styles.lightLongArrow}/>
             </a>
           </div>

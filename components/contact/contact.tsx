@@ -16,7 +16,7 @@ export default function Contact() {
     <div className={styles.contactContainer} id="contact">
       <Slide>
         <div className={styles.header}>
-          Get in Touch 
+          Get in Touch
         </div>
       </Slide>
       <Bounce className={styles.content}>

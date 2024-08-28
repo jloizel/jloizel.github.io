@@ -11,15 +11,17 @@
 }
 
 .header {
+  position: relative;
   align-self: center;
   color: white;
   font-family: 'Poppins', sans-serif;
   /* font-family: "Roboto Mono", monospace; */
-  font-weight: 600;
+  font-weight: 900;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  /* align-items: flex-end; */
   font-size: 40px;
+  vertical-align: baseline;
   /* padding: 0 40px; */
   
   @media (min-width: 768px) and (max-width: 1023px) {
@@ -29,6 +31,16 @@
   @media (min-width: 1024px) {
     font-size: 75px;
   }
+}
+
+
+.header::after {
+  content: ".";
+  position: relative;
+  top: 2px; /* Adjust this value to align with the baseline */
+  font-size: inherit;
+  line-height: inherit;
+  color: #E18EEC;
 }
 
 .content {

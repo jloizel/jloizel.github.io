@@ -10,12 +10,15 @@ function Resume() {
   return (
     <div className={styles.resume} id="resume">
       <div className={styles.content}>
-        <div className={styles.header}>
-          <Slide>
-            <IoIosArrowForward className={styles.icon}/>
-            Résumé
-            <span className={styles.cursor}/>
-          </Slide>
+        <div className={styles.headerContainer}>
+          <div className={styles.header}>
+            <Slide>
+              {/* <IoIosArrowForward className={styles.icon}/> */}
+              Résumé
+              <span className={styles.cursor}/>
+            </Slide>
+          </div>
+          <div className={styles.line}/>
         </div>
         <Bounce>
           <a href="/resume.pdf" download className={styles.downloadButton}>

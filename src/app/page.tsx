@@ -12,7 +12,6 @@ import Footer from '../../components/footer/footer';
 import ScrollArrow from '../../components/scrollArrow/scrollArrow';
 
 function App() {
-
   const mode = "dark"
 
   return (
