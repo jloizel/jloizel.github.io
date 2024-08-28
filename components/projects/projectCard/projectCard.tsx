@@ -61,10 +61,10 @@ const ProjectCard: React.FC = () => {
               <div className={styles.languages}>{projectCard.languages}</div>
               <div className={styles.summary}>
                 {projectCard.summary}
-                <a> Learn more &gt;</a>
+                <span onClick={() => window.open("/projects/metroguessr")}> Learn more &gt;</span>
               </div>
             </div>
-            <span className={styles.showProject}>Show Project</span>
+            {/* <span className={styles.showProject}>Show Project</span> */}
           </a>
           </Bounce>
         ))}

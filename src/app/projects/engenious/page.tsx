@@ -90,7 +90,7 @@ const EngeniousPage = () => {
               </span>
             </div>
             <a className={mode === 'dark' ? styles.darkOpen : styles.lightOpen} href="https://engenious.vercel.app/" target='_blank'>
-              Open Project <FaArrowRightLong className={mode === 'dark' ? styles.darkLongArrow : styles.lightLongArrow}/>
+              Live Project <FaArrowRightLong className={mode === 'dark' ? styles.darkLongArrow : styles.lightLongArrow}/>
             </a>
           </div>
         </div>

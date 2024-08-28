@@ -95,7 +95,7 @@ const metroguessrPage = () => {
               </span>
             </div>
             <a className={mode === 'dark' ? styles.darkOpen : styles.lightOpen} href="https://www.metroguessr.com/" target='_blank'>
-              Open Project <FaArrowRightLong className={mode === 'dark' ? styles.darkLongArrow : styles.lightLongArrow}/>
+              Live Project <FaArrowRightLong className={mode === 'dark' ? styles.darkLongArrow : styles.lightLongArrow}/>
             </a>
           </div>
         </div>
