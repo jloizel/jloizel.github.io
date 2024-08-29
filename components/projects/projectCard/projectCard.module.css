@@ -32,6 +32,7 @@
   cursor: pointer !important;
   text-decoration: none;
   /* width: 80%; */
+  /* height: 100%; */
 
   @media (min-width: 768px) and (max-width: 1023px) {
 
@@ -46,53 +47,47 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase the shadow for a more pronounced effect */
 }
 
-.card:hover .imageContainer img {
+.image:hover {
   transform: scale(1.1); /* Scale up the image on hover */
+  rotate: 2deg;
 }
+
+.imageContainer:hover + .content {
+  opacity: 0.2; 
+}
+
 
 .imageContainer {
   width: 100%;
+  aspect-ratio: 16/9;
+  background: var(--background-light);
+  cursor: pointer;
+  position: relative;
+  border-radius: .8rem;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 250px;
-
-  @media (min-width: 768px) and (max-width: 1023px) {
-
-  }
-  
-  @media (min-width: 1024px) {
-    /* height: 300px;   */
-  }
+  height: 50%;
 }
 
-.imageContainer img {
-  width: auto;
-  height: 300px;
-  object-fit: fill; /* Ensures the image covers the container without distortion */
-  transition: transform 0.3s ease;
-
-  @media (min-width: 768px) and (max-width: 1023px) {
-
-  }
-  
-  @media (min-width: 1024px) {
-    /* height: 300px;   */
-  }
+.image {
+  width: 85%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  translate: -50% 20%;
+  transition: all .25s;
+  border-radius: 4px;
 }
 
 .content {
   display: flex;
   flex-direction: column;
   padding: 30px 20px;
-  transition: opacity 0.3s ease; /* Add transition for smooth opacity change */
+  transition: opacity 0.3s ease;
   gap: 10px;
+  height: 50%;
 }
 
-.card:hover .content {
-  opacity: 0.2; /* Fade out the text content on hover */
-}
+
 
 .top {
   width: 100%;
@@ -175,7 +170,7 @@
 .showProject {
   display: block;
   position: absolute;
-  bottom: 16px;
+  bottom: 120px;
   left: 50%;
   background-color: #fff;
   color: #1a294a;
@@ -190,10 +185,11 @@
   transform: translateX(-50%) translateY(0%);
   transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
   cursor: pointer !important;
+  z-index: 100;
 }
 
-.card:hover .showProject {
+.imageContainer:hover ~ .showProject {
   opacity: 1;
   visibility: visible;
-  transform: translate(-50%, -60%);
+  transform: translate(-50%, -30%);
 }

@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "/images/metroguessr.jpg",
+    "image": "/1.png",
     "title": "metroguessr",
     "details": "Interactive online game where the player selects between several cities to play and attempts to guess as many metro stations of that city within a set timeframe.",
     "languages": "React - Typescript - MongoDB",
@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "image": "/images/engenious.png",
+    "image": "/2.png",
     "title": "Engenious",
     "details": "Bespoke website developed for Engenious, a recruitment company specialised in the construction industry",
     "languages": "React - Typescript - MongoDB",
@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "image": "/images/hoopstoglory.png",
+    "image": "/3.png",
     "title": "Hoops to Glory",
     "details": "Incremental clicker game with a NBA draft theme.",
     "languages": "React - Typescript - MongoDB",

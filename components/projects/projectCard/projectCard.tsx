@@ -47,7 +47,7 @@ const ProjectCard: React.FC = () => {
           <Bounce className={styles.card}>
           <a className={styles.card} key={projectCard.id} href={projectCard.href}>
             <div className={styles.imageContainer}>
-              <img src={projectCard.image}/>
+              <img className={styles.image} src={projectCard.image}/>
             </div>
             <div className={styles.content}>
               <div className={styles.top}>
@@ -64,7 +64,7 @@ const ProjectCard: React.FC = () => {
                 <span onClick={() => window.open("/projects/metroguessr")}> Learn more &gt;</span>
               </div>
             </div>
-            {/* <span className={styles.showProject}>Show Project</span> */}
+            <span className={styles.showProject}>Show Project</span>
           </a>
           </Bounce>
         ))}
