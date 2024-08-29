@@ -66,17 +66,20 @@ const NavBar: React.FC = () => {
             <div className={styles.linksContainer}>
               {['// home', '// focus', '// projects', '// resume', '// contact'].map((section, index) => (
                 <motion.div
-                key={section}
-                className={styles.link}
-                onClick={() => scrollToSection(section)}
-                initial={{ y: -30, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                  key={section}
+                  className={styles.link}
+                  onClick={() => scrollToSection(section)}
+                  initial={{ y: -30, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 {section}
               </motion.div>
               ))}
             </div>
+            <a href="/resume.pdf" download className={styles.downloadButton}>
+              &lt;Download Résumé&gt;          
+            </a>
           </div>
           <div className={`${styles.navbar} ${isSlidingDown ? styles.slideDown : styles.hidden}`}>
             <div className={styles.linksContainer}>
