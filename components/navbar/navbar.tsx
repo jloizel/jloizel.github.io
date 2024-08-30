@@ -78,7 +78,7 @@ const NavBar: React.FC = () => {
               ))}
             </div>
             <a href="/resume.pdf" download className={styles.downloadButton}>
-              &lt;Download Résumé&gt;          
+              My Résumé        
             </a>
           </div>
           <div className={`${styles.navbar} ${isSlidingDown ? styles.slideDown : styles.hidden}`}>
@@ -93,6 +93,9 @@ const NavBar: React.FC = () => {
                 </div>
               ))}
             </div>
+            <a href="/resume.pdf" download className={styles.downloadButton}>
+              My Résumé        
+            </a>
           </div>
         </div>
       )}
