@@ -74,14 +74,6 @@
     "header": "Skills",
     "sections": [
       {
-        "subHeader": "Soft Skills:",
-        "content": ["Leadership, Team player"]
-      },
-      {
-        "subHeader": "Languages:",
-        "content": ["French (native), English (native), Spanish (intermediate level)"]
-      },
-      {
         "subHeader": "Programming:",
         "content": ["TypeScript, JavaScript, Python, HTML, CSS, Frontend & Backend Web Development (React, Node.js, MongoDB, mongoose, Next.js)"]
       }
