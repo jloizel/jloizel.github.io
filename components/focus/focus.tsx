@@ -110,7 +110,7 @@ const Focus: React.FC = () => {
                 return null;
               }
               return (
-              <SwiperSlide key={item.id} className={styles.swiperSlide}>
+              <SwiperSlide key={item.id || index} className={styles.swiperSlide}>
                 <div className={styles.focus}>
                   <div className={styles.focusHeader}>
                     <IconComponent className={styles.icon} />
@@ -142,7 +142,7 @@ const Focus: React.FC = () => {
                 return null;
               }
               return (
-                <div className={styles.focus}>
+                <div key={item.id || index} className={styles.focus}>
                   <div className={styles.focusHeader}>
                     <IconComponent className={styles.icon} />
                     <span>

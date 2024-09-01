@@ -44,10 +44,10 @@ const ProjectCard: React.FC = () => {
   return (
     <div className={styles.projectCardContainer}>
         {data.map((projectCard, index) => (
-          <Bounce className={styles.card}>
-          <a className={styles.card} key={projectCard.id} href={projectCard.href}>
+          <Bounce className={styles.card} key={projectCard.id}>
+          <a className={styles.card} href={projectCard.href}>
             <div className={styles.imageContainer}>
-              <img className={styles.image} src={projectCard.image}/>
+              <img className={styles.image} src={projectCard.image} alt={projectCard.title}/>
             </div>
             <div className={styles.content}>
               <div className={styles.top}>
