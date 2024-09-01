@@ -43,11 +43,18 @@
     "sections": [
       {
         "subHeader": "Oct. 2017 - Jun. 2023",
-        "content": ["University of Sheffield — MEng Civil & Structural Engineering with a Year in Industry", "First Class Honours"]
+        "company": "University of Sheffield",
+        "content": ["— MEng Civil & Structural Engineering with a Year in Industry"],
+        "description": [
+          "First Class Honours"
+        ]
       },
       {
         "subHeader": "Sep. 2015 - Jun. 2017",
-        "content": ["International Option of the French Baccalauréat with scientific concentration", "15/20 Average"]
+        "content": ["International Option of the French Baccalauréat with scientific concentration"],
+        "description": [
+          "15/20 Average"
+        ]
       }
     ]
   },

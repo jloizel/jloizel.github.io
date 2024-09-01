@@ -139,7 +139,7 @@
   /* font-family: 'Poppins', sans-serif; */
   font-family: "Consolas" , "monaco" , "monospace"; 
   font-weight: 600;
-  font-size: 18px;
+  font-size: 17px;
   /* padding-left: 20px; */
   position: relative;
   
@@ -185,7 +185,7 @@
 
 .descriptionList {
   list-style-type: disc; 
-  margin: 0px 0 0 40px; 
+  margin: 0px 0 0 30px; 
   padding: 0;
 }
 
