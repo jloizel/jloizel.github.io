@@ -30,10 +30,6 @@
       {
         "subHeader": "Hobbies:",
         "content": ["Basketball, cooking, gym, sailing, chess"]
-      },
-      {
-        "subHeader": "Achievements:",
-        "content": ["Captain of the university basketball club for 4 years, nominated for fresher of the year, sports club member of the year and outstanding contribution award at the university's sports awards "]
       }
     ]
   },
@@ -116,7 +112,7 @@
     "sections": [
         {
             "subHeader": "Design & Engineering Tools:",
-            "content": ["Rhino, Grasshopper, AutoCAD, Revit"]
+            "content": ["Rhino, Grasshopper, AutoCAD, Revit, Spline"]
         },
         {
             "subHeader": "Version Control:",
