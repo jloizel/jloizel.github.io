@@ -54,11 +54,11 @@
 
 /* Hover effect to make other links transparent */
 .linksContainer:hover .link {
-  opacity: 0.5;
+  opacity: 0.5 !important;
 }
 
 .linksContainer .link:hover {
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 @media (max-width: 767px) {
