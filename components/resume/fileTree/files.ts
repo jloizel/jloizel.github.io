@@ -51,7 +51,13 @@ export const files: TFiles = {
               name: "skills",
               children: [
                 {
-                  name: "skills.tsx",
+                  name: "technicalSkills.tsx",
+                },
+                {
+                  name: "softwareAndTools.tsx",
+                },
+                {
+                  name: "languagesAndSoftSkills.tsx",
                 }            
               ],
             },

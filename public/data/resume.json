@@ -67,30 +67,75 @@
         "company": "AKT",
         "content": ["- Structural Engineering Design Engineer"],
         "description": [
-          "Led the design of structural components",
-          "Coordinated with project managers"
+          "Led the design of structural components using advanced computational tools",
+          "Collaborated with cross-functional teams to integrate structural designs into software workflows",
+          "Created custom scripts in Grasshopper to automate repetitive tasks and optimize structural designs",
+          "Utilized parametric design principles in Rhino and Grasshopper to explore and identify optimal structural solutions",
+          "Leveraged computational tools to optimize material usage, reducing waste on large-scale structural projects",
+          "Used Rhino and Grasshopper to create visually compelling presentations for clients and stakeholders"
         ]
       },
       {
         "subHeader": "Sep. 2021 - Jul. 2022",
         "company": "AKT",
-        "content": ["- Structural Engineering Intern"]
+        "content": ["- Structural Engineering Intern"],
+        "description": [
+          "Led the design of structural components",
+          "Coordinated with project managers",
+          "Led the design of structural components using advanced computational tools"
+        ]
       },
       {
         "subHeader": "Jun. 2020 - Jul. 2020",
         "company": "DPI Structures",
-        "content": ["- Structural Engineering Intern"]
+        "content": ["- Structural Engineering Intern"],
+        "description": [
+          "Conducted structural analysis using 3D modeling software",
+          "Automated design calculations through scripting to improve efficiency"
+        ]
       }
     ]
   },
   {
-    "fileName": "skills.tsx",
-    "header": "Skills",
+    "fileName": "technicalSkills.tsx",
+    "header": "Technical Skills",
     "sections": [
-      {
-        "subHeader": "Programming:",
-        "content": ["TypeScript, JavaScript, Python, HTML, CSS, Frontend & Backend Web Development (React, Node.js, MongoDB, mongoose, Next.js)"]
-      }
+        {
+            "subHeader": "Programming Languages & Technologies:",
+            "content": ["TypeScript, JavaScript, Python, HTML, CSS"]
+        },
+        {
+            "subHeader": "Web Development:",
+            "content": ["Frontend Development (React, Next.js)", "Backend Development (Node.js, Express)", "Database Management (MongoDB, Mongoose)"]
+        }
+    ]
+  },
+  {
+    "fileName": "softwareAndTools.tsx",
+    "header": "Software & Tools",
+    "sections": [
+        {
+            "subHeader": "Design & Engineering Tools:",
+            "content": ["Rhino, Grasshopper, AutoCAD, Revit"]
+        },
+        {
+            "subHeader": "Version Control:",
+            "content": ["Git, GitHub"]
+        }
+    ]
+  },
+  {
+    "fileName": "languagesAndSoftSkills.tsx",
+    "header": "Languages & Soft Skills",
+    "sections": [
+        {
+            "subHeader": "Languages:",
+            "content": ["English (Fluent)", "French (Fluent)", "Spanish (Conversational)"]
+        },
+        {
+            "subHeader": "Soft Skills:",
+            "content": ["Problem Solving", "Effective Communication", "Team Collaboration", "Adaptability", "Critical Thinking", "Time Management"]
+        }
     ]
   },
   {
