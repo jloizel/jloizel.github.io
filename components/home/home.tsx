@@ -7,6 +7,7 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import { IoIosArrowForward } from "react-icons/io";
 import { FaGithubSquare, FaNodeJs, FaReact } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { FaLongArrowAltDown } from "react-icons/fa";
 import OrbitingCircles from './orbitingCircles/orbitingCircles';
 import SplineScene from '../spline/spline';
@@ -47,7 +48,7 @@ function Home() {
       </div>
       <div className={styles.logos}>
         <a href="https://github.com/jloizel" target="_blank" style={{textDecoration: "none"}}>
-          <FaGithubSquare className={styles.logo}/>
+          <FaGithub className={styles.logo}/>
         </a>
         <a href="https://www.linkedin.com/in/jackloizel/" target="_blank" style={{textDecoration: "none"}}>
           <FaLinkedin className={styles.logo}/>
