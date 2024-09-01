@@ -70,9 +70,6 @@ export const files: TFiles = {
     },
     {
       name: "package.json", // Symbolic file containing an overview of your 'skills dependencies'
-    },
-    {
-      name: "yarn.lock" // Symbolizes dependency management in your projects
     }
   ]
 }
