@@ -57,15 +57,22 @@
     "sections": [
       {
         "subHeader": "Oct. 2023 - present",
-        "content": ["AKT II - Structural Engineering Design Engineer"]
+        "company": "AKT",
+        "content": ["- Structural Engineering Design Engineer"],
+        "description": [
+          "Led the design of structural components",
+          "Coordinated with project managers"
+        ]
       },
       {
         "subHeader": "Sep. 2021 - Jul. 2022",
-        "content": ["AKT II - Structural Engineering Intern"]
+        "company": "AKT",
+        "content": ["- Structural Engineering Intern"]
       },
       {
         "subHeader": "Jun. 2020 - Jul. 2020",
-        "content": ["DPI Structures - Structural Engineering Intern"]
+        "company": "DPI Structures",
+        "content": ["- Structural Engineering Intern"]
       }
     ]
   },

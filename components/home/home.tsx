@@ -9,7 +9,7 @@ import { FaGithubSquare, FaNodeJs, FaReact } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLongArrowAltDown } from "react-icons/fa";
-import OrbitingCircles from './orbitingCircles/orbitingCircles';
+import OrbitingCircles from '../orbitingCircles/orbitingCircles';
 import SplineScene from '../spline/spline';
 import Bounce from '../scrollAnimations/bounce';
 

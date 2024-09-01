@@ -5,8 +5,15 @@ import File from "./file";
 import { files } from "./files";
 import styles from "./filetree.module.css";
 import resumeSections from '../../../public/data/resume.json';
-import OrbitingCircles from "../../home/orbitingCircles/orbitingCircles";
+import OrbitingCircles from "../../orbitingCircles/orbitingCircles";
 import { FaFileDownload } from "react-icons/fa";
+
+interface ResumeSection {
+  subHeader: string;
+  company?: string;
+  content: string[];
+  description?: string[];
+}
 
 const FileTree = () => {
   const [selectedFile, setSelectedFile] = useState<string | null>("README.md");
@@ -15,8 +22,11 @@ const FileTree = () => {
     setSelectedFile(fileName);
   };
 
-  const resumeSection = resumeSections.find(section => section.fileName === selectedFile);
-
+  const resumeSection = resumeSections.find(section => section.fileName === selectedFile) as {
+    fileName: string;
+    header: string;
+    sections: ResumeSection[];
+  };
   const timeline = selectedFile === "education.tsx" || selectedFile === "workExperience.tsx";
 
   return (
@@ -52,10 +62,20 @@ const FileTree = () => {
                   </div>
                   <div className={styles.contentBox}>
                     {section.content.map((line: string, lineIndex: number) => (
-                      <div key={lineIndex}>
+                      <div key={lineIndex} className={styles.contentLine}>
+                        {section.company && <span className={styles.companyName}>{section.company} </span>}
                         {line}
                       </div>
                     ))}
+                    {section.description && (
+                      <ul className={styles.descriptionList}>
+                        {section.description.map((descLine, descIndex) => (
+                          <li key={descIndex} className={styles.descriptionItem}>
+                            {descLine}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </div>
                 </div>
               ))

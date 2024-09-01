@@ -10,7 +10,7 @@ type FileProps = {
   isExpanded?: boolean;
   selectedFile: string | null;
   handleClick: (fileName: string) => void;
-  resumeSection: any; // Replace with the appropriate type if known
+  resumeSection: any;
 }
 
 const File: FC<FileProps> = ({ file, depth, isExpanded = false, selectedFile, handleClick, resumeSection }) => {

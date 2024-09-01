@@ -23,7 +23,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: -1000; 
+  z-index: 1; 
 }
 
 .circle1 {
@@ -37,7 +37,7 @@
 }
 
 .logo1, .logo2 {
-  z-index: 1000;
+  z-index: 2;
 }
 
 /* Rotating logos on circle 1 */
