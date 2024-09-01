@@ -24,10 +24,11 @@ export default function Slide({ children, delay = 0, className }: Props) {
 
   return (
     <motion.div ref={ref} className={className} style={{ position: 'relative', overflow: 'hidden' }}>
+
       {/* Pink Curtain Reveal */}
       <motion.div
-        initial={{ translateX: "-100%" }}
-        animate={isInView ? { translateX: "100%" } : {}}
+        initial={{ translateX: "-100%" }} 
+        animate={isInView ? { translateX: "101%" } : {}} 
         transition={{
           duration: 0.5,
           delay: delay,
@@ -47,13 +48,13 @@ export default function Slide({ children, delay = 0, className }: Props) {
       {/* Main Content with Slide-Up Effect */}
       <motion.div
         variants={{
-          hidden: { opacity: 0, translateY: 50 },  // Initially hidden and below
-          visible: { opacity: 1, translateY: 0 },  // Slide into place
+          hidden: { opacity: 0, translateY: 50 },  
+          visible: { opacity: 1, translateY: 0 },  
         }}
         transition={{
-          duration: 0.2, // Control the slide-up duration
-          delay: delay + 0.5, // Ensure the slide-up starts after the curtain reveal
-          ease: "easeOut", // Smooth easing
+          duration: 0.2, 
+          delay: delay + 0.5, 
+          ease: "easeOut", 
         }}
         initial="hidden"
         animate={controls}
