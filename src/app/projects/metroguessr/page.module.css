@@ -197,6 +197,14 @@
   transition: all 0.3s ease-in-out;
 }
 
+.darkDescription a {
+  color: white;
+}
+
+.lightDescription a {
+  color: #8b8b8b;
+}
+
 .darkDescription a:hover {
   /* font-weight: 600; */
   color: white;
