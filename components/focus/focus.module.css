@@ -135,6 +135,7 @@
 .icon {
   color: white;
   font-size: 45px;
+  flex-shrink: 0
 }
 
 .focusHeader span {
