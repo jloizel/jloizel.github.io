@@ -37,7 +37,7 @@
 .header::after {
   content: ".";
   position: relative;
-  top: 2px; /* Adjust this value to align with the baseline */
+  top: 0px; 
   font-size: inherit;
   line-height: inherit;
   color: #E18EEC;
