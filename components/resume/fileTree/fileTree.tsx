@@ -37,7 +37,7 @@ const FileTree = () => {
             key={file.name}
             file={file}
             depth={1}
-            isExpanded={file.name === "README.md"} // Expanded by default if it's README
+            isExpanded={file.name === "README.md"} //Expanded by default if it's README
             selectedFile={selectedFile}
             handleClick={handleClick}
             resumeSection={resumeSection}
