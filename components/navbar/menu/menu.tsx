@@ -11,7 +11,7 @@ import Image from 'next/image';
 
 
 
-const Menu: React.FC<MenuProps> = ({}) => {
+const Menu: React.FC = ({}) => {
   const [open, setOpen] = useState(false);
 
   const handleDrawerOpen = () => {
