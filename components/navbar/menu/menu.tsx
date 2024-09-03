@@ -8,9 +8,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import styles from "./menu.module.css";
 import Image from 'next/image';
 
-interface MenuProps {
 
-}
 
 
 const Menu: React.FC<MenuProps> = ({}) => {
