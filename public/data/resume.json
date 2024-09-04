@@ -47,10 +47,7 @@
       },
       {
         "subHeader": "Sep. 2015 - Jun. 2017",
-        "content": ["International Option of the French Baccalauréat with scientific concentration"],
-        "description": [
-          "15/20 Average"
-        ]
+        "content": ["International Option of the French Baccalauréat with scientific concentration"]
       }
     ]
   },
@@ -111,12 +108,12 @@
     "header": "Software & Tools",
     "sections": [
         {
-            "subHeader": "Design & Engineering Tools:",
-            "content": ["Rhino, Grasshopper, AutoCAD, Revit, Spline"]
-        },
-        {
             "subHeader": "Version Control:",
             "content": ["Git, GitHub"]
+        },
+        {
+            "subHeader": "Design & Engineering Tools:",
+            "content": ["Rhino, Grasshopper, AutoCAD, Revit, Spline"]
         }
     ]
   },
