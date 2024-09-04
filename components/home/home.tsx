@@ -12,6 +12,7 @@ import { FaLongArrowAltDown } from "react-icons/fa";
 import OrbitingCircles from '../orbitingCircles/orbitingCircles';
 import SplineScene from '../spline/spline';
 import Bounce from '../scrollAnimations/bounce';
+import { createTheme, useMediaQuery } from '@mui/material';
 
 const phrases = [
   'Part time coder',
@@ -28,14 +29,30 @@ function Home() {
     }
   };
 
+  const theme = createTheme({
+    breakpoints: {
+      values: {
+        xs: 0,
+        sm: 768,
+        md: 1024,
+        lg: 1200,
+        xl: 1536,
+      },
+    },
+  });
+
+  const isComputer = useMediaQuery(theme.breakpoints.up('md'));
+
   return (
     <div className={styles.home} id="home">
       {/* <div className={styles.orbitingCircles}> */}
         {/* <OrbitingCircles/> */}
       {/* </div> */}
-      <div className={styles.splineSceneContainer}>
-        <SplineScene />
-      </div>
+      {isComputer && (
+        <div className={styles.splineSceneContainer}>
+          <SplineScene />
+        </div>
+      )}
       <Bounce>
         <div className={styles.header}>
           JACK LOIZEL
