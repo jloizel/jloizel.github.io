@@ -89,7 +89,7 @@ const ContactForm: FC = () => {
                 value={formData.name}
                 onChange={handleChange}
                 className={styles.input}
-                placeholder="{enter user name}"
+                placeholder="{enter name}"
               />          
             </div>
             {errors?.name && (
@@ -109,7 +109,7 @@ const ContactForm: FC = () => {
                 value={formData.email}
                 onChange={handleChange}
                 className={styles.input}
-                placeholder="{enter user email}"
+                placeholder="{enter email}"
               />
             </div>
             {errors?.email && (
@@ -129,7 +129,7 @@ const ContactForm: FC = () => {
                 value={formData.message}
                 onChange={handleChange}
                 className={styles.textArea}
-                placeholder="{enter user message}"
+                placeholder="{enter message}"
                 // minRows={2}
               />
             </div>
