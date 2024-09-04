@@ -122,9 +122,11 @@ const Focus: React.FC = () => {
                   </div>
                   <div className={styles.focusContent}>
                     <pre>&lt;body&gt;</pre>
-                    <div className={styles.focusContentText}>
-                      {item.content}
-                    </div>
+                    <Slide>
+                      <div className={styles.focusContentText}>
+                        {item.content}
+                      </div>
+                    </Slide>
                     <pre>&lt;/body&gt;</pre>
                   </div>
                 </div>

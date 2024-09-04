@@ -55,7 +55,8 @@ const ProjectCard: React.FC = () => {
                 {/* <div className={styles.details}>{projectCard.details}</div> */}
                 <div className={styles.line}></div>
                 <div className={styles.icons}>
-                  <FaGithub/><IoIosLink/>
+                  <FaGithub className={styles.icon}/>
+                  <IoIosLink className={styles.icon}/>
                 </div>
               </div>
               <div className={styles.languages}>{projectCard.languages}</div>

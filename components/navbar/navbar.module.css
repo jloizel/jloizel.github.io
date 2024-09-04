@@ -19,7 +19,7 @@
   align-items: center;
   padding: 0 40px;
   z-index: 101;
-  background-color: rgba(63, 72, 94, 0.675); 
+  background-color: #0f172a9f; 
   backdrop-filter: blur(8px);
   transition: top 0.6s ease-in;
   justify-content: space-between;

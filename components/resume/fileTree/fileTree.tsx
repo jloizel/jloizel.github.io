@@ -62,7 +62,7 @@ const FileTree = () => {
                   </div>
                   <div className={styles.contentBox}>
                     {section.content.map((line: string, lineIndex: number) => (
-                      <div key={lineIndex} className={styles.contentLine}>
+                      <div key={lineIndex} className={section.subHeader ? styles.contentLine : ""}>
                         {section.company && <span className={styles.companyName}>{section.company} </span>}
                         {line}
                       </div>
