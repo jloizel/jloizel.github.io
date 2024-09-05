@@ -15,18 +15,29 @@
 .home {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 80px);
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
+  justify-content: flex-end;
   z-index: 100;
 }
 
-.splineSceneContainer {
+/* .splineSceneContainer {
   height: 40%;
   width: 100%;
+} */
+
+.splineSceneContainer {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45%;
+  z-index: -1; 
+  /* overflow: hidden; */
 }
 
 .splineScene {
@@ -107,7 +118,8 @@
 }
 
 .scroller {
-  margin-top: 100px;
+  margin-top: 80px;
+  margin-bottom: 40px;
   cursor: pointer;
   animation: up-down 1.5s ease infinite;
 }
