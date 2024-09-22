@@ -26,6 +26,7 @@ const Menu: React.FC = ({}) => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
+      setOpen(false)
     }
   };
 
@@ -47,7 +48,7 @@ const Menu: React.FC = ({}) => {
             />
           </div>
           <div className={styles.menuLinks}>
-            <div className={styles.link} onClick={() => jumpToSection("home")}>
+            <div className={styles.link} onClick={() => jumpToSection("navbar")}>
               // home
             </div>
             <div className={styles.link} onClick={() => jumpToSection("focus")}>

@@ -1,12 +1,18 @@
-/* .menuContainer {
+.menuContainer {
   width: 100%;
-} */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 
 .menuIcon {
   color: white;
   /* background-color: rgba(255, 255, 255, 0.08); */
   cursor: pointer;
-  font-size: 30px !important;
+  font-size: 40px !important;
+  justify-self: flex-end;
+  width: 100%;
+  padding: 20px;
 }
 
 .container {

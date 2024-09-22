@@ -7,7 +7,8 @@ export default function SplineScene() {
   return (
     // <Spline scene="https://prod.spline.design/9nxhJkCellODUkIn/scene.splinecode" />
     // <div className={styles.container}>
-      <Suspense fallback={<div>Loading...</div>}>
+      // <Suspense fallback={<div>Loading...</div>}>
+      <Suspense>
         <Spline scene="https://prod.spline.design/bI6wGt069uMkN3el/scene.splinecode" />
       </Suspense>
     // </div>

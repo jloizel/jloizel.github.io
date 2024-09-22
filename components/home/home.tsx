@@ -13,7 +13,6 @@ import OrbitingCircles from '../orbitingCircles/orbitingCircles';
 import SplineScene from '../spline/spline';
 import Bounce from '../scrollAnimations/bounce';
 import { createTheme, useMediaQuery } from '@mui/material';
-import Scene from '../spline/spline2';
 
 const phrases = [
   'Part time coder',
@@ -52,7 +51,6 @@ function Home() {
       {isComputer && (
         <div className={styles.splineSceneContainer}>
           <SplineScene />
-          {/* <Scene/> */}
         </div>
       )}
       <Bounce>
