@@ -23,6 +23,7 @@
   width: 100%;
   align-self: center;
   gap: 10px;
+  justify-content: center;
 }
 
 .header {
@@ -42,8 +43,8 @@
   /* align-self: center; */
   gap: 10px;
   
-  @media (min-width: 768px) and (max-width: 1023px) {
-  
+  @media (max-width: 767px) {
+    /* margin-bottom: 20px; */
   }
   
   @media (min-width: 1024px) {

@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react';
 import styles from "./resume.module.css"
 import ProjectCard from '../projects/projectCard/projectCard';
@@ -5,8 +7,24 @@ import { IoIosArrowForward } from "react-icons/io";
 import FileTree from './fileTree/fileTree';
 import Slide from '../scrollAnimations/slide';
 import Bounce from '../scrollAnimations/bounce';
+import { createTheme, useMediaQuery } from '@mui/material';
 
 function Resume() {
+
+  const theme = createTheme({
+    breakpoints: {
+      values: {
+        xs: 0,
+        sm: 768,
+        md: 1024,
+        lg: 1200,
+        xl: 1536,
+      },
+    },
+  });
+
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
   return (
     <div className={styles.resume} id="resume">
       <div className={styles.content}>
@@ -18,7 +36,7 @@ function Resume() {
               <span className={styles.cursor}/>
             </Slide>
           </div>
-          <div className={styles.line}/>
+          {!isMobile && (<div className={styles.line}/>)}
         </div>
         <Bounce>
           <a href="/resume.pdf" download className={styles.downloadButton}>

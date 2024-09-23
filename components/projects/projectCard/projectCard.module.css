@@ -3,21 +3,21 @@
   justify-content: center;
   gap: 40px;
   /* padding: 16px; */
-  margin-top: 50px;
-  width: 80%;
+  margin-top: 30px;
+  width: 100%;
 
   @media (max-width: 767px) {
     flex-direction: column;
   }
 
-  @media (min-width: 768px) and (max-width: 1023px) {
+  @media (min-width: 768px) {
 
   }
   
   @media (min-width: 1024px) {
     flex-wrap: wrap;
-    width: 100%;
     gap: 40px;
+    margin-top: 50px;
   }
 }
 
@@ -32,7 +32,7 @@
   cursor: pointer !important;
   text-decoration: none;
   /* width: 80%; */
-  height: 450px;
+  height: 400px;
   /* flex-grow: 1; */
 
   @media (min-width: 768px) and (max-width: 1023px) {
@@ -40,7 +40,8 @@
   }
   
   @media (min-width: 1024px) {
-    width: 400px; /* Set a fixed width for the cards */
+    width: 400px; 
+    height: 450px;
   }
 }
 
@@ -61,12 +62,16 @@
 .imageContainer {
   width: 100%;
   aspect-ratio: 16/9;
-  background: var(--background-light);
+  /* background: var(--background-light); */
   cursor: pointer;
   position: relative;
   border-radius: .8rem;
   overflow: hidden;
-  height: 50%;
+  height: 45%;
+
+  @media (min-width: 768px) {
+    height: 50%;
+  }
 }
 
 .image {
@@ -82,10 +87,18 @@
 .content {
   display: flex;
   flex-direction: column;
-  padding: 30px 20px;
+  padding: 0px 20px;
   transition: opacity 0.3s ease;
   gap: 10px;
   height: 50%;
+
+  @media (max-width: 767px) {
+    margin-top: 20px;
+  }
+
+  @media (min-width: 768px) {
+    padding: 30px 20px;
+  }
 }
 
 

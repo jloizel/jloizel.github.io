@@ -10,11 +10,25 @@ import Slide from '../scrollAnimations/slide';
 
 const Projects: React.FC = () => {
 
+  const theme = createTheme({
+    breakpoints: {
+      values: {
+        xs: 0,
+        sm: 768,
+        md: 1024,
+        lg: 1200,
+        xl: 1536,
+      },
+    },
+  });
+
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
   return (
     <div className={styles.projects} id="projects">
       <div className={styles.content}>
         <div className={styles.headerContainer}>
-          <div className={styles.line}/>
+          {!isMobile && (<div className={styles.line}/>)}
           <div className={styles.header}>
             <Slide>
               {/* <IoIosArrowForward className={styles.icon}/> */}
