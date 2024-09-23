@@ -59,10 +59,14 @@
 
 .contactForm {
   display: flex;
-  width: 50%;
+  width: 100%;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+
+  @media (min-width: 768px) {
+    width: 50%;
+  }
 }
 
 .contactDetailsContainer {

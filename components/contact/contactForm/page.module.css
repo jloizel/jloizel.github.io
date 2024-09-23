@@ -34,6 +34,7 @@
   font-family: "Roboto Mono", monospace;
   color: #E6E6E5;
   width: max-content;
+  white-space: nowrap;
 }
 
 .icon {
