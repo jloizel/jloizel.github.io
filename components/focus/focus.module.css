@@ -1,5 +1,5 @@
 .focusContainer {
-  width: 80%;
+  width: 85%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,6 +21,7 @@
   width: 100%;
   align-self: center;
   gap: 10px;
+  justify-content: center;
 }
 
 .header {
@@ -39,8 +40,8 @@
   align-self: center;
   gap: 10px;
   
-  @media (min-width: 768px) and (max-width: 1023px) {
-  
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
   }
   
   @media (min-width: 1024px) {
@@ -84,12 +85,6 @@
   }
 }
 
-.line {
-  width: 100%;
-  height: 1px;
-  background-color: rgba(201, 201, 201, 0.432);
-}
-
 .box {
   display: flex;
   justify-content: center;
@@ -103,7 +98,7 @@
 
 .focus {
   flex: 1;
-  padding: 30px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -112,7 +107,7 @@
   /* height: 100%; */
   border-right: none;
   border-top: 3px solid #A3A3A3;
-  border-bottom: 3px solid #A3A3A3;;
+  border-bottom: 3px solid #A3A3A3;
 }
 
 .focus:first-child {
@@ -134,8 +129,12 @@
 
 .icon {
   color: white;
-  font-size: 45px;
-  flex-shrink: 0
+  font-size: 30px;
+  flex-shrink: 0;
+
+  @media (min-width: 768px) {
+    font-size: 45px;
+  }
 }
 
 .focusHeader span {
@@ -143,8 +142,12 @@
   flex-direction: column;
   color: white;
   position: relative;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
+
+  @media (min-width: 768px) {
+    font-size: 24px;
+  }
 }
 
 .focusHeader span div {
@@ -154,23 +157,26 @@
   width: max-content;
 }
 
-.underline, .underline2, .underline3 {
+.underline {
   position: relative;
   z-index: 1;
 }
 
-.underline::before, .underline2::before, .underline3::before {
+.underline::before {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0.1rem; /* Adjust this value to move the line higher or lower */
+  bottom: 0.1rem; 
   width: 100%;
-  height: 0.5rem; /* Adjust the thickness of the line */
-  z-index: -1; /* Ensure the line is behind the text */
+  height: 8px; 
+  z-index: -1; 
+  background-color: var(--underline-color);
 }
 
-.underline::before {
-  background-color: var(--underline-color);
+@media (min-width: 768px) {
+  .underline::before {
+    height: 11px;
+  }
 }
 
 .focusContent {
@@ -202,9 +208,13 @@
 .focusContentText {
   position: relative;
   padding-left: 60px;
-  margin: 20px 0;
-  font-size: 16px;
+  margin: 25px 0;
+  font-size: 15px;
   width: 80%;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 .focusContentText::before {
@@ -220,15 +230,6 @@
 .swiperContainer {
   align-self: center;
   width: 100%;
-  
-  @media (min-width: 768px) and (max-width: 1023px) {
-    width: 60%;
-  }
-  
-  @media (min-width: 1024px) {
-    /* width: 80%; */
-    max-width: 650px;
-  }
 }
 
 .swiper {
@@ -238,5 +239,6 @@
 
 .swiperSlide {
   display: flex !important;
-  justify-content: center !important
+  justify-content: center !important;
+  margin-bottom: 60px;
 }

@@ -88,14 +88,14 @@ const Focus: React.FC = () => {
             <span className={styles.cursor}/>
           </Slide>
         </div>
-        <div className={styles.line}/>
+        {!isMobile && (<div className={styles.line}/>)}
       </div>
       {isMobile ? (
         <div className={styles.swiperContainer}>
           <Swiper
             slidesPerView={1}
             centeredSlides={true}
-            initialSlide={1}
+            initialSlide={0}
             spaceBetween={32}
             pagination={{
               clickable: true,
@@ -115,8 +115,9 @@ const Focus: React.FC = () => {
                   <div className={styles.focusHeader}>
                     <IconComponent className={styles.icon} />
                     <span>
-                    <div className={styles.underline} style={{ '--underline-color': item.color } as CustomCSSProperties}>{item.header}
-                    </div>
+                      <div className={styles.underline} style={{ '--underline-color': item.color } as CustomCSSProperties}>
+                        {item.header}
+                      </div>
                       {item.subheader}
                     </span>
                   </div>

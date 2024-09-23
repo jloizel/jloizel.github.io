@@ -108,6 +108,10 @@
   align-items: center;
   gap: 6px;
   white-space: nowrap;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 .line {
