@@ -139,17 +139,18 @@ const ContactForm: FC = () => {
               </p>
             )}
           </div>
-          <button
-            className={styles.button} type="submit"
-          >
-            Send Message
-          </button>
+          <div className={styles.buttonContainer}>
+            <button className={styles.button} type="submit">
+              Send Message
+            </button>
+          </div>
+          
         </form>
       )}
       {messageSent && (
         <div className={styles.successMessageContainer}>
           <div className={styles.successMessage}>
-            Thank you for your message, I will be in contact as soon as possible.
+            Thank you for your message, I will be in contact with you as soon as possible.
           </div>
         </div>
       )}
