@@ -95,11 +95,11 @@
     "sections": [
         {
             "subHeader": "Programming Languages & Technologies:",
-            "content": ["TypeScript, JavaScript, Python, HTML, CSS"]
+            "content": ["• TypeScript", "• JavaScript", "• Python", "• HTML", "• CSS"]
         },
         {
             "subHeader": "Web Development:",
-            "content": ["Frontend Development (React, Next.js)", "Backend Development (Node.js, Express)", "Database Management (MongoDB, Mongoose)"]
+            "content": ["• Frontend Development (React, Next.js)", " • Backend Development (Node.js, Express)", "• Database Management (MongoDB, Mongoose)"]
         }
     ]
   },
@@ -109,11 +109,11 @@
     "sections": [
         {
             "subHeader": "Version Control:",
-            "content": ["Git, GitHub"]
+            "content": ["• Git", "• GitHub"]
         },
         {
             "subHeader": "Design & Engineering Tools:",
-            "content": ["Rhino, Grasshopper, AutoCAD, Revit, Spline"]
+            "content": ["• Rhino", "• Grasshopper", "• AutoCAD", "• Revit", "• Spline"]
         }
     ]
   },
@@ -123,11 +123,11 @@
     "sections": [
         {
             "subHeader": "Languages:",
-            "content": ["English (Fluent)", "French (Fluent)", "Spanish (Conversational)"]
+            "content": ["• English (Fluent)", "• French (Fluent)", "• Spanish (Conversational)"]
         },
         {
             "subHeader": "Soft Skills:",
-            "content": ["Problem Solving", "Effective Communication", "Team Collaboration", "Adaptability", "Critical Thinking", "Time Management"]
+            "content": ["• Problem Solving", "• Effective Communication", "• Team Collaboration", "• Adaptability", "• Critical Thinking", "• Time Management"]
         }
     ]
   },

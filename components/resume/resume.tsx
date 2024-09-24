@@ -8,6 +8,7 @@ import FileTree from './fileTree/fileTree';
 import Slide from '../scrollAnimations/slide';
 import Bounce from '../scrollAnimations/bounce';
 import { createTheme, useMediaQuery } from '@mui/material';
+import FileTreeMobile from './fileTree/fileTreeMobile';
 
 function Resume() {
 
@@ -42,7 +43,11 @@ function Resume() {
           <a href="/resume.pdf" download className={styles.downloadButton}>
             &lt;Download Résumé&gt;          
           </a>
-          <FileTree/>
+          {isMobile ? (
+            <FileTreeMobile/>
+          ) : (
+            <FileTree/>
+          )}
         </Bounce>
       </div>
     </div>

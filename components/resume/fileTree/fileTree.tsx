@@ -28,6 +28,7 @@ const FileTree = () => {
     sections: ResumeSection[];
   };
   const timeline = selectedFile === "education.tsx" || selectedFile === "workExperience.tsx";
+  const skills = selectedFile === "technicalSkills.tsx" || selectedFile === "softwareAndTools.tsx" || selectedFile === "languagesAndSoftSkills.tsx";
 
   return (
     <div className={styles.container}>
@@ -56,7 +57,7 @@ const FileTree = () => {
               </div>
             ) : (
               resumeSection.sections?.map((section, index) => (
-                <div key={index} className={timeline ? styles.section2 : styles.section}>
+                <div key={index} className={skills || timeline ? styles.section2 : styles.section}>
                   <div className={timeline ? styles.subHeaderWithCircle : styles.subHeader}>
                     {section.subHeader}
                   </div>
