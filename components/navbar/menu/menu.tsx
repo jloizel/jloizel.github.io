@@ -63,6 +63,9 @@ const Menu: React.FC = ({}) => {
             <div className={styles.link} onClick={() => jumpToSection("contact")}>
               // contact
             </div>
+            <a href="/resume.pdf" download className={styles.downloadButton}>
+              My Résumé        
+            </a>
           </div>
         </div>
       </Drawer>

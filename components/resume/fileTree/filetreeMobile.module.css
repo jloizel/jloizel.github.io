@@ -5,7 +5,8 @@
   margin-top: 20px;
   width: 100%;
   /* justify-content: center; */
-  border: solid 1px rgba(128, 128, 128, 0.5);
+  /* border: solid 1px rgba(128, 128, 128, 0.5); */
+  background-color: #10192ed7;
   padding: 10px;
 }
 

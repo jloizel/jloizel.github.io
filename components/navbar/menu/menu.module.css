@@ -55,3 +55,24 @@
 .link:hover {
   color: #E18EEC;
 }
+
+.downloadButton {
+  /* background-color: #007bff; */
+  color: #E18EEC;
+  cursor: pointer !important;
+  /* font-size: 20px; */
+  font-weight: 500;
+  font-family: "Roboto Mono", monospace;
+  transition: all 0.3s ease-in-out;
+  width: max-content;
+  border: solid 1px #E18EEC;
+  border-radius: 4px;
+  padding: 10px 50px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.downloadButton:hover {
+  color: black;
+  background-color: #E18EEC;
+}
