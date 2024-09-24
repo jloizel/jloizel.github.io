@@ -1,10 +1,14 @@
 .footer {
   /* width: 100%; */
-  padding: 40px;
+  padding: 30px 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   z-index: 100;
+
+  @media (min-width: 768px) {
+    padding: 40px;
+  }
 }
 
 .left {
@@ -20,6 +24,16 @@
 
 .icon {
   font-size: 16px;
+}
+
+.footerText {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 5px;
+  }
 }
 
 .right {

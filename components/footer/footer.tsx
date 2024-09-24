@@ -29,7 +29,10 @@ const Footer: React.FC<FooterProps> = ({mode}) => {
     <div className={styles.footer}>
       <div className={styles.left}>
         <AiOutlineCopyright className={styles.icon}/>
-        Jack Loizel 2024. All rights reserved.
+        <div className={styles.footerText}>
+          <span>Jack Loizel 2024.</span>
+          <span>All rights reserved.</span>
+        </div>
       </div>
       <div className={styles.right}>
         <div className={styles.logoContainer}>
