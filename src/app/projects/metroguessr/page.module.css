@@ -26,10 +26,6 @@
   background: none;
   background-color: transparent;
   gap: 10px;
-
-  @media (max-width: 767px) {
-    justify-content: flex-end;
-  }
 }
 
 .link, .linkDark {
@@ -69,13 +65,17 @@
 
 .arrowContainer {
   position: fixed;
-  top: 120px;     /* Position it 20px from the top of the viewport */
-  left: 30px;    /* Position it 20px from the left of the viewport */
-  z-index: 1000; /* Ensure it stays on top of other content */
+  top: 70px;
+  left: 30px;    
+  z-index: 1000; 
   display: flex;
   align-items: center;
   cursor: pointer;
   gap: 10px;
+
+  @media (min-width: 768px) {
+    top: 120px;   
+  }
 }
 
 .backText {
@@ -119,9 +119,16 @@
 
 .toggleContainer {
   position: fixed;
-  top: 40%;   /* One-third of the way down from the top */
-  transform: translateY(-50%);
-  z-index: 1000; /* Ensure it stays above other content */
+  top: 85px;   
+  z-index: 1000; 
+  
+  @media (max-width: 767px) {
+    right: 30px;
+  }
+
+  @media (min-width: 768px) {
+    top: 40%;   
+  }
 }
 
 .content {
