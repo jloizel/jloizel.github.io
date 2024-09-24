@@ -35,7 +35,7 @@ const FileTreeMobile = () => {
     sections: ResumeSection[];
   };
   const timeline = selectedFile === "education.tsx" || selectedFile === "workExperience.tsx";
-  const skills = selectedFile === "technicalSkills.tsx" || selectedFile === "softwareAndTools.tsx" || selectedFile === "languagesAndSoftSkills.tsx";
+  const skills = selectedFile === "technicalSkills.tsx" || selectedFile === "softwareAndTools.tsx" || selectedFile === "languagesAndSoftSkills.tsx" || selectedFile === "about.tsx";
 
 
   return (

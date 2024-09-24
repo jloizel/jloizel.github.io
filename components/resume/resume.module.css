@@ -24,6 +24,7 @@
   width: 100%;
   align-self: center;
   gap: 10px;
+  justify-content: center;
 }
 
 .header {
@@ -95,6 +96,15 @@
   @media (min-width: 1024px) {
     width: 800px;
     font-size: 18px;
+  }
+}
+
+.downloadButtonContainer {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: 768px) {
+    justify-content: flex-start;
   }
 }
 

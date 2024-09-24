@@ -3,6 +3,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  box-shadow: none;
 }
 
 .menuIcon {
@@ -39,14 +40,14 @@
   width: 100%;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 50px;
 }
 
 .link {
   color: white;
   font-family: "Roboto Mono", monospace;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 20px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }

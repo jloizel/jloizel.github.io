@@ -40,9 +40,11 @@ function Resume() {
           {!isMobile && (<div className={styles.line}/>)}
         </div>
         <Bounce>
-          <a href="/resume.pdf" download className={styles.downloadButton}>
-            &lt;Download Résumé&gt;          
-          </a>
+          <div className={styles.downloadButtonContainer}>
+            <a href="/resume.pdf" download className={styles.downloadButton}>
+              &lt;Download Résumé&gt;          
+            </a>
+          </div>
           {isMobile ? (
             <FileTreeMobile/>
           ) : (
