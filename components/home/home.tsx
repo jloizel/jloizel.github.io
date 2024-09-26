@@ -15,7 +15,7 @@ import Bounce from '../scrollAnimations/bounce';
 import { createTheme, useMediaQuery } from '@mui/material';
 
 const phrases = [
-  'Part time coder',
+  'Passionate coder',
   'Tech enthusiast',
   'Problem solver'
 ];

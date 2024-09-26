@@ -97,21 +97,21 @@ const EngeniousPage = () => {
         <div className={styles.images}>
           <div className={styles.imageContainer}>
             <img
-              src="/images/Engenious/1.png"
+              src="/images/HoopsToGlory/1.png"
               alt="Engenious Screenshot"
               className={styles.image}
             />
           </div>
           <div className={styles.imageContainer}>
             <img
-              src="/images/Engenious/2.png"
+              src="/images/HoopsToGlory/2.png"
               alt="Engenious Screenshot"
               className={styles.image}
             />
           </div>
           <div className={styles.imageContainer}>
             <img
-              src="/images/Engenious/3.png"
+              src="/images/HoopsToGlory/3.png"
               alt="Engenious Screenshot"
               className={styles.image}
             />

@@ -11,6 +11,8 @@ import Footer from '../../../../components/footer/footer'
 import ProjectNav from '../../../../components/projectNav/projectNav'
 import { RiGitRepositoryLine } from 'react-icons/ri'
 import { FaGithub } from 'react-icons/fa'
+import Slide from '../../../../components/scrollAnimations/slide'
+import Bounce from '../../../../components/scrollAnimations/bounce'
 
 
 const EngeniousPage = () => {
@@ -70,51 +72,62 @@ const EngeniousPage = () => {
       </div>
       <div className={styles.content}>
         <div className={mode === 'dark' ? styles.darkHeader : styles.lightHeader}>
-          Engenious
-          <a className={styles.repo} href="https://github.com/jloizel/Engenious" target="_blank">
-            <FaGithub className={styles.repoIcon}/>            
-            Source Code
-          </a>
+          <Slide>
+            Engenious
+            <a className={styles.repo} href="https://github.com/jloizel/Engenious" target="_blank">
+              <FaGithub className={styles.repoIcon}/> Source Code      
+            </a>
+          </Slide>
         </div>
         <div className={styles.subHeader}>
           <div className={mode === 'dark' ? styles.darkDescription : styles.lightDescription}>
-            Custom-designed website created for Engenious, a leading recruitment firm specializing in the construction industry, developed to enhance their online presence, streamline their recruitment processes, and effectively connect with both clients and job seekers in the construction sector. The site features a user-friendly interface and robust functionality tailored to meet the specific needs of Engenious and its audience.
+            <Slide>
+              Custom-designed website created for Engenious, a leading recruitment firm specializing in the construction industry, developed to enhance their online presence, streamline their recruitment processes, and effectively connect with both clients and job seekers in the construction sector. The site features a user-friendly interface and robust functionality tailored to meet the specific needs of Engenious and its audience.
+            </Slide>
           </div>
           <div className={styles.info}>
-            <div className={styles.detailsContainer}>
-              <span className={mode === 'dark' ? styles.darkDetailsHeader : styles.lightDetailsHeader}>
-                Technologies
-              </span>
-              <span className={mode === 'dark' ? styles.darkDetails : styles.lightDetails}>
-                React, Typescript, MongoDB
-              </span>
-            </div>
-            <a className={mode === 'dark' ? styles.darkOpen : styles.lightOpen} href="https://engenious.vercel.app/" target='_blank'>
-              Live Project <FaArrowRightLong className={mode === 'dark' ? styles.darkLongArrow : styles.lightLongArrow}/>
-            </a>
+            <Slide>
+              <div className={styles.detailsContainer}>
+                <span className={mode === 'dark' ? styles.darkDetailsHeader : styles.lightDetailsHeader}>
+                  Technologies
+                </span>
+                <span className={mode === 'dark' ? styles.darkDetails : styles.lightDetails}>
+                  React, Typescript, MongoDB
+                </span>
+              </div>
+              <a className={mode === 'dark' ? styles.darkOpen : styles.lightOpen} href="https://engenious.vercel.app/" target='_blank'>
+                Live Project <FaArrowRightLong className={mode === 'dark' ? styles.darkLongArrow : styles.lightLongArrow}/>
+              </a>
+            </Slide>
           </div>
         </div>
         <div className={styles.images}>
           <div className={styles.imageContainer}>
-            <img
-              src="/images/Engenious/1.png"
-              alt="Engenious Screenshot"
-              className={styles.image}
-            />
+            <Bounce>
+              <img
+                src="/images/Engenious/1.png"
+                alt="Engenious Screenshot"
+                className={styles.image}
+              />
+            </Bounce>
           </div>
           <div className={styles.imageContainer}>
-            <img
-              src="/images/Engenious/2.png"
-              alt="Engenious Screenshot"
-              className={styles.image}
-            />
+            <Bounce>
+              <img
+                src="/images/Engenious/2.png"
+                alt="Engenious Screenshot"
+                className={styles.image}
+              />
+            </Bounce>
           </div>
           <div className={styles.imageContainer}>
-            <img
-              src="/images/Engenious/3.png"
-              alt="Engenious Screenshot"
-              className={styles.image}
-            />
+            <Bounce>
+              <img
+                src="/images/Engenious/3.png"
+                alt="Engenious Screenshot"
+                className={styles.image}
+              />
+            </Bounce>
           </div>
         </div>
       </div>

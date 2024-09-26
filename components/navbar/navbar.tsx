@@ -11,7 +11,8 @@ const NavBar: React.FC = () => {
   const [isSlidingDown, setIsSlidingDown] = useState(false);
 
   const scrollToSection = (sectionId: string) => {
-    const section = document.getElementById(sectionId);
+    const cleanSectionId = sectionId.replace('// ', ''); // Remove the "// " part
+    const section = document.getElementById(cleanSectionId);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
     }
@@ -64,7 +65,7 @@ const NavBar: React.FC = () => {
         <div>
           <div className={`${styles.fixedNavbar} ${isSlidingDown ? styles.hidden : ""}`}>
             <div className={styles.linksContainer}>
-              {['// home', '// focus', '// projects', '// resume', '// contact'].map((section, index) => (
+              {['// home', '// focus', '// projects', '// résumé', '// contact'].map((section, index) => (
                 <motion.div
                   key={section}
                   className={styles.link}
@@ -83,7 +84,7 @@ const NavBar: React.FC = () => {
           </div>
           <div className={`${styles.navbar} ${isSlidingDown ? styles.slideDown : styles.hidden}`}>
             <div className={styles.linksContainer}>
-              {['// home', '// focus', '// projects', '// resume', '//  contact'].map((section) => (
+              {['// home', '// focus', '// projects', '// résumé', '//  contact'].map((section) => (
                 <div
                   key={section}
                   className={`${styles.link}`}
