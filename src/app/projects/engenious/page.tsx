@@ -82,7 +82,7 @@ const EngeniousPage = () => {
         <div className={styles.subHeader}>
           <div className={mode === 'dark' ? styles.darkDescription : styles.lightDescription}>
             <Slide>
-              Custom-designed website created for Engenious, a leading recruitment firm specializing in the construction industry, developed to enhance their online presence, streamline their recruitment processes, and effectively connect with both clients and job seekers in the construction sector. The site features a user-friendly interface and robust functionality tailored to meet the specific needs of Engenious and its audience.
+              Developed a custom-designed website for Engenious, a leading recruitment firm specializing in the construction industry. The website was created to enhance their online presence, streamline recruitment processes, and effectively connect clients with job seekers within the construction sector. The site incorporates a user-friendly interface that prioritizes ease of navigation, ensuring that both clients and candidates can access information efficiently. It also includes robust functionality tailored to the specific needs of Engenious and its audience, providing a seamless experience throughout the recruitment journey.
             </Slide>
           </div>
           <div className={styles.info}>
