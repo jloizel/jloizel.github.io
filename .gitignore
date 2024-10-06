@@ -11,10 +11,10 @@
 
 # next.js
 /.next/
-/out/
+# /out/ (Remove or comment this line)
 
 # production
-/build
+# /build (Keep this line to ignore build output)
 
 # misc
 .DS_Store
