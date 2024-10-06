@@ -6,7 +6,7 @@ const PDFDownload = () => {
   return (
     <div className={styles.downloadContainer}>
       <a href="/resume.pdf" download className={styles.downloadButton}>
-        <FaFileDownload /> Download Resume
+        <FaFileDownload /> Download Résumé
       </a>
     </div>
     
