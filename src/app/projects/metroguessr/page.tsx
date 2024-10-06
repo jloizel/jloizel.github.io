@@ -15,7 +15,7 @@ import ScrollArrow from '../../../../components/scrollArrow/scrollArrow'
 import { FaGithub } from 'react-icons/fa'
 
 
-const metroguessrPage: React.FC = () => {
+const MetroguessrPage: React.FC = () => {
   const [mode, setMode] = useState("dark");
   
   const nextProject = "Engenious"
@@ -133,4 +133,4 @@ const metroguessrPage: React.FC = () => {
   )
 }
 
-export default metroguessrPage
+export default MetroguessrPage
