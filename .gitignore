@@ -11,7 +11,7 @@
 
 # next.js
 /.next/
-# /out/ (Remove or comment this line)
+/out/
 
 # production
 # /build (Keep this line to ignore build output)
