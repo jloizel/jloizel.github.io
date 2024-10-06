@@ -7,7 +7,8 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import CloseIcon from '@mui/icons-material/Close';
 import styles from "./menu.module.css";
 import Image from 'next/image';
-
+import { TbSlashes } from "react-icons/tb";
+import { RxSlash } from "react-icons/rx";
 
 
 
@@ -30,6 +31,14 @@ const Menu: React.FC = ({}) => {
     }
   };
 
+  const menuItems = [
+    { id: "navbar", label: "// home" },
+    { id: "focus", label: "// focus" },
+    { id: "projects", label: "// projects" },
+    { id: "resume", label: "// résumé" },
+    { id: "contact", label: "// contact" }
+  ];
+
   return (
     <div className={styles.menuContainer}>
       {/* <div className={styles.menuButton}> */}
@@ -48,21 +57,15 @@ const Menu: React.FC = ({}) => {
             />
           </div>
           <div className={styles.menuLinks}>
-            <div className={styles.link} onClick={() => jumpToSection("navbar")}>
-              // home
-            </div>
-            <div className={styles.link} onClick={() => jumpToSection("focus")}>
-              // focus
-            </div>
-            <div className={styles.link} onClick={() => jumpToSection("projects")}>
-              // projects
-            </div>
-            <div className={styles.link} onClick={() => jumpToSection("resume")}>
-              // résumé
-            </div>
-            <div className={styles.link} onClick={() => jumpToSection("contact")}>
-              // contact
-            </div>
+            {menuItems.map(item => (
+              <div
+                key={item.id}
+                className={styles.link}
+                onClick={() => jumpToSection(item.id)}
+              >
+                {item.label}
+              </div>
+            ))}
             <a href="/resume.pdf" download className={styles.downloadButton}>
               My Résumé        
             </a>

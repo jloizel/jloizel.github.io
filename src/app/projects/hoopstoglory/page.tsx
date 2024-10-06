@@ -50,7 +50,7 @@ const EngeniousPage = () => {
       />
       <div className={styles.navbar} id="navbar">
         <a className={getLinkClassName()} href="/">
-          // home
+          {"// home"}
         </a>
         <span className={mode === 'dark' ? styles.arrowDark : styles.arrowLight}>
           <MdKeyboardArrowRight/>
@@ -78,7 +78,7 @@ const EngeniousPage = () => {
         </div>
         <div className={styles.subHeader}>
           <div className={mode === 'dark' ? styles.darkDescription : styles.lightDescription}>
-            HoopsToGlory is a basketball-themed incremental clicker game where your aim is to climb the ranks and secure the number one pick in the NBA draft as quickly as possible, attracting nearly 1,000 users to date. Your decisions shape the outcome—focus on training, upgrading skills, and managing your player's career. Each choice influences your progress through interconnected gameplay mechanics. Can you rise to the top and make your mark in basketball history?          
+            HoopsToGlory is a basketball-themed incremental clicker game where your aim is to climb the ranks and secure the number one pick in the NBA draft as quickly as possible, attracting nearly 1,000 users to date. Your decisions shape the outcome—focus on training, upgrading skills, and managing your player&apos;s career. Each choice influences your progress through interconnected gameplay mechanics. Can you rise to the top and make your mark in basketball history?          
           </div>
           <div className={styles.info}>
             <div className={styles.detailsContainer}>

@@ -15,7 +15,7 @@ import ScrollArrow from '../../../../components/scrollArrow/scrollArrow'
 import { FaGithub } from 'react-icons/fa'
 
 
-const metroguessrPage = () => {
+const metroguessrPage: React.FC = () => {
   const [mode, setMode] = useState("dark");
   
   const nextProject = "Engenious"
@@ -54,7 +54,7 @@ const metroguessrPage = () => {
       />
       <div className={styles.navbar} id="navbar">
         <a className={getLinkClassName()} href="/">
-          // home
+          {"// home"}
         </a>
         <span className={mode === 'dark' ? styles.arrowDark : styles.arrowLight}>
           <MdKeyboardArrowRight/>

@@ -52,7 +52,7 @@ const EngeniousPage = () => {
       />
       <div className={styles.navbar} id="navbar">
         <a className={getLinkClassName()} href="/">
-          // home
+          {"// home"}
         </a>
         <span className={mode === 'dark' ? styles.arrowDark : styles.arrowLight}>
           <MdKeyboardArrowRight/>
