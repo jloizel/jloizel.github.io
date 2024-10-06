@@ -60,12 +60,11 @@
         "company": "AKT",
         "content": ["- Structural Engineering Design Engineer"],
         "description": [
-          "Led the design of structural components using advanced computational tools",
-          "Collaborated with cross-functional teams to integrate structural designs into software workflows",
-          "Created custom scripts in Grasshopper to automate repetitive tasks and optimize structural designs",
-          "Utilized parametric design principles in Rhino and Grasshopper to explore and identify optimal structural solutions",
-          "Leveraged computational tools to optimize material usage, reducing waste on large-scale structural projects",
-          "Used Rhino and Grasshopper to create visually compelling presentations for clients and stakeholders"
+          "Facilitated the engineering design of the New Murabba’s £50 billion Mukaab project, meeting stringent design standards and tight deadlines",
+          "Developed automated parametric models using Rhino and Grasshopper, streamlining tasks and enhancing design precision—skills directly applicable to coding efficiency and scalable solutions in software projects",
+          "Designed several structural elements for the Aquellum project (part of Saudi Arabia’s £1 trillion NEOM initiative), utilizing computational tools to improve design processes and ensure project accuracy",
+          "Optimized workflows by creating custom Grasshopper scripts, significantly reducing manual tasks, showcasing strong problem-solving and process automation skills, similar to software development techniques",
+          "Collaborated with cross-functional teams to integrate complex designs, demonstrating communication, teamwork, and problem-solving skills critical for both engineering and software development environments"
         ]
       },
       {
@@ -73,9 +72,12 @@
         "company": "AKT",
         "content": ["- Structural Engineering Intern"],
         "description": [
-          "Led the design of structural components",
-          "Coordinated with project managers",
-          "Led the design of structural components using advanced computational tools"
+          "Created detailed design calculations and 3D models using advanced software tools, ensuring accuracy and efficiency in the engineering process",
+          "Contributed to the production of technical reports, demonstrating strong documentation and communication skills—essential for clear project deliverables",
+          "Assisted in preparing conceptual and outline designs for structural schemes, showcasing a strong foundation in problem-solving and creative thinking",
+          "Assisted in preparing conceptual and outline designs for structural schemes, showcasing a strong foundation in problem-solving and creative thinking",
+          "Collaborated in multidisciplinary team meetings, honing skills in cross-functional communication and teamwork",
+          "Provided day-to-day support to colleagues across disciplines, illustrating adaptability and a collaborative approach to project execution"
         ]
       },
       {
@@ -109,11 +111,11 @@
     "sections": [
         {
             "subHeader": "Version Control:",
-            "content": ["• Git", "• GitHub"]
+            "content": ["• Git", "• GitHub", "• NPM"]
         },
         {
             "subHeader": "Design & Engineering Tools:",
-            "content": ["• Rhino", "• Grasshopper", "• AutoCAD", "• Revit", "• Spline"]
+            "content": ["• Spline", "• Rhino", "• Grasshopper", "• AutoCAD", "• Revit"]
         }
     ]
   },
