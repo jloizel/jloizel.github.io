@@ -51,6 +51,7 @@ function Home() {
       {isComputer && (
         <div className={styles.splineSceneContainer}>
           <SplineScene />
+          <div className={styles.hideLogo}></div>
         </div>
       )}
       <Bounce>

@@ -4,8 +4,8 @@
     "image": "/1.png",
     "title": "metroguessr",
     "details": "Interactive online game where the player selects between several cities to play and attempts to guess as many metro stations of that city within a set timeframe.",
-    "languages": "React - Typescript - MongoDB",
-    "summary": "A city-based game where players guess metro stations, with over 10,000 users and features in top publications.",
+    "languages": "React - TypeScript - MongoDB - Express.js - Node.js",
+    "summary": "An engaging city-based game where players guess metro stations, boasting over 10,000 users and featured in leading publications.",
     "href": "/projects/metroguessr"
   },
   {
@@ -13,8 +13,8 @@
     "image": "/2.png",
     "title": "Engenious",
     "details": "Bespoke website developed for Engenious, a recruitment company specialised in the construction industry",
-    "languages": "React - Typescript - MongoDB",
-    "summary": "Custom website for Engenious, a construction recruitment firm, enhancing their online presence to enhance their opportunities.",
+    "languages": "React - TypeScript - MongoDB - Node.js - HTML/CSS",
+    "summary": "A tailored website for Engenious, a construction recruitment firm, enhancing their online presence and streamlining the recruitment process.",
     "href": "/projects/Engenious"
   },
   {
@@ -22,8 +22,8 @@
     "image": "/3.png",
     "title": "Hoops to Glory",
     "details": "Incremental clicker game with a NBA draft theme.",
-    "languages": "React - Typescript - MongoDB",
-    "summary": "A basketball clicker game where you manage training and career to reach the top NBA draft pick.",
+    "languages": "React - TypeScript - MongoDB - Express.js - Node.js",
+    "summary": "A captivating incremental clicker game where players manage training and career decisions to secure the top NBA draft pick.",
     "href": "/projects/HoopsToGlory"
   }
 ]
