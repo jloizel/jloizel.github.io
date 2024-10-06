@@ -84,7 +84,7 @@ const NavBar: React.FC = () => {
           </div>
           <div className={`${styles.navbar} ${isSlidingDown ? styles.slideDown : styles.hidden}`}>
             <div className={styles.linksContainer}>
-              {['// home', '// focus', '// projects', '// résumé', '//  contact'].map((section) => (
+              {['// home', '// focus', '// projects', '// résumé', '// contact'].map((section) => (
                 <div
                   key={section}
                   className={`${styles.link}`}

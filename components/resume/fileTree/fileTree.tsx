@@ -84,7 +84,7 @@ const FileTree = () => {
             {selectedFile === "portrait.jpg" && (
               <img src="/images/pp.png" alt="portrait picture" className={styles.image}/>
             )}
-            {selectedFile === "skills.tsx" && (
+            {selectedFile === "technicalSkills.tsx" && (
               <OrbitingCircles/>
             )}
             {/* {selectedFile === "resume.pdf" && (

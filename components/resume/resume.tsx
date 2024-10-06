@@ -27,7 +27,7 @@ function Resume() {
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
-    <div className={styles.resume} id="resume">
+    <div className={styles.resume} id="résumé">
       <div className={styles.content}>
         <div className={styles.headerContainer}>
           <div className={styles.header}>
