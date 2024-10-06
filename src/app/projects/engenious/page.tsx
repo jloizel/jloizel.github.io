@@ -114,7 +114,7 @@ const EngeniousPage = () => {
           <div className={styles.imageContainer}>
             <Bounce>
               <img
-                src="/images/Engenious/2.png"
+                src="/images/Engenious/3.png"
                 alt="Engenious Screenshot"
                 className={styles.image}
               />
@@ -123,7 +123,7 @@ const EngeniousPage = () => {
           <div className={styles.imageContainer}>
             <Bounce>
               <img
-                src="/images/Engenious/3.png"
+                src="/images/Engenious/4.png"
                 alt="Engenious Screenshot"
                 className={styles.image}
               />
