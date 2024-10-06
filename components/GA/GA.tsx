@@ -4,7 +4,7 @@ export const GA = () => {
 
   return (
     <>
-      {/* Global site tag (gtag.js) - Google Analytics */}
+      {/* Global site tag (gtag.js) - testGoogle Analytics */}
       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-VD897NGQX9"/>
       <Script id="google-analytics" strategy="afterInteractive">
         {`
