@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import File from "./file";
 import { files } from "./files";
 import styles from "./filetreeMobile.module.css";
@@ -23,6 +23,7 @@ const FileTreeMobile = () => {
 
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  
 
   const handleClick = (fileName: string) => {
     setOpen(true)
@@ -34,9 +35,11 @@ const FileTreeMobile = () => {
     header: string;
     sections: ResumeSection[];
   };
+
   const timeline = selectedFile === "education.tsx" || selectedFile === "workExperience.tsx";
   const skills = selectedFile === "technicalSkills.tsx" || selectedFile === "softwareAndTools.tsx" || selectedFile === "languagesAndSoftSkills.tsx" || selectedFile === "about.tsx";
 
+  console.log(selectedFile)
 
   return (
     <div className={styles.container}>
@@ -97,8 +100,8 @@ const FileTreeMobile = () => {
               {selectedFile === "portrait.jpg" && (
                 <img src="/images/pp.png" alt="portrait picture" className={styles.image}/>
               )}
-              {selectedFile === "skills.tsx" && (
-                <OrbitingCircles/>
+              {selectedFile === "technicalSkills.tsx" && (
+                <OrbitingCircles />
               )}
             </div>
           </div>

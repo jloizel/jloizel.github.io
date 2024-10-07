@@ -6,6 +6,7 @@
   height: 250px; 
   margin-bottom: 20px;
   margin-left: 50px;
+  z-index: 1000;
 }
 
 .circlesContainer {
