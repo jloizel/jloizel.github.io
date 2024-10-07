@@ -35,7 +35,7 @@ const Menu: React.FC = ({}) => {
     { id: "navbar", label: "// home" },
     { id: "focus", label: "// focus" },
     { id: "projects", label: "// projects" },
-    { id: "resume", label: "// résumé" },
+    { id: "résumé", label: "// résumé" },
     { id: "contact", label: "// contact" }
   ];
 
