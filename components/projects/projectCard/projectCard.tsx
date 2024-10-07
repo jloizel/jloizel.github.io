@@ -48,6 +48,7 @@ const ProjectCard: React.FC = () => {
           <a className={styles.card} href={projectCard.href}>
             <div className={styles.imageContainer}>
               <img className={styles.image} src={projectCard.image} alt={projectCard.title}/>
+              <span className={styles.showProject}>Show Project</span>
             </div>
             <div className={styles.content}>
               <div className={styles.top}>
@@ -65,8 +66,8 @@ const ProjectCard: React.FC = () => {
                 <span onClick={() => window.open("/projects/metroguessr")}> Learn more &gt;</span>
               </div>
             </div>
-            <span className={styles.showProject}>Show Project</span>
           </a>
+          
           </Bounce>
         ))}
     </div>

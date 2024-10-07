@@ -206,14 +206,12 @@
   font-weight: 700;
   opacity: 0;
   visibility: hidden;
-  transform: translateX(-50%) translateY(0%);
-  transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
-  cursor: pointer !important;
-  z-index: 100;
+  transform: translateX(-50%) translateY(140%);
+  transition: all ease 0.5s;
 }
 
-.imageContainer:hover ~ .showProject {
+.imageContainer:hover .showProject {
   opacity: 1;
   visibility: visible;
-  transform: translate(-50%, -30%);
+  transform: translate(-50%, 100%);
 }
