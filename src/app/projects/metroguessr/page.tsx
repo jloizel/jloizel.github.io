@@ -13,6 +13,7 @@ import { RiGitRepositoryLine } from "react-icons/ri";
 import { RiGitRepositoryFill } from "react-icons/ri";
 import ScrollArrow from '../../../../components/scrollArrow/scrollArrow'
 import { FaGithub } from 'react-icons/fa'
+import { createTheme, useMediaQuery } from '@mui/material'
 
 
 const MetroguessrPage: React.FC = () => {
@@ -26,32 +27,46 @@ const MetroguessrPage: React.FC = () => {
 
   const getLinkClassName = () => mode === 'dark' ? styles.link : styles.linkDark;
 
+  const theme = createTheme({
+    breakpoints: {
+      values: {
+        xs: 0,
+        sm: 768,
+        md: 1024,
+        lg: 1200,
+        xl: 1536,
+      },
+    },
+  });
+
+  const isComputer = useMediaQuery(theme.breakpoints.up('md'));
+
   return (
     <div className={mode === 'dark' ? styles.darkPage : styles.lightPage}>
-      <AnimatedCursor
-        innerSize={8}
-        outerSize={8}
-        color='225, 142, 236'
-        outerAlpha={0.2}
-        innerScale={0.7}
-        outerScale={5}
-        showSystemCursor={false}
-        clickables={[
-          'a',
-          'input[type="text"]',
-          'input[type="email"]',
-          'input[type="number"]',
-          'input[type="submit"]',
-          'input[type="image"]',
-          'label[for]',
-          'select',
-          'textarea',
-          'button',
-          '.link',
-          '.darkDescription a', 
-          '.lightDescription a'
-        ]}
-      />
+      {isComputer && (
+        <AnimatedCursor 
+          innerSize={8}
+          outerSize={8}
+          color='225, 142, 236'
+          outerAlpha={0.2}
+          innerScale={0.7}
+          outerScale={5}
+          showSystemCursor={false}
+          clickables={[
+            'a',
+            'input[type="text"]',
+            'input[type="email"]',
+            'input[type="number"]',
+            'input[type="submit"]',
+            'input[type="image"]',
+            'label[for]',
+            'select',
+            'textarea',
+            'button',
+            '.link'
+          ]}
+        />
+      )}
       <div className={styles.navbar} id="navbar">
         <a className={getLinkClassName()} href="/">
           {"// home"}
