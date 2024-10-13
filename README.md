@@ -10,7 +10,7 @@
 <h3 align="center">Personal Portfolio Website</h3>
 
   <p align="center">
-    This is my personal portfolio website built to showcase my design and development skills. It features multiple sections including a bio, project gallery, and contact form. 🎯 I created this portfolio to have a place where I can present my projects and share my journey.
+    This is my personal portfolio website built to showcase my design and development skills. It features multiple sections including a bio, project gallery, and contact form. I created this portfolio to have a place where I can present my projects and share my journey.
     <br />
     <a href="https://github.com/jloizel/jloizel.github.io"><strong>Explore the docs »</strong></a>
     <br />
