@@ -34,7 +34,7 @@ The goal was to build a modern, responsive, and visually appealing site that ref
 The portfolio highlights my projects, demonstrates my proficiency in various tools and frameworks, and provides an easy way to get in touch via the contact form. Key features include responsive design, a dynamic project gallery, and a user-focused interface.
 
 
-### Built With
+### Built With (***non-exhaustive***)
 
 <code><img src="https://github.com/jloizel/jloizel/blob/main/Assets/react-color.svg" alt="react" height="35px"/></code>
 <code><img src="https://github.com/jloizel/jloizel/blob/main/Assets/typescript-color.svg" alt="typescript" height="35px"/></code>
