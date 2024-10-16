@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from "./page.module.css"
 import AnimatedCursor from 'react-animated-cursor'
 import Toggle from '../../../../components/toggle/toggle'
@@ -19,6 +19,7 @@ import { Helmet } from 'react-helmet'
 
 const Engenious = () => {
   const [mode, setMode] = useState("dark");
+  const [showProjectNav, setShowProjectNav] = useState(false);
   
   const nextProject = "HoopsToGlory"
 
@@ -27,6 +28,31 @@ const Engenious = () => {
   };
 
   const getLinkClassName = () => mode === 'dark' ? styles.link : styles.linkDark;
+
+  const handleScroll = () => {
+    const descriptionElement = document.getElementById('description');
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+  
+    if (descriptionElement) {
+      const rect = descriptionElement.getBoundingClientRect();
+      const isPastDescription = rect.bottom <= window.innerHeight;
+  
+      // Show ProjectNav if scrolled past description
+      if (isPastDescription && scrollTop > 100) {
+        setShowProjectNav(true); 
+      } else if (scrollTop <= 100) {
+        setShowProjectNav(false); 
+      }
+    }
+  };
+  
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const theme = createTheme({
     breakpoints: {
@@ -103,7 +129,7 @@ const Engenious = () => {
           </Slide>
         </div>
         <div className={styles.subHeader}>
-          <div className={mode === 'dark' ? styles.darkDescription : styles.lightDescription}>
+          <div className={mode === 'dark' ? styles.darkDescription : styles.lightDescription}  id="description">
             <Slide>
               Developed a custom-designed website for Engenious, a leading recruitment firm specializing in the construction industry. The website was created to enhance their online presence, streamline recruitment processes, and effectively connect clients with job seekers within the construction sector. The site incorporates a user-friendly interface that prioritizes ease of navigation, ensuring that both clients and candidates can access information efficiently. It also includes robust functionality tailored to the specific needs of Engenious and its audience, providing a seamless experience throughout the recruitment journey.
             </Slide>
@@ -155,7 +181,7 @@ const Engenious = () => {
         </div>
       </div>
       
-      <div className={styles.projectNavContainer}>
+      <div className={`${styles.projectNavContainer} ${showProjectNav ? styles.fadeIn : ''}`}>
         <ProjectNav nextProject={nextProject}/>
       </div>
       <Footer mode={mode}/>

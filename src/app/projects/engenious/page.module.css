@@ -305,7 +305,16 @@
   position: fixed; 
   bottom: 100px; 
   right: 20px; 
+  transition: opacity 0.8s ease-in-out;
   /* z-index: 1000; */
+
+  @media (max-width: 768px) {
+    opacity: 0;
+  }
+}
+
+.fadeIn {
+  opacity: 1;
 }
 
 .images {

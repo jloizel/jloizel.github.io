@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from "./page.module.css"
 import AnimatedCursor from 'react-animated-cursor'
 import Toggle from '../../../../components/toggle/toggle'
@@ -20,6 +20,7 @@ import { Helmet } from 'react-helmet';
 
 const HoopsToGlory = () => {
   const [mode, setMode] = useState("dark");
+  const [showProjectNav, setShowProjectNav] = useState(false);
   
   const nextProject = "metroguessr"
 
@@ -28,6 +29,31 @@ const HoopsToGlory = () => {
   };
 
   const getLinkClassName = () => mode === 'dark' ? styles.link : styles.linkDark;
+
+  const handleScroll = () => {
+    const descriptionElement = document.getElementById('description');
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+  
+    if (descriptionElement) {
+      const rect = descriptionElement.getBoundingClientRect();
+      const isPastDescription = rect.bottom <= window.innerHeight;
+  
+      // Show ProjectNav if scrolled past description
+      if (isPastDescription && scrollTop > 100) {
+        setShowProjectNav(true); 
+      } else if (scrollTop <= 100) {
+        setShowProjectNav(false);
+      }
+    }
+  };
+  
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const theme = createTheme({
     breakpoints: {
@@ -105,7 +131,7 @@ const HoopsToGlory = () => {
           </Slide>
         </div>
         <div className={styles.subHeader}>
-          <div className={mode === 'dark' ? styles.darkDescription : styles.lightDescription}>
+          <div className={mode === 'dark' ? styles.darkDescription : styles.lightDescription}  id="description">
             <Slide>
               HoopsToGlory is a basketball-themed incremental clicker game where your aim is to climb the ranks and secure the number one pick in the NBA draft as quickly as possible, attracting nearly 1,000 users to date. Your decisions shape the outcome—focus on training, upgrading skills, and managing your player&apos;s career. Each choice influences your progress through interconnected gameplay mechanics. Can you rise to the top and make your mark in basketball history?     
             </Slide>     
@@ -156,7 +182,7 @@ const HoopsToGlory = () => {
           </div>
         </div>
       </div>
-      <div className={styles.projectNavContainer}>
+      <div className={`${styles.projectNavContainer} ${showProjectNav ? styles.fadeIn : ''}`}>
         <ProjectNav nextProject={nextProject}/>
       </div>
       <Footer mode={mode}/>

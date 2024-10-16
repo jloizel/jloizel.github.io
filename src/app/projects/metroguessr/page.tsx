@@ -41,13 +41,12 @@ const Metroguessr: React.FC = () => {
   
       // Show ProjectNav if scrolled past description
       if (isPastDescription && scrollTop > 100) {
-        setShowProjectNav(true); // Apply fadeIn class
+        setShowProjectNav(true); 
       } else if (scrollTop <= 100) {
-        setShowProjectNav(false); // Remove fadeIn class
+        setShowProjectNav(false); 
       }
     }
   };
-  
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
