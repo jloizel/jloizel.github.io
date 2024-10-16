@@ -15,7 +15,7 @@
     "details": "Bespoke website developed for Engenious, a recruitment company specialised in the construction industry",
     "languages": "React - TypeScript - MongoDB - Node.js - HTML/CSS",
     "summary": "A tailored website for Engenious, a construction recruitment firm, enhancing their online presence and streamlining the recruitment process.",
-    "href": "/projects/Engenious"
+    "href": "/projects/engenious"
   },
   {
     "id": 3,
@@ -24,6 +24,6 @@
     "details": "Incremental clicker game with a NBA draft theme.",
     "languages": "React - TypeScript - MongoDB - Express.js - Node.js",
     "summary": "A captivating incremental clicker game where players manage training and career decisions to secure the top NBA draft pick.",
-    "href": "/projects/HoopsToGlory"
+    "href": "/projects/hoopstoglory"
   }
 ]

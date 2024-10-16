@@ -17,7 +17,7 @@ const ProjectNav: React.FC<ProjectNavProps> = ({ nextProject }) => {
   };
 
   const imageUrl = projectImages[nextProject] || '';
-  const href = `/projects/${nextProject}`
+  const href = `/projects/${nextProject.toLowerCase()}`;
 
   return (
     <div className={styles.container}>

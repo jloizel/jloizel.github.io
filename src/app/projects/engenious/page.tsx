@@ -75,7 +75,7 @@ const Engenious = () => {
         <span className={mode === 'dark' ? styles.arrowDark : styles.arrowLight}>
           <MdKeyboardArrowRight/>
         </span>
-        <a className={getLinkClassName()} href="/projects/Engenious">
+        <a className={getLinkClassName()} href="/projects/engenious">
           Engenious
         </a>
       </div>
@@ -113,7 +113,7 @@ const Engenious = () => {
                   React, Typescript, MongoDB
                 </span>
               </div>
-              <a className={mode === 'dark' ? styles.darkOpen : styles.lightOpen} href="https://engenious.vercel.app/" target='_blank'>
+              <a className={mode === 'dark' ? styles.darkOpen : styles.lightOpen} href="https://engenious.co/" target='_blank'>
                 Live Project <FaArrowRightLong className={mode === 'dark' ? styles.darkLongArrow : styles.lightLongArrow}/>
               </a>
             </Slide>
