@@ -16,6 +16,7 @@ import { FaGithub } from 'react-icons/fa'
 import { createTheme, useMediaQuery } from '@mui/material'
 import Slide from '../../../../components/scrollAnimations/slide'
 import Bounce from '../../../../components/scrollAnimations/bounce'
+import { Helmet } from 'react-helmet'
 
 
 const Metroguessr: React.FC = () => {
@@ -45,6 +46,10 @@ const Metroguessr: React.FC = () => {
 
   return (
     <div className={mode === 'dark' ? styles.darkPage : styles.lightPage}>
+      <Helmet>
+        <title>Jack Loizel - metroguessr</title>
+        <meta name='description' content='' />
+      </Helmet>
       {isComputer && (
         <AnimatedCursor 
           innerSize={8}

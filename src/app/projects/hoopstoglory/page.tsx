@@ -14,6 +14,8 @@ import { FaGithub } from 'react-icons/fa'
 import { createTheme, useMediaQuery } from '@mui/material'
 import Slide from '../../../../components/scrollAnimations/slide'
 import Bounce from '../../../../components/scrollAnimations/bounce'
+import { Helmet } from 'react-helmet';
+
 
 
 const HoopsToGlory = () => {
@@ -40,9 +42,14 @@ const HoopsToGlory = () => {
   });
 
   const isComputer = useMediaQuery(theme.breakpoints.up('md'));
+  
 
   return (
     <div className={mode === 'dark' ? styles.darkPage : styles.lightPage}>
+      <Helmet>
+        <title>Jack Loizel - HoopsToGlory</title>
+        <meta name='description' content='' />
+      </Helmet>
       {isComputer && (
         <AnimatedCursor 
           innerSize={8}

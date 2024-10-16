@@ -14,6 +14,7 @@ import { FaGithub } from 'react-icons/fa'
 import Slide from '../../../../components/scrollAnimations/slide'
 import Bounce from '../../../../components/scrollAnimations/bounce'
 import { createTheme, useMediaQuery } from '@mui/material'
+import { Helmet } from 'react-helmet'
 
 
 const Engenious = () => {
@@ -44,6 +45,10 @@ const Engenious = () => {
 
   return (
     <div className={mode === 'dark' ? styles.darkPage : styles.lightPage}>
+      <Helmet>
+        <title>Jack Loizel - Engenious</title>
+        <meta name='description' content='' />
+      </Helmet>
       {isComputer && (
         <AnimatedCursor 
           innerSize={8}
