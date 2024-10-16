@@ -16,7 +16,7 @@ import { FaGithub } from 'react-icons/fa'
 import { createTheme, useMediaQuery } from '@mui/material'
 
 
-const MetroguessrPage: React.FC = () => {
+const Metroguessr: React.FC = () => {
   const [mode, setMode] = useState("dark");
   
   const nextProject = "Engenious"
@@ -148,4 +148,4 @@ const MetroguessrPage: React.FC = () => {
   )
 }
 
-export default MetroguessrPage
+export default Metroguessr

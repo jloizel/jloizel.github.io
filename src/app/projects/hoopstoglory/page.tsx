@@ -14,7 +14,7 @@ import { FaGithub } from 'react-icons/fa'
 import { createTheme, useMediaQuery } from '@mui/material'
 
 
-const EngeniousPage = () => {
+const HoopsToGlory = () => {
   const [mode, setMode] = useState("dark");
   
   const nextProject = "metroguessr"
@@ -143,4 +143,4 @@ const EngeniousPage = () => {
   )
 }
 
-export default EngeniousPage
+export default HoopsToGlory

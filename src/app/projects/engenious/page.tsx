@@ -16,7 +16,7 @@ import Bounce from '../../../../components/scrollAnimations/bounce'
 import { createTheme, useMediaQuery } from '@mui/material'
 
 
-const EngeniousPage = () => {
+const Engenious = () => {
   const [mode, setMode] = useState("dark");
   
   const nextProject = "HoopsToGlory"
@@ -158,4 +158,4 @@ const EngeniousPage = () => {
   )
 }
 
-export default EngeniousPage
+export default Engenious
