@@ -72,7 +72,7 @@ const HoopsToGlory = () => {
         <span className={mode === 'dark' ? styles.arrowDark : styles.arrowLight}>
           <MdKeyboardArrowRight/>
         </span>
-        <a className={getLinkClassName()} href="/projects/Engenious">
+        <a className={getLinkClassName()} href="/projects/hoopstoglory">
           HoopsToGlory
         </a>
       </div>
