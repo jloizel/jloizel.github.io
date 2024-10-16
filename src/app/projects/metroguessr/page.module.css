@@ -322,17 +322,13 @@
 
 .projectNavContainer {
   position: fixed; 
-  bottom: 40px; 
+  bottom: 100px; 
   right: 20px; 
   transition: opacity 0.8s ease-in-out;
   /* z-index: 1000; */
 
   @media (max-width: 768px) {
     opacity: 0;
-  }
-
-  @media (min-width: 768px) {
-    bottom: 100px; 
   }
 }
 

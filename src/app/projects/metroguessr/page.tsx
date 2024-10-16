@@ -32,22 +32,22 @@ const Metroguessr: React.FC = () => {
   const getLinkClassName = () => mode === 'dark' ? styles.link : styles.linkDark;
 
   const handleScroll = () => {
-    if (isMobile) {
-      const descriptionElement = document.getElementById('description');
-      const scrollTop = window.scrollY || document.documentElement.scrollTop;
-
-      if (descriptionElement) {
-        const rect = descriptionElement.getBoundingClientRect();
-        const isPastDescription = rect.bottom <= window.innerHeight;
-
-        if (isPastDescription && scrollTop > 100) {
-          setShowProjectNav(true);
-        } else if (scrollTop <= 100) {
-          setShowProjectNav(false);
-        }
+    const descriptionElement = document.getElementById('description');
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+  
+    if (descriptionElement) {
+      const rect = descriptionElement.getBoundingClientRect();
+      const isPastDescription = rect.bottom <= window.innerHeight;
+  
+      // Show ProjectNav if scrolled past description
+      if (isPastDescription && scrollTop > 100) {
+        setShowProjectNav(true); // Apply fadeIn class
+      } else if (scrollTop <= 100) {
+        setShowProjectNav(false); // Remove fadeIn class
       }
     }
-  }; 
+  };
+  
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
