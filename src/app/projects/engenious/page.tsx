@@ -103,21 +103,21 @@ const Engenious = () => {
               Developed a custom-designed website for Engenious, a leading recruitment firm specializing in the construction industry. The website was created to enhance their online presence, streamline recruitment processes, and effectively connect clients with job seekers within the construction sector. The site incorporates a user-friendly interface that prioritizes ease of navigation, ensuring that both clients and candidates can access information efficiently. It also includes robust functionality tailored to the specific needs of Engenious and its audience, providing a seamless experience throughout the recruitment journey.
             </Slide>
           </div>
-          <div className={styles.info}>
-            <Slide>
-              <div className={styles.detailsContainer}>
-                <span className={mode === 'dark' ? styles.darkDetailsHeader : styles.lightDetailsHeader}>
-                  Technologies
-                </span>
-                <span className={mode === 'dark' ? styles.darkDetails : styles.lightDetails}>
-                  React, Typescript, MongoDB
-                </span>
-              </div>
-              <a className={mode === 'dark' ? styles.darkOpen : styles.lightOpen} href="https://engenious.co/" target='_blank'>
-                Live Project <FaArrowRightLong className={mode === 'dark' ? styles.darkLongArrow : styles.lightLongArrow}/>
-              </a>
-            </Slide>
-          </div>
+          <Slide>
+            <div className={styles.info}>
+                <div className={styles.detailsContainer}>
+                  <span className={mode === 'dark' ? styles.darkDetailsHeader : styles.lightDetailsHeader}>
+                    Technologies
+                  </span>
+                  <span className={mode === 'dark' ? styles.darkDetails : styles.lightDetails}>
+                    React, Typescript, MongoDB
+                  </span>
+                </div>
+                <a className={mode === 'dark' ? styles.darkOpen : styles.lightOpen} href="https://engenious.co/" target='_blank'>
+                  Live Project <FaArrowRightLong className={mode === 'dark' ? styles.darkLongArrow : styles.lightLongArrow}/>
+                </a>
+            </div>
+          </Slide>
         </div>
         <div className={styles.images}>
           <div className={styles.imageContainer}>

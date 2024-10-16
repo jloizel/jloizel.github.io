@@ -12,6 +12,8 @@ import ProjectNav from '../../../../components/projectNav/projectNav'
 import { RiGitRepositoryLine } from 'react-icons/ri'
 import { FaGithub } from 'react-icons/fa'
 import { createTheme, useMediaQuery } from '@mui/material'
+import Slide from '../../../../components/scrollAnimations/slide'
+import Bounce from '../../../../components/scrollAnimations/bounce'
 
 
 const HoopsToGlory = () => {
@@ -87,51 +89,63 @@ const HoopsToGlory = () => {
       </div>
       <div className={styles.content}>
         <div className={mode === 'dark' ? styles.darkHeader : styles.lightHeader}>
-          HoopsToGlory
-          <a className={styles.repo} href="https://github.com/jloizel/hoops-to-glory" target="_blank">
-            <FaGithub className={styles.repoIcon}/>            
-            Source Code
-          </a>
+          <Slide>
+            HoopsToGlory
+            <a className={styles.repo} href="https://github.com/jloizel/hoops-to-glory" target="_blank">
+              <FaGithub className={styles.repoIcon}/>            
+              Source Code
+            </a>
+          </Slide>
         </div>
         <div className={styles.subHeader}>
           <div className={mode === 'dark' ? styles.darkDescription : styles.lightDescription}>
-            HoopsToGlory is a basketball-themed incremental clicker game where your aim is to climb the ranks and secure the number one pick in the NBA draft as quickly as possible, attracting nearly 1,000 users to date. Your decisions shape the outcome—focus on training, upgrading skills, and managing your player&apos;s career. Each choice influences your progress through interconnected gameplay mechanics. Can you rise to the top and make your mark in basketball history?          
+            <Slide>
+              HoopsToGlory is a basketball-themed incremental clicker game where your aim is to climb the ranks and secure the number one pick in the NBA draft as quickly as possible, attracting nearly 1,000 users to date. Your decisions shape the outcome—focus on training, upgrading skills, and managing your player&apos;s career. Each choice influences your progress through interconnected gameplay mechanics. Can you rise to the top and make your mark in basketball history?     
+            </Slide>     
           </div>
-          <div className={styles.info}>
-            <div className={styles.detailsContainer}>
-              <span className={mode === 'dark' ? styles.darkDetailsHeader : styles.lightDetailsHeader}>
-                Technologies
-              </span>
-              <span className={mode === 'dark' ? styles.darkDetails : styles.lightDetails}>
-                React, Typescript, MongoDB
-              </span>
+          <Slide>
+            <div className={styles.info}>
+              <div className={styles.detailsContainer}>
+                <span className={mode === 'dark' ? styles.darkDetailsHeader : styles.lightDetailsHeader}>
+                  Technologies
+                </span>
+                <span className={mode === 'dark' ? styles.darkDetails : styles.lightDetails}>
+                  React, Typescript, MongoDB
+                </span>
+              </div>
+              <a className={mode === 'dark' ? styles.darkOpen : styles.lightOpen} href="https://www.hoopstoglory.com/" target='_blank'>
+                Live Project <FaArrowRightLong className={mode === 'dark' ? styles.darkLongArrow : styles.lightLongArrow}/>
+              </a>
             </div>
-            <a className={mode === 'dark' ? styles.darkOpen : styles.lightOpen} href="https://www.hoopstoglory.com/" target='_blank'>
-              Live Project <FaArrowRightLong className={mode === 'dark' ? styles.darkLongArrow : styles.lightLongArrow}/>
-            </a>
-          </div>
+          </Slide>
         </div>
         <div className={styles.images}>
           <div className={styles.imageContainer}>
-            <img
-              src="/images/HoopsToGlory/1.png"
-              alt="Engenious Screenshot"
-              className={styles.image}
-            />
+            <Bounce>
+              <img
+                src="/images/HoopsToGlory/1.png"
+                alt="Engenious Screenshot"
+                className={styles.image}
+              />
+            </Bounce>
           </div>
           <div className={styles.imageContainer}>
-            <img
-              src="/images/HoopsToGlory/2.png"
-              alt="Engenious Screenshot"
-              className={styles.image}
-            />
+            <Bounce>
+              <img
+                src="/images/HoopsToGlory/2.png"
+                alt="Engenious Screenshot"
+                className={styles.image}
+              />
+            </Bounce>
           </div>
           <div className={styles.imageContainer}>
-            <img
-              src="/images/HoopsToGlory/3.png"
-              alt="Engenious Screenshot"
-              className={styles.image}
-            />
+            <Bounce>
+              <img
+                src="/images/HoopsToGlory/3.png"
+                alt="Engenious Screenshot"
+                className={styles.image}
+              />
+            </Bounce>
           </div>
         </div>
       </div>
