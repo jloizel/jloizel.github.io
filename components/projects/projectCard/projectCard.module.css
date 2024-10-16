@@ -173,7 +173,8 @@
   line-height: 25px;
   font-weight: 300;
   font-size: 17px;
-  /* display: flex;
+  /* display: inline-flex;
+  flex-direction: row;
   gap: 5px; */
 }
 
@@ -185,6 +186,7 @@
   font-family: 'Poppins', sans-serif;
   cursor: pointer !important;
   transition: all 0.3s ease-in-out;
+  margin-left: 5px;
 }
 
 .summary span:hover {

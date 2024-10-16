@@ -21,6 +21,7 @@ import { Helmet } from 'react-helmet'
 
 const Metroguessr: React.FC = () => {
   const [mode, setMode] = useState("dark");
+  const [showProjectNav, setShowProjectNav] = useState(false);
   
   const nextProject = "Engenious"
 
@@ -29,6 +30,31 @@ const Metroguessr: React.FC = () => {
   };
 
   const getLinkClassName = () => mode === 'dark' ? styles.link : styles.linkDark;
+
+  const handleScroll = () => {
+    if (isMobile) {
+      const descriptionElement = document.getElementById('description');
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+      if (descriptionElement) {
+        const rect = descriptionElement.getBoundingClientRect();
+        const isPastDescription = rect.bottom <= window.innerHeight;
+
+        if (isPastDescription && scrollTop > 100) {
+          setShowProjectNav(true);
+        } else if (scrollTop <= 100) {
+          setShowProjectNav(false);
+        }
+      }
+    }
+  }; 
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const theme = createTheme({
     breakpoints: {
@@ -43,6 +69,7 @@ const Metroguessr: React.FC = () => {
   });
 
   const isComputer = useMediaQuery(theme.breakpoints.up('md'));
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
     <div className={mode === 'dark' ? styles.darkPage : styles.lightPage}>
@@ -105,7 +132,7 @@ const Metroguessr: React.FC = () => {
           </Slide>
         </div>
         <div className={styles.subHeader}>
-          <div className={mode === 'dark' ? styles.darkDescription : styles.lightDescription}>
+          <div className={mode === 'dark' ? styles.darkDescription : styles.lightDescription} id="description">
             <Slide>
               metroguessr is an interactive online game where players choose from various cities and try to guess as many metro stations as possible within a set time limit. The game has attracted over 10,000 users and has been featured in publications such as <a href="https://www.timeout.fr/paris/actualites/vous-etes-chaud-sur-la-carte-du-metro-prouvez-le-en-1-minute-071424" target='_blank'>Time Out Paris</a>, <a href="https://en.lebonbon.fr/paris/news/do-you-really-know/" target="_blank">Le Bonbon</a> and <a href="https://www.newsshopper.co.uk/news/24457392.london-underground-game-name-tube-stations-1-minute/" target='_blank'>News Shopper</a>, among others.
             </Slide>
@@ -157,8 +184,8 @@ const Metroguessr: React.FC = () => {
         </div>
       </div>
       
-      <div className={styles.projectNavContainer}>
-        <ProjectNav nextProject={nextProject}/>
+      <div className={`${styles.projectNavContainer} ${showProjectNav ? styles.fadeIn : ''}`}>
+        <ProjectNav nextProject={nextProject} />
       </div>
       <ScrollArrow mode={mode}/>
       <Footer mode={mode}/>

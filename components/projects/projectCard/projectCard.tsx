@@ -16,7 +16,9 @@ const ProjectCard: React.FC = () => {
       details: "",
       languages: "",
       summary: "",
-      href: ""
+      href: "",
+      github: "",
+      liveProject: ""
     },
   ]);
 
@@ -40,34 +42,45 @@ const ProjectCard: React.FC = () => {
     getData()
   },[])
 
+  const handleCardClick = (href: string) => {
+    window.location.href = href; // Navigate to the project's href
+  };
+
 
   return (
     <div className={styles.projectCardContainer}>
-        {data.map((projectCard, index) => (
-          <Bounce className={styles.card} key={projectCard.id}>
-          <a className={styles.card} href={projectCard.href}>
-            <div className={styles.imageContainer}>
-              <img className={styles.image} src={projectCard.image} alt={projectCard.title}/>
-              <span className={styles.showProject}>Show Project</span>
-            </div>
-            <div className={styles.content}>
-              <div className={styles.top}>
-                <div className={styles.title}>{projectCard.title}</div>
-                {/* <div className={styles.details}>{projectCard.details}</div> */}
-                <div className={styles.line}></div>
-                <div className={styles.icons}>
-                  <FaGithub className={styles.icon}/>
-                  <IoIosLink className={styles.icon}/>
+        {data.map((project, index) => (
+          <Bounce className={styles.card} key={project.id}>
+            <div className={styles.card}>
+              <div className={styles.imageContainer} onClick={() => handleCardClick(project.href)}>
+                <img className={styles.image} src={project.image} alt={project.title}/>
+                <span className={styles.showProject}>Show Project</span>
+              </div>
+              <div className={styles.content}>
+                <div className={styles.top}>
+                  <div className={styles.title}>{project.title}</div>
+                  {/* <div className={styles.details}>{projectCard.details}</div> */}
+                  <div className={styles.line}></div>
+                  <div className={styles.icons}>
+                    <a href={project.github} target="_blank" onClick={(e) => e.stopPropagation()}>
+                      <FaGithub className={styles.icon}/>
+                    </a>
+                    <a href={project.liveProject} target="_blank" onClick={(e) => e.stopPropagation()}>
+                      <IoIosLink className={styles.icon}/>
+                    </a>
+                  </div>
+                </div>
+                <div className={styles.languages}>
+                  {project.languages}
+                </div>
+                <div className={styles.summary}>
+                  {project.summary}
+                  <span onClick={(e) =>  {e.stopPropagation(); window.open(project.href)}}> 
+                    View &gt;
+                  </span>
                 </div>
               </div>
-              <div className={styles.languages}>{projectCard.languages}</div>
-              <div className={styles.summary}>
-                {projectCard.summary}
-                <span onClick={() => window.open("/projects/metroguessr")}> Learn more &gt;</span>
-              </div>
             </div>
-          </a>
-          
           </Bounce>
         ))}
     </div>
