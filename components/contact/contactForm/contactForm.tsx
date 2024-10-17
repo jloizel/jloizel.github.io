@@ -4,132 +4,110 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import React, { FC, useRef, useState } from 'react';
 import { useForm } from "react-hook-form";
 import * as z from "zod";
-import { sendEmail } from '../../../src/app/utils/sendEmail';
-import styles from './page.module.css'
-import { createTheme, TextareaAutosize, useMediaQuery } from "@mui/material";
+import emailjs from '@emailjs/browser';  
+import styles from './page.module.css';
 import { IoIosArrowForward } from "react-icons/io";
+import { TextareaAutosize } from "@mui/material";
 
 const formSchema = z.object({
-  name: z.string().min(1, {
-    message: "This field cannot be left blank.",
-  }),
-  message: z.string().min(1, {
-    message: "This field cannot be left blank.",
-  }),
-  email: z.string().email({
-    message: "Email must be in proper format.",
-  })
+  user_name: z.string().min(1, "This field cannot be left blank."),
+  user_email: z.string().email("Email must be in proper format."),
+  message: z.string().min(1, "This field cannot be left blank."),
 });
 
 export type FormData = z.infer<typeof formSchema>;
 
 const ContactForm: FC = () => {
-  const form = useRef<HTMLFormElement | null>(null);
+  const formRef = useRef<HTMLFormElement | null>(null); 
+  const [messageSent, setMessageSent] = useState(false); 
+
   const {
     register,
     handleSubmit,
-    setError,
     formState: { errors },
-    setValue,
     reset,
-    trigger,
-    clearErrors
   } = useForm<FormData>({
     resolver: zodResolver(formSchema),
   });
 
-  const [formData, setFormData] = useState<FormData>({
-    name: '',
-    message: '',
-    email: ''
-  });
-
-  const [messageSent, setMessageSent] = useState<boolean>(false);
-  const [isMultiLine, setIsMultiLine] = useState<boolean>(false);
-
   const onSubmit = (data: FormData) => {
-    sendEmail(data);
-    setMessageSent(true);
-    // reset();
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prevFormData => ({
-      ...prevFormData,
-      [name]: value,
-    }));
-
-    // Calculate the number of lines in the textarea
-    if (e.target.name === 'message') {
-      const textArea = e.target;
-      const lines = textArea.value.split('\n').length;
-
-      // Update the state if the user is on the second line or more
-      if (lines > 1) {
-        setIsMultiLine(true);
-      } else {
-        setIsMultiLine(false);
-      }
+    if (formRef.current) {
+      emailjs.sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '',  
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '',
+        formRef.current, 
+        process.env.NEXT_PUBLIC_EMAILJS_USER_ID || '' 
+      ).then(
+        (result) => {
+          console.log('Email successfully sent!', result.text);
+          setMessageSent(true);  
+          reset();  
+        },
+        (error) => {
+          console.error('Error sending email:', error.text);
+        }
+      );
     }
   };
 
   return (
     <div className={styles.formContainer}>
-      {!messageSent && (
-        <form ref={form} onSubmit={handleSubmit(onSubmit)} className={styles.form} autoComplete="off">
+      {!messageSent ? (
+        <form ref={formRef} onSubmit={handleSubmit(onSubmit)} className={styles.form} autoComplete="off">
+          {/* Name input */}
           <div className={styles.container}>
             <div className={styles.inputContainer}>
               <div className={styles.label}>
-                <IoIosArrowForward className={styles.icon}/>
-                MESSAGE FROM: 
+                <IoIosArrowForward className={styles.icon} />
+                MESSAGE FROM:
               </div>
               <input
-                {...register('name')}
-                value={formData.name}
-                onChange={handleChange}
+                {...register('user_name')}
+                name="user_name"
                 className={styles.input}
                 placeholder="{enter name}"
                 autoComplete="new-password"
-              />          
+              />
             </div>
-            {errors?.name && (
+            {errors?.user_name && (
               <p className={styles.errorMessage}>
-                {errors.name.message}
+                {errors.user_name.message}
               </p>
             )}
           </div>
+
+          {/* Email input */}
           <div className={styles.container}>
             <div className={styles.inputContainer}>
               <div className={styles.label}>
-                <IoIosArrowForward className={styles.icon}/>
-                EMAIL: 
+                <IoIosArrowForward className={styles.icon} />
+                EMAIL:
               </div>
               <input
-                {...register('email')}
-                value={formData.email}
-                onChange={handleChange}
+                {...register('user_email')}
+                name="user_email"
                 className={styles.input}
                 placeholder="{enter email}"
                 autoComplete="new-password"
               />
             </div>
-            {errors?.email && (
+            {errors?.user_email && (
               <p className={styles.errorMessage}>
-                {errors.email.message}
+                {errors.user_email.message}
               </p>
             )}
-          </div> 
+          </div>
+
+          {/* Message textarea */}
           <div className={styles.container}>
-            <div className={`${styles.textAreaContainer} ${isMultiLine ? styles.multiLine : ''}`}>
+            <div className={styles.textAreaContainer}>
               <div className={styles.label}>
-                <IoIosArrowForward className={styles.icon}/>
-                MESSAGE: 
+                <IoIosArrowForward className={styles.icon} />
+                MESSAGE:
               </div>
-              <TextareaAutosize 
+              <TextareaAutosize
                 {...register('message')}
-                value={formData.message}
-                onChange={handleChange}
+                name="message"
                 className={styles.textArea}
                 placeholder="{enter message}"
                 autoComplete="new-password"
@@ -141,15 +119,15 @@ const ContactForm: FC = () => {
               </p>
             )}
           </div>
+
+          {/* Submit button */}
           <div className={styles.buttonContainer}>
             <button className={styles.button} type="submit">
               Send Message
             </button>
           </div>
-          
         </form>
-      )}
-      {messageSent && (
+      ) : (
         <div className={styles.successMessageContainer}>
           <div className={styles.successMessage}>
             Thank you for your message, I will be in contact with you as soon as possible.
@@ -160,4 +138,4 @@ const ContactForm: FC = () => {
   );
 };
 
-export default ContactForm
+export default ContactForm;
