@@ -33,18 +33,19 @@ const ContactForm: FC = () => {
   const onSubmit = (data: FormData) => {
     if (formRef.current) {
       emailjs.sendForm(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '',  
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '',
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '',
-        formRef.current, 
-        process.env.NEXT_PUBLIC_EMAILJS_USER_ID || '' 
+        formRef.current,
+        process.env.NEXT_PUBLIC_EMAILJS_USER_ID || ''
       ).then(
         (result) => {
           console.log('Email successfully sent!', result.text);
-          setMessageSent(true);  
-          reset();  
+          setMessageSent(true);
+          reset();
         },
         (error) => {
-          console.error('Error sending email:', error.text);
+          console.error('Error sending email:', error); 
+          alert(`Error sending email: ${error.text || 'Unknown error'}`); 
         }
       );
     }
