@@ -6,7 +6,7 @@ import { EmailTemplate } from '../../../../components/contact/contactForm/emailT
 
 
 export async function POST(request: NextRequest) {
-  const { company, job, file, message, name, email, phoneNumber } = await request.json();
+  const { message, name, email } = await request.json();
 
   const transport = nodemailer.createTransport({
     service: 'gmail',
@@ -20,8 +20,8 @@ export async function POST(request: NextRequest) {
     from: process.env.EMAIL,
     to: process.env.EMAIL,
     // cc: email, (uncomment this line if you want to send a copy to the sender)
-    subject: `Message from ${name} from (${company})`,
-    text: `${message} ${job} ${phoneNumber}`,
+    subject: `Message from ${name}`,
+    text: `${message}`,
     html: render(EmailTemplate({ name: name, emailAddress: email, message: message })),
   };
 

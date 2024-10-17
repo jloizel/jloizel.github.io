@@ -35,13 +35,10 @@ export function EmailTemplate({ name, emailAddress, message }: ContactMeEmailPro
           <Text className={styles.emailText}>
             <strong>{message}</strong>
           </Text>
-          <Text className={styles.emailText}>
-            <strong>Job title:</strong>
-          </Text>
           <Hr style={{backgroundColor: "#002D49"}} />
           <Text className={styles.emailInfo}>
-            This message was sent by {name} from. You can contact them through their
-            email {emailAddress} or phone number <strong></strong>
+            This message was sent by {name}. You can contact them through their
+            email {emailAddress}.<strong></strong>
           </Text>
         </Container>
       </Tailwind>
