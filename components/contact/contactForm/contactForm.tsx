@@ -39,13 +39,10 @@ const ContactForm: FC = () => {
         "5sXrDZuoGKK_BsarB"
       ).then(
         (result) => {
-          console.log('Email successfully sent!', result.text);
           setMessageSent(true);
           reset();
         },
         (error) => {
-          console.error('Error sending email:', error); 
-          alert(`Error sending email: ${error.text || 'Unknown error'}`); 
         }
       );
     }
