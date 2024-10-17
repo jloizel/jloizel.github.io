@@ -48,9 +48,14 @@ const ContactForm: FC = () => {
   const [isMultiLine, setIsMultiLine] = useState<boolean>(false);
 
   const onSubmit = (data: FormData) => {
-    sendEmail(data);
+    const emailData = {
+      user_name: data.name,    // 'name' becomes 'user_name'
+      user_email: data.email,  // 'email' becomes 'user_email'
+      message: data.message,   // 'message' stays the same
+    };
+
+    sendEmail(emailData); // Call the sendEmail function with the mapped data
     setMessageSent(true);
-    // reset();
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
