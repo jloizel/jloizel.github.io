@@ -77,7 +77,7 @@ const ContactForm: FC = () => {
   return (
     <div className={styles.formContainer}>
       {!messageSent && (
-        <form ref={form} onSubmit={handleSubmit(onSubmit)} className={styles.form}>
+        <form ref={form} onSubmit={handleSubmit(onSubmit)} className={styles.form} autoComplete="off">
           <div className={styles.container}>
             <div className={styles.inputContainer}>
               <div className={styles.label}>
@@ -90,6 +90,7 @@ const ContactForm: FC = () => {
                 onChange={handleChange}
                 className={styles.input}
                 placeholder="{enter name}"
+                autoComplete="new-password"
               />          
             </div>
             {errors?.name && (
@@ -110,6 +111,7 @@ const ContactForm: FC = () => {
                 onChange={handleChange}
                 className={styles.input}
                 placeholder="{enter email}"
+                autoComplete="new-password"
               />
             </div>
             {errors?.email && (
@@ -130,7 +132,7 @@ const ContactForm: FC = () => {
                 onChange={handleChange}
                 className={styles.textArea}
                 placeholder="{enter message}"
-                // minRows={2}
+                autoComplete="new-password"
               />
             </div>
             {errors?.message && (

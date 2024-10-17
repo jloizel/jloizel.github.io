@@ -21,7 +21,7 @@ interface ContactMeEmailProps {
 }
 
 export function EmailTemplate({ name, emailAddress, message }: ContactMeEmailProps) {
-  const previewText = `${name} from has submitted a vacancy`;
+  const previewText = `${name} has sent you a message`;
 
   return (
     <Html>
@@ -38,7 +38,7 @@ export function EmailTemplate({ name, emailAddress, message }: ContactMeEmailPro
           <Hr style={{backgroundColor: "#002D49"}} />
           <Text className={styles.emailInfo}>
             This message was sent by {name}. You can contact them through their
-            email {emailAddress}.<strong></strong>
+            email <strong>{emailAddress}</strong>.
           </Text>
         </Container>
       </Tailwind>
