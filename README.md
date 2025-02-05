@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/jloizel.github.io">
+  <a href="https://github.com/jloizel/jloizel.github.io">
     <img src="images/resume.png" alt="Logo" width="auto" height="300">
   </a>
 
