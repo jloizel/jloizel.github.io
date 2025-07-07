@@ -36,10 +36,10 @@ The portfolio highlights my projects, demonstrates my proficiency in various too
 
 ### Built With (***non-exhaustive***)
 
-<code><img src="https://github.com/jloizel/jloizel/blob/main/Assets/react-color.svg" alt="react" height="35px"/></code>
-<code><img src="https://github.com/jloizel/jloizel/blob/main/Assets/typescript-color.svg" alt="typescript" height="35px"/></code>
-<code><img src="https://github.com/jloizel/jloizel/blob/main/Assets/css3-color%20(1).svg" alt="css" height="35px"/></code>
-<code><img src="https://github.com/jloizel/jloizel/blob/main/Assets/html5-color.svg" alt="html" height="35px"/></code>
+<code><img src="https://github.com/jloizel/jloizel/blob/main/Assets/react-color.svg" alt="react" height="35px" width="35px"/></code>
+<code><img src="https://github.com/jloizel/jloizel/blob/main/Assets/typescript-color.svg" alt="typescript" height="35px" width="35px"/></code>
+<code><img src="https://github.com/jloizel/jloizel/blob/main/Assets/css3-color%20(1).svg" alt="css" height="35px" width="35px"/></code>
+<code><img src="https://github.com/jloizel/jloizel/blob/main/Assets/html5-color.svg" alt="html" height="35px" width="35px"/></code>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
