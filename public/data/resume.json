@@ -56,6 +56,32 @@
     "header": "Work Experience",
     "sections": [
       {
+        "subHeader": "Jul. 2025 - present",
+        "company": "Formlate Digital",
+        "content": ["- Fullstack Developer"],
+        "description": [
+          "Built a full-stack Ruby on Rails application for a major client to create a modern platform for storing and sharing brand assets across teams and regions",
+          "Developed the MVP for an insurtech startup using React and supabase, establishing a scalable foundation for future product expansion",
+          "Currently building a React + Ruby on Rails full-stack Member Hub platform for an insurance company to streamline member engagement and improve self-service capabilities",
+          "Collaborate closely with cross-functional teams to design, implement, and deliver robust, user-centered solutions",
+          "Apply Agile methodologies and best practices in version control, code review, and deployment pipelines to ensure efficient development and high code quality"
+        ]
+      },
+      {
+        "subHeader": "Mar. 2025 - Jul. 2025",
+        "company": "Loxa",
+        "content": ["- Junior Fullstack Developer"],
+        "description": [
+          "Contributed to continuous improvements of the company’s internal Rails Admin application by implementing new features and refining existing workflows to enhance operational efficiency",
+          "Enhanced the UI/UX across key admin interfaces, facilitating internal use and improving task execution speed",
+          "Built a full-stack application with a React frontend and Ruby on Rails backend, enabling tool owners to select and manage insurance coverage options through an intuitive interface.",
+          "Developed a full-scale Merchants Portal platform (React + Rails), a centralised platform for merchant product management, as part of broader efforts to streamline internal processes",
+          "Wrote frontend end-to-end tests using Cypress and backend unit tests with RSpec to ensure application stability and maintainability",
+          "Collaborated closely with the team to implement scalable, user-focused features",
+          "Applied Agile methodologies and Git workflows in a fast-paced development environment"
+        ]
+      },
+      {
         "subHeader": "Oct. 2023 - present",
         "company": "AKT",
         "content": ["- Structural Engineering Design Engineer"],
