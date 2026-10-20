@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
+  images: { unoptimized: true },
 }
 
-export default nextConfig; // use ES Module export
+export default nextConfig;
